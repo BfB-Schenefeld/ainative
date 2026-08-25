@@ -17,7 +17,8 @@ docs/             metamodel, ID scheme, ingestion runbook, ADRs
 index/            derived — gitignored, rebuild with tools/build_index.py
 ```
 
-Read `docs/metamodel.md` first, then `docs/ingestion.md`.
+Read `docs/metamodel.md` first, then `docs/ingestion.md`. For capturing Rise 360
+courses with their quiz answer keys intact, `docs/capture-rise.md`.
 
 ## Quick start
 
@@ -49,8 +50,8 @@ From `src:2026-08-25/learning-plans-exams`:
 ## Read this before adding more captures
 
 That first export was 8.5 MB and yielded one lesson. **Full-page HTML exports are the
-wrong capture method for these courses** — see `docs/adr/0002-capture-strategy.md` for
-what to do instead. Fixing the capture step is worth more than any amount of work on
+wrong capture method for these courses** — `docs/capture-rise.md` has the method that
+works, `docs/adr/0002-capture-strategy.md` has the reasoning. Fixing the capture step is worth more than any amount of work on
 this repo.
 
 ## Rights
