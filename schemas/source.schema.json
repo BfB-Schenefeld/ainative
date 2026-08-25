@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/BfB-Schenefeld/ainative/schemas/source.schema.json",
+  "title": "Source",
+  "type": "object",
+  "required": ["source_id", "provider", "capture", "coverage"],
+  "properties": {
+    "source_id": { "type": "string", "pattern": "^src:\\d{4}-\\d{2}-\\d{2}/[a-z0-9-]+$" },
+    "provider": { "type": "string", "pattern": "^provider:[a-z0-9-]+$" },
+    "capture": {
+      "type": "object",
+      "required": ["url", "captured_at", "method", "sha256", "bytes"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "captured_at": { "type": "string", "format": "date-time" },
+        "method": { "enum": ["singlefile-html", "rise-json", "manual-transcription", "api"] },
+        "tool_version": { "type": "string" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "bytes": { "type": "integer", "minimum": 0 },
+        "captured_by": { "type": "string" }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["complete", "partial", "shell-only"] },
+        "contains": { "type": "array", "items": { "type": "string" } },
+        "missing": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "rights": {
+      "type": "object",
+      "properties": {
+        "holder": { "type": "string" },
+        "basis": { "type": "string" },
+        "redistribution": { "enum": ["none", "internal", "public"] }
+      }
+    },
+    "derives": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

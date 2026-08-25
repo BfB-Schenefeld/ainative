@@ -1,0 +1,75 @@
+# yaml-language-server: $schema=../../../schemas/course.schema.json
+id: "course:scaledagile/ai-native-safe-overview"
+title: "AI-Native SAFe Overview"
+provider: "provider:scaledagile"
+kind: upgrade-path
+duration_minutes: 100
+language: en
+url: "https://community.scaledagile.com/s/learning"
+delivery: rise360
+
+objectives:
+  - id: "obj:ai-native-safe-overview/01"
+    text: "Explain why organizations need AI-Native SAFe to achieve a return on AI."
+    concepts: ["concept:ai-native-safe", "concept:return-on-ai"]
+    sources: ["src:2026-08-25/learning-plans-exams#b0036"]
+  - id: "obj:ai-native-safe-overview/02"
+    text: "Explain the four shifts to become AI-Native and how each changes day-to-day practice."
+    concepts: ["concept:four-shifts"]
+    sources: ["src:2026-08-25/learning-plans-exams#b0037"]
+  - id: "obj:ai-native-safe-overview/03"
+    text: "Describe the human skills the AI-Native Professional pairs with AI fluency."
+    concepts: ["concept:ai-native-professional", "concept:ai-fluency"]
+    sources: ["src:2026-08-25/learning-plans-exams#b0038"]
+  - id: "obj:ai-native-safe-overview/04"
+    text: "Locate your own role in AI-Native SAFe."
+    concepts: ["concept:ai-native-safe"]
+    sources: ["src:2026-08-25/learning-plans-exams#b0039"]
+
+lessons:
+  - id: "lesson:scaledagile/ai-native-safe-overview/00-welcome"
+    order: 0
+    title: "Welcome"
+    capture_status: captured
+    file: "lessons/00-welcome.md"
+  - id: "lesson:scaledagile/ai-native-safe-overview/01-ai-native-safe-overview"
+    order: 1
+    title: "Lesson 1: AI-Native SAFe Overview"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/ai-native-safe-overview/02-optimized-for-outcome-driven-flow"
+    order: 2
+    title: "Lesson 2: Optimized for Outcome-Driven Flow"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/ai-native-safe-overview/03-cross-functional-ai-augmented-teams"
+    order: 3
+    title: "Lesson 3: Cross-Functional, AI-Augmented Teams"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/ai-native-safe-overview/04-iterative-learning-and-rapid-experimentation-cycles"
+    order: 4
+    title: "Lesson 4: Iterative Learning and Rapid Experimentation Cycles"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/ai-native-safe-overview/05-development-and-innovation-at-scale"
+    order: 5
+    title: "Lesson 5: Development and Innovation at Scale"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/ai-native-safe-overview/06-getting-started-with-ai-native-safe"
+    order: 6
+    title: "Lesson 6: Getting Started with AI-Native SAFe"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/ai-native-safe-overview/07-final-quiz"
+    order: 7
+    title: "Final Quiz"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/ai-native-safe-overview/08-references"
+    order: 8
+    title: "References"
+    capture_status: manifest_only
+
+certifications:
+  - "cert:scaledagile/spc"
+  - "cert:scaledagile/aspc"
+  - "cert:scaledagile/spct"
+
+sources:
+  - "src:2026-08-25/learning-plans-exams#b0021"
+  - "src:2026-08-25/learning-plans-exams#b0022"

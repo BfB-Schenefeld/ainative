@@ -1,0 +1,310 @@
+{
+  "source_id": "src:2026-08-25/learning-plans-exams",
+  "schema": "schemas/source.schema.json",
+  "extractor": {
+    "name": "extract_singlefile.py",
+    "version": "0.1.0"
+  },
+  "extracted_at": "2026-08-25T21:29:30+00:00",
+  "capture": {
+    "original_filename": "Learning_Plans___Exams__25_8_2026_23_22_24_.html",
+    "url": "https://community.scaledagile.com/s/learning",
+    "saved_at_raw": "Tue Aug 25 2026 23:22:24 GMT+0200 (Mitteleuropäische Sommerzeit)",
+    "bytes": 8497060,
+    "sha256": "b22ea7ed6d967c7bb22a42a1b4cc4ae6126526c518e8e6a4721f425fced946bb"
+  },
+  "frame_chain": [
+    {
+      "path": "root",
+      "bytes": 976898
+    },
+    {
+      "path": "root>resizable-iframe",
+      "bytes": 279122
+    },
+    {
+      "path": "root>resizable-iframe>iFramePlayer",
+      "bytes": 229081
+    },
+    {
+      "path": "root>resizable-iframe>iFramePlayer>launcher-content",
+      "bytes": 78558
+    },
+    {
+      "path": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame",
+      "bytes": 68584
+    },
+    {
+      "path": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame",
+      "bytes": 64624
+    }
+  ],
+  "blocks": [
+    {
+      "id": "b0001",
+      "type": "list_item",
+      "text": "Home",
+      "frame": "root"
+    },
+    {
+      "id": "b0002",
+      "type": "list_item",
+      "text": "Administration",
+      "frame": "root"
+    },
+    {
+      "id": "b0003",
+      "type": "list_item",
+      "text": "SPCT Portal",
+      "frame": "root"
+    },
+    {
+      "id": "b0004",
+      "type": "list_item",
+      "text": "Framework",
+      "frame": "root"
+    },
+    {
+      "id": "b0005",
+      "type": "list_item",
+      "text": "Learning Plans & Exams",
+      "frame": "root"
+    },
+    {
+      "id": "b0006",
+      "type": "list_item",
+      "text": "Class Attendance",
+      "frame": "root"
+    },
+    {
+      "id": "b0007",
+      "type": "list_item",
+      "text": "Tools & Resources",
+      "frame": "root"
+    },
+    {
+      "id": "b0008",
+      "type": "list_item",
+      "text": "SAFe Skills",
+      "frame": "root"
+    },
+    {
+      "id": "b0009",
+      "type": "list_item",
+      "text": "SAFe CoPilot",
+      "frame": "root"
+    },
+    {
+      "id": "b0010",
+      "type": "list_item",
+      "text": "SAFe Connect Open in new tab",
+      "frame": "root"
+    },
+    {
+      "id": "b0011",
+      "type": "list_item",
+      "text": "SAFe Training Finder Open in new tab",
+      "frame": "root"
+    },
+    {
+      "id": "b0012",
+      "type": "list_item",
+      "text": "AI-Native Connect Open in new tab",
+      "frame": "root"
+    },
+    {
+      "id": "b0013",
+      "type": "list_item",
+      "text": "AI-Native Training Calendar Open in new tab",
+      "frame": "root"
+    },
+    {
+      "id": "b0014",
+      "type": "list_item",
+      "text": "Scaled Agile, Inc. Open in new tab",
+      "frame": "root"
+    },
+    {
+      "id": "b0015",
+      "type": "list_item",
+      "text": "Support Open in new tab",
+      "frame": "root"
+    },
+    {
+      "id": "b0016",
+      "type": "heading",
+      "text": "Learning Plans & Exams",
+      "frame": "root",
+      "level": 1
+    },
+    {
+      "id": "b0017",
+      "type": "list_item",
+      "text": "Cookie Policy",
+      "frame": "root"
+    },
+    {
+      "id": "b0018",
+      "type": "list_item",
+      "text": "Privacy Policy",
+      "frame": "root"
+    },
+    {
+      "id": "b0019",
+      "type": "list_item",
+      "text": "My Learning",
+      "frame": "root>resizable-iframe"
+    },
+    {
+      "id": "b0020",
+      "type": "list_item",
+      "text": "Achievements",
+      "frame": "root>resizable-iframe"
+    },
+    {
+      "id": "b0021",
+      "type": "paragraph",
+      "text": "AI-Native SAFe Overview",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0022",
+      "type": "paragraph",
+      "text": "Lessons",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0023",
+      "type": "paragraph",
+      "text": "Welcome",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0024",
+      "type": "paragraph",
+      "text": "Lesson 1: AI-Native SAFe Overview",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0025",
+      "type": "paragraph",
+      "text": "Lesson 2: Optimized for Outcome-Driven Flow",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0026",
+      "type": "paragraph",
+      "text": "Lesson 3: Cross-Functional, AI-Augmented Teams",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0027",
+      "type": "paragraph",
+      "text": "Lesson 4: Iterative Learning and Rapid Experimentation Cycles",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0028",
+      "type": "paragraph",
+      "text": "Lesson 5: Development and Innovation at Scale",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0029",
+      "type": "paragraph",
+      "text": "Lesson 6: Getting Started with AI-Native SAFe",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0030",
+      "type": "paragraph",
+      "text": "Final Quiz",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0031",
+      "type": "paragraph",
+      "text": "References",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0032",
+      "type": "heading",
+      "text": "Welcome to the AI-Native SAFe Overview",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame",
+      "level": 2
+    },
+    {
+      "id": "b0033",
+      "type": "paragraph",
+      "text": "AI-Native SAFe builds on a foundation of Lean-Agile practices by powering organizations with Lean, Agile, and AI. In this path, you will learn about four critical shifts and the human-centric AI culture that allows organizations using Lean-Agile practices to master the adoption of AI.",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0034",
+      "type": "paragraph",
+      "text": "Completing this upgrade path and passing the final quiz will upgrade your current SAFe certifications to their new AI-Native SAFe versions.",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0035",
+      "type": "paragraph",
+      "text": "By the end of this course, you will be able to:",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0036",
+      "type": "list_item",
+      "text": "Explain why organizations need AI-Native SAFe to achieve a return on AI",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0037",
+      "type": "list_item",
+      "text": "Explain the four shifts to become AI-Native and how each changes day-to-day practice",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0038",
+      "type": "list_item",
+      "text": "Describe the human skills the AI-Native Professional pairs with AI fluency",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0039",
+      "type": "list_item",
+      "text": "Locate your own role in AI-Native SAFe",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0040",
+      "type": "paragraph",
+      "text": "Getting around this course:",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0041",
+      "type": "list_item",
+      "text": "Highly recommended: Enter Full screen mode using the button in the top right of this course. Press Esc anytime to exit. The content in this course is optimized for full screen mode and you'll have the best experience there.",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0042",
+      "type": "list_item",
+      "text": "Open or close the lesson menu with the hamburger icon (three stacked lines) at the top left.",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0043",
+      "type": "paragraph",
+      "text": "To get oriented, jot down: What is your role? What do you hope to do with what you learn here?",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    },
+    {
+      "id": "b0044",
+      "type": "paragraph",
+      "text": "Complete this course to upgrade your certifications to AI-Native SAFe.",
+      "frame": "root>resizable-iframe>iFramePlayer>launcher-content>content_frame>dispatch-frame"
+    }
+  ]
+}

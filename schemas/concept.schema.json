@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/BfB-Schenefeld/ainative/schemas/concept.schema.json",
+  "title": "Concept front matter",
+  "type": "object",
+  "required": ["id", "label", "status", "sources"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^concept:[a-z0-9-]+$" },
+    "label": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "status": {
+      "enum": ["stub", "defined", "superseded"],
+      "description": "stub = name known, definition not yet captured"
+    },
+    "superseded_by": { "type": "string" },
+    "broader": { "type": "array", "items": { "type": "string" } },
+    "narrower": { "type": "array", "items": { "type": "string" } },
+    "related": { "type": "array", "items": { "type": "string" } },
+    "part_of": { "type": "array", "items": { "type": "string" } },
+    "sources": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/certification.schema.json
+id: "cert:scaledagile/spc"
+label: "SAFe Practice Consultant"
+abbreviation: "SPC"
+provider: "provider:scaledagile"
+tier: expert
+
+upgrade_path:
+  - course: "course:scaledagile/ai-native-safe-overview"
+    required: true
+    note: "Upgrade path plus passing its final quiz."
+  - course: "course:scaledagile/adopting-ai-native-safe"
+    required: true
+    note: >-
+      Additional requirement for expert certifications only. On-demand course,
+      delivered through the learning plan. Not yet captured.
+
+sources:
+  - "src:2026-08-25/learning-plans-exams#b0034"

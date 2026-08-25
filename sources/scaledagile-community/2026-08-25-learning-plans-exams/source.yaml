@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schemas/source.schema.json
+source_id: "src:2026-08-25/learning-plans-exams"
+provider: "provider:scaledagile"
+
+capture:
+  url: "https://community.scaledagile.com/s/learning"
+  captured_at: "2026-08-25T21:22:24Z"
+  method: singlefile-html
+  tool_version: "SingleFile (version not recorded in export header)"
+  sha256: "b22ea7ed6d967c7bb22a42a1b4cc4ae6126526c518e8e6a4721f425fced946bb"
+  bytes: 8497060
+  captured_by: "Jörg Christoffers"
+
+coverage:
+  status: partial
+  contains:
+    - "Learning Plans & Exams page shell (Salesforce Experience Cloud)"
+    - "Lesson manifest of the course 'AI-Native SAFe Overview' (8 entries)"
+    - "Full text of the Welcome lesson, including the four course objectives"
+    - "Progress indicator (2/8) and stated total duration (~1h40)"
+  missing:
+    - "Lesson 1 through Lesson 6 body content"
+    - "Final Quiz — no questions, options or answer keys are present"
+    - "References section"
+    - "Any content behind an unopened interaction (accordion, flip card, knowledge check)"
+    - "The learning-plan list itself (other courses, exam entitlements, attempt history)"
+  notes: >-
+    The content sits six iframes deep, each nested level carried in a `srcdoc`
+    attribute. The innermost frame is an Articulate Rise 360 course. Rise keeps the
+    whole course in a JavaScript payload and renders one lesson at a time; SingleFile
+    strips JavaScript. Therefore only the lesson that happened to be on screen at save
+    time survives. 8.3 MB of the 8.5 MB file is base64 fonts, CSS and icons — the
+    actual course DOM is 64 KB. See docs/adr/0002-capture-strategy.md.
+
+rights:
+  holder: "Scaled Agile, Inc."
+  basis: "Personal learner access to licensed training content"
+  redistribution: none
+
+derives:
+  - "course:scaledagile/ai-native-safe-overview"
+  - "lesson:scaledagile/ai-native-safe-overview/00-welcome"
+  - "cert:scaledagile/spc"
+  - "cert:scaledagile/aspc"
+  - "cert:scaledagile/spct"

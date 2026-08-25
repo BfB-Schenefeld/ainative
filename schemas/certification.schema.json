@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/BfB-Schenefeld/ainative/schemas/certification.schema.json",
+  "title": "Certification",
+  "type": "object",
+  "required": ["id", "label", "provider", "sources"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^cert:[a-z0-9-]+/[a-z0-9-]+$" },
+    "label": { "type": "string" },
+    "abbreviation": { "type": "string" },
+    "provider": { "type": "string", "pattern": "^provider:[a-z0-9-]+$" },
+    "tier": { "enum": ["foundational", "practitioner", "expert", "unknown"] },
+    "upgrade_path": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["course", "required"],
+        "properties": {
+          "course": { "type": "string" },
+          "required": { "type": "boolean" },
+          "note": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "sources": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}
