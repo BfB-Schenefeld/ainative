@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/029"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "An ART implements its full launch plan and declares its change journey finished. What does the pace of AI make necessary instead?"
+options:
+  - key: "a"
+    text: "A second readiness assessment"
+    correct: false
+  - key: "b"
+    text: "A commitment to continuous learning"
+    correct: true
+  - key: "c"
+    text: "A freeze on adopting any further AI tools"
+    correct: false
+  - key: "d"
+    text: "An immediate second ART launch"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is a commitment to continuous learning. Advancing AI technologies keep the ART in a constant state of adaptation, so the learning journey continues after the launch plan is complete."
+difficulty: harder
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0029"

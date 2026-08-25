@@ -66,11 +66,12 @@ def lesson_label(item) -> str:
 
 def wide_rows(items, maxopt):
     """One row per question: every option, its verdict, and its explanation."""
-    header = ["Nr", "ID", "Typ", "Lektion", "Frage"]
+    header = ["Nr", "ID", "Typ", "Schwierigkeit", "Lektion", "Frage"]
     for i in range(maxopt):
         L = chr(65 + i)
         header += [f"Option {L}", f"{L} richtig?", f"Begründung {L}"]
-    header += ["Richtige Antwort", "Begründung (richtig)", "Antwortstatus", "Quelle"]
+    header += ["Richtige Antwort", "Begründung (richtig)", "Erläuterung zur Frage",
+               "Antwortstatus", "Quelle"]
 
     rows = []
     for n, it in enumerate(items, 1):
@@ -80,6 +81,8 @@ def wide_rows(items, maxopt):
             n,
             it.get("id", ""),
             "Einfachauswahl" if it.get("type") == "single-choice" else it.get("type", ""),
+            {"easy": "leicht", "medium": "mittel", "harder": "schwer"}.get(
+                it.get("difficulty", ""), it.get("difficulty", "")),
             lesson_label(it),
             it.get("stem", ""),
         ]
@@ -92,6 +95,7 @@ def wide_rows(items, maxopt):
         row += [
             correct.get("text", "") if correct else "",
             correct.get("feedback", "") if correct else "",
+            it.get("rationale", ""),
             it.get("answer_status", ""),
             (it.get("sources") or [""])[0],
         ]
@@ -101,19 +105,23 @@ def wide_rows(items, maxopt):
 
 def long_rows(items):
     """One row per option: easier to filter, sort and pivot."""
-    header = ["Nr", "Frage-ID", "Lektion", "Frage", "Option", "Antworttext", "Richtig?", "Begründung"]
+    header = ["Nr", "Frage-ID", "Schwierigkeit", "Lektion", "Frage", "Option",
+              "Antworttext", "Richtig?", "Begründung", "Erläuterung zur Frage"]
     rows = []
     for n, it in enumerate(items, 1):
         for o in it.get("options", []) or []:
             rows.append([
                 n,
                 it.get("id", ""),
+                {"easy": "leicht", "medium": "mittel", "harder": "schwer"}.get(
+                    it.get("difficulty", ""), it.get("difficulty", "")),
                 lesson_label(it),
                 it.get("stem", ""),
                 (o.get("key") or "").upper(),
                 o.get("text", ""),
                 "RICHTIG" if o.get("correct") else "falsch",
                 o.get("feedback", ""),
+                it.get("rationale", "") if o.get("correct") else "",
             ])
     return header, rows
 
@@ -176,17 +184,20 @@ def main() -> int:
     wb = Workbook()
     ws = wb.active
     ws.title = "Fragen"
-    wide_widths = [5, 40, 15, 40, 60]
+    FIRST = 7  # first option column after Nr, ID, Typ, Schwierigkeit, Lektion, Frage
+    wide_widths = [5, 40, 15, 14, 40, 60]
     for _ in range(maxopt):
         wide_widths += [50, 12, 62]
-    wide_widths += [50, 62, 14, 42]
-    last = 6 + maxopt * 3
-    wide_wrap = {4, 5} | {c for c in range(6, last) if (c - 6) % 3 != 1} | {last, last + 1}
-    wide_verdict = {c for c in range(6, last) if (c - 6) % 3 == 1}
+    wide_widths += [50, 62, 66, 14, 42]
+    last = FIRST + maxopt * 3
+    wide_wrap = ({5, 6} | {c for c in range(FIRST, last) if (c - FIRST) % 3 != 1}
+                 | {last, last + 1, last + 2})
+    wide_verdict = {c for c in range(FIRST, last) if (c - FIRST) % 3 == 1}
     style_sheet(ws, wh, wr, wide_widths, wide_wrap, wide_verdict, row_height=110)
 
     ws2 = wb.create_sheet("Antwortoptionen")
-    style_sheet(ws2, lh, lr, [5, 40, 40, 60, 8, 55, 12, 70], {3, 4, 6, 8}, {5, 7}, row_height=58)
+    style_sheet(ws2, lh, lr, [5, 40, 14, 40, 60, 8, 55, 12, 70, 66],
+                {4, 5, 7, 9, 10}, {6, 8}, row_height=58)
 
     info = wb.create_sheet("Info")
     for r in [
@@ -194,6 +205,7 @@ def main() -> int:
         ["", ""],
         ["Fragen im Pool", len(items)],
         ["Antwortoptionen je Frage", maxopt],
+        ["Schwierigkeitsverteilung", ""],
         ["Fragen pro Versuch", 15],
         ["Bestehensgrenze", "12 von 15 (80 %)"],
         ["Modus", "Open Book, unbegrenzte Wiederholungen, ohne Zeitlimit"],
@@ -208,6 +220,16 @@ def main() -> int:
         ["Rechte", "Scaled Agile, Inc. — keine Weitergabe (rights.redistribution: none)"],
     ]:
         info.append(r)
+    bands = {}
+    for it in items:
+        d = it.get("difficulty")
+        if d:
+            bands[d] = bands.get(d, 0) + 1
+    if bands:
+        label = {"easy": "leicht", "medium": "mittel", "harder": "schwer"}
+        info["B6"] = ", ".join(f"{label.get(k, k)}: {v}" for k, v in
+                               sorted(bands.items(), key=lambda kv: ["easy", "medium", "harder"].index(kv[0])
+                                      if kv[0] in ("easy", "medium", "harder") else 9))
     info.column_dimensions["A"].width = 26
     info.column_dimensions["B"].width = 95
     for row in info.iter_rows():

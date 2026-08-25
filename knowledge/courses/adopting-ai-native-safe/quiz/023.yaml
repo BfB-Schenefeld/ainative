@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/023"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "Two candidates compete to be the first AI-Native ART. One has AI-engaged leaders, a defined product with clear outcomes, teams using AI daily, and a sizeable challenge. The other has an eager manager and an undefined product. Why is the first the stronger choice?"
+options:
+  - key: "a"
+    text: "Its manager is more eager to reorganize"
+    correct: false
+  - key: "b"
+    text: "It already passed a readiness assessment"
+    correct: false
+  - key: "c"
+    text: "It guarantees a faster first launch date"
+    correct: false
+  - key: "d"
+    text: "It meets all four criteria at once"
+    correct: true
+answer_status: confirmed
+rationale: "The correct answer is that it meets all four criteria at once. An opportunistic first ART sits at the intersection of engaged leaders, clear products and outcomes, teams embracing AI, and a significant opportunity."
+difficulty: harder
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0023"

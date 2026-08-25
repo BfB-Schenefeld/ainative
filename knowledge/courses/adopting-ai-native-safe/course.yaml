@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../../schemas/course.schema.json
+id: "course:scaledagile/adopting-ai-native-safe"
+title: "Adopting AI-Native SAFe"
+provider: "provider:scaledagile"
+kind: on-demand
+duration_minutes: 86
+language: en
+url: "https://community.scaledagile.com/s/learning"
+delivery: spa  # Vite/React single-page app, see docs/adr/0003-not-a-rise-course.md
+
+lessons:
+  - id: "lesson:scaledagile/adopting-ai-native-safe/00-welcome"
+    order: 0
+    title: "Welcome"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/adopting-ai-native-safe/01-the-ai-native-safe-implementation-roadmap"
+    order: 1
+    title: "The AI-Native SAFe Implementation Roadmap"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/adopting-ai-native-safe/02-align-to-outcomes-phase"
+    order: 2
+    title: "\"Align to Outcomes\" Phase"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/adopting-ai-native-safe/03-set-priorities-phase"
+    order: 3
+    title: "\"Set Priorities\" Phase"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/adopting-ai-native-safe/04-launch-ai-native-arts-phase"
+    order: 4
+    title: "\"Launch AI-Native ARTs\" Phase"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/adopting-ai-native-safe/05-measure-performance-phase"
+    order: 5
+    title: "\"Measure Performance\" Phase"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/adopting-ai-native-safe/06-amplify-roi-phase"
+    order: 6
+    title: "\"Amplify ROI\" Phase"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/adopting-ai-native-safe/07-ai-native-safe-resources"
+    order: 7
+    title: "AI-Native SAFe Resources"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/adopting-ai-native-safe/08-final-quiz"
+    order: 8
+    title: "Final Quiz"
+    capture_status: manifest_only
+  - id: "lesson:scaledagile/adopting-ai-native-safe/09-references"
+    order: 9
+    title: "References"
+    capture_status: manifest_only
+
+certifications:
+  - "cert:scaledagile/spc"
+  - "cert:scaledagile/aspc"
+  - "cert:scaledagile/spct"
+
+prerequisites:
+  - "course:scaledagile/ai-native-safe-overview"
+
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0001"

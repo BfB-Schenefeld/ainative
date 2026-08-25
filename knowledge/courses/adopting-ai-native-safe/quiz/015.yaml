@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/015"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "An organization wants its new RTEs to create an environment where teams and ARTs flourish. Why do the RTE and SAFe Advanced Scrum Master courses still apply?"
+options:
+  - key: "a"
+    text: "They are largely agnostic to the version of SAFe"
+    correct: true
+  - key: "b"
+    text: "They were rewritten exclusively for AI-Native SAFe"
+    correct: false
+  - key: "c"
+    text: "They replace the need for AI-specific training"
+    correct: false
+  - key: "d"
+    text: "They certify attendees as AI Value Architects"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is that they are largely agnostic to the version of SAFe. Although initially designed to support Core SAFe, both courses build the environment-shaping and coaching skills that high-performing teams and ARTs still need."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0015"

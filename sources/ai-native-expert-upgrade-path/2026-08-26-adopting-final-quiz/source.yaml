@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=../../../schemas/source.schema.json
+source_id: "src:2026-08-26/adopting-final-quiz"
+provider: "provider:scaledagile"
+
+capture:
+  url: "https://ai-native-safe-expert-upgrade-path.replit.app/assets/FinalQuiz-etnZrWxX.js"
+  captured_at: "2026-08-26T00:00:00Z"
+  method: singlefile-html
+  tool_version: "extract_assets_from_har.py 0.1.0 (body taken from HAR, not re-downloaded)"
+  sha256: "ebcf7d80d3f95f5ca1dbb8b4d70551f5b3ba714a3b34143a89f328d8fde150c5"
+  bytes: 19210
+  captured_by: "Jörg Christoffers"
+
+coverage:
+  status: complete
+  contains:
+    - "Full final-quiz bank: 30 single-choice items across three difficulty banks"
+    - "EASY (6), MEDIUM (15), HARDER (9)"
+    - "Correct answer and a rationale for every item"
+    - "Quiz mechanics: 3 easy + 8 medium + 4 harder = 15 drawn, passing score 12 (80%)"
+  missing:
+    - "Per-option feedback — this app ships one shared rationale per item, unlike the"
+    - "  AI-Native SAFe Overview quiz, which has feedback for every wrong option"
+    - "Question-to-lesson map — this bundle does not carry one"
+    - "Lesson body prose (the seven Lesson0N chunks are archived but not yet parsed)"
+  notes: >-
+    Second app, same architecture: a Vite/React SPA at
+    ai-native-safe-expert-upgrade-path.replit.app, distinct from the overview path's
+    origin. Bank shape differs — three exported banks with a per-band draw, and a
+    single `feedback` string per question rather than an optionFeedback map.
+
+    Body was lifted out of the HAR rather than re-downloaded, so the sha256 above is
+    of the actual served bytes and is verifiable. This is the fix for the provenance
+    gap in src:2026-08-26/upgrade-path-final-quiz.
+
+rights:
+  holder: "Scaled Agile, Inc."
+  basis: "Personal learner access to licensed training content"
+  redistribution: none
+
+derives:
+  - "course:scaledagile/adopting-ai-native-safe"

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/018"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "Every team keeps rediscovering the same AI practices on its own. Which group exists to prevent this?"
+options:
+  - key: "a"
+    text: "The AI Council"
+    correct: false
+  - key: "b"
+    text: "The portfolio management team"
+    correct: false
+  - key: "c"
+    text: "The AI Center of Excellence"
+    correct: true
+  - key: "d"
+    text: "The ART leadership team"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is the AI Center of Excellence. Spreading what works, it champions the highest-value AI practices and prevents every team from having to rediscover them, creating a multiplier effect."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0018"

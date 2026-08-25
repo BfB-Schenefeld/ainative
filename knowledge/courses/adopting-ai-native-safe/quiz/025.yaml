@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/025"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "An organization schedules every critical success factor before the ART's first PI Outcome Planning event. What is wrong with the plan?"
+options:
+  - key: "a"
+    text: "It tries to do everything up front"
+    correct: true
+  - key: "b"
+    text: "It leaves too little work for later PIs"
+    correct: false
+  - key: "c"
+    text: "It postpones the readiness assessment"
+    correct: false
+  - key: "d"
+    text: "It undervalues the ART's product work"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is that it tries to do everything up front, which is an anti-pattern. The two events act as forcing functions, and the lessons learned from each feed back into the launch plan itself."
+difficulty: harder
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0025"

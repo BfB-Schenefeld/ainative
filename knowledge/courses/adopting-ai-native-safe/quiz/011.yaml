@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/011"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "One ART owns a navigation app end-to-end, with its own customers and outcomes. Another ART is integrating legacy ERP systems and disbands at go-live. Which is organized around value?"
+options:
+  - key: "a"
+    text: "The ERP integration ART only"
+    correct: false
+  - key: "b"
+    text: "Both ARTs equally"
+    correct: false
+  - key: "c"
+    text: "The navigation app ART only"
+    correct: true
+  - key: "d"
+    text: "Neither of the ARTs"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is the navigation app ART only. It is organized around a lasting product with defined customers and outcomes, while the ERP effort is project-organized and disbands before customer understanding can build."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0011"

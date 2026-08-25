@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/024"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "An ART suffered two weeks of public outages traced to tangled cross-portfolio dependencies and misaligned strategic themes. What does this reveal about how the organization is structured?"
+options:
+  - key: "a"
+    text: "The outages were a staffing problem"
+    correct: false
+  - key: "b"
+    text: "ARTs and portfolios mirror org silos, not value"
+    correct: true
+  - key: "c"
+    text: "The ART needs a bigger tooling budget"
+    correct: false
+  - key: "d"
+    text: "Creating a new portfolio would remove all dependencies"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is that ARTs and portfolios mirror organizational silos rather than value. When structure follows the org chart, cross-portfolio dependencies multiply and flow breaks. Organizing around value restores clear ownership and outcomes."
+difficulty: harder
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0024"

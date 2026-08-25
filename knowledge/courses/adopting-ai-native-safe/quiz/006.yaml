@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/006"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "Which training develops the core AI fluency every individual on an ART needs?"
+options:
+  - key: "a"
+    text: "SAFe for AI-Native Teams"
+    correct: false
+  - key: "b"
+    text: "AI-Native Foundations"
+    correct: true
+  - key: "c"
+    text: "Launching AI-Native ARTs"
+    correct: false
+  - key: "d"
+    text: "AI Value Architect"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is AI-Native Foundations, the 2-day interactive training that develops AI fluency for everyone on the ART. SAFe for AI-Native Teams then covers operating together as an AI-Native Team."
+difficulty: easy
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0006"

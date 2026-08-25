@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/004"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "How often should transformation key results be measured?"
+options:
+  - key: "a"
+    text: "Once per PI, during PI Outcome Planning"
+    correct: false
+  - key: "b"
+    text: "Daily, with quarterly as the worst case"
+    correct: true
+  - key: "c"
+    text: "Monthly, at portfolio sync reviews"
+    correct: false
+  - key: "d"
+    text: "Annually, during the budget planning cycle"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is daily, with quarterly as the worst case. Current results belong on executive dashboards to enable steering, and quarterly is the minimum only when daily measurement is unviable."
+difficulty: easy
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0004"

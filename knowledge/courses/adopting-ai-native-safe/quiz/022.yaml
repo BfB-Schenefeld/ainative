@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/022"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "Over three PIs, an ART's velocity climbs from 520 to 700 while feature throughput falls from 46 to 22 and customer NPS drops. What does this pattern reveal?"
+options:
+  - key: "a"
+    text: "Rising output masking declining outcomes"
+    correct: true
+  - key: "b"
+    text: "Healthy growth in the ART's delivery capacity"
+    correct: false
+  - key: "c"
+    text: "A need to raise velocity targets further"
+    correct: false
+  - key: "d"
+    text: "Normal variation between PIs"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is rising output masking declining outcomes. Velocity is an output, while throughput and NPS are the outcomes, and both are deteriorating. An outcome-driven approach judges the change by the value it creates."
+difficulty: harder
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0022"

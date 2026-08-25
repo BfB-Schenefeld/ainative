@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/007"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "An organization is drafting key results for its transformation OKR. Which candidate is a transformation outcome rather than an output?"
+options:
+  - key: "a"
+    text: "Number of AI-Native ARTs launched during the year"
+    correct: false
+  - key: "b"
+    text: "Total training sessions delivered across all of the divisions"
+    correct: false
+  - key: "c"
+    text: "Lead time to validate an MVP, from six months to one"
+    correct: true
+  - key: "d"
+    text: "Percentage of the workforce enrolled in AI courses"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is lead time to validate an MVP. It measures a change in how the organization performs, while ARTs launched, sessions delivered, and enrollments are outputs. See [Achieving Measurable Business Results with SAFe](https://framework.scaledagile.com/achieving-measurable-business-results-with-safe/)."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0007"

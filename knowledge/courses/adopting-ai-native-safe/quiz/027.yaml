@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/027"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "An organization reports every existing workflow now has AI assistance and declares the evolve step complete. What is it missing?"
+options:
+  - key: "a"
+    text: "A significantly larger AI tooling budget for each ART"
+    correct: false
+  - key: "b"
+    text: "Redesign around processes only AI makes possible"
+    correct: true
+  - key: "c"
+    text: "An updated list of approved AI tools"
+    correct: false
+  - key: "d"
+    text: "One more pass through the launch steps"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is redesign around processes only AI makes possible. Augmenting existing workflows is not the end state, and the organization must also tackle the systemic issues holding back real change."
+difficulty: harder
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0027"

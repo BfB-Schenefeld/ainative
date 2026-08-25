@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/019"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "Why would an organization pursue the AI-Native Trainer certification for its own people?"
+options:
+  - key: "a"
+    text: "To eliminate the need for external training partners"
+    correct: false
+  - key: "b"
+    text: "To scale AI training by running it from within"
+    correct: true
+  - key: "c"
+    text: "To certify executives as change agents"
+    correct: false
+  - key: "d"
+    text: "To shorten the launch plan for each new ART"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is to scale AI training by running it from within. Internal trainers bring deep contextual knowledge and supplement, rather than replace, the training provided by the Scaled Partner Network."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0019"

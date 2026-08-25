@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/016"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "Beyond key results, an organization tracks KPIs such as progress against the critical success factors. What does this regular tracking enable?"
+options:
+  - key: "a"
+    text: "A fixed long-range transformation plan"
+    correct: false
+  - key: "b"
+    text: "Automatic reprioritization of every team backlog"
+    correct: false
+  - key: "c"
+    text: "An adaptive approach to the transformation"
+    correct: true
+  - key: "d"
+    text: "Early retirement of executive dashboards"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is an adaptive approach to the transformation. Regularly tracking key results and supporting KPIs lets the organization review and adjust transformation OKRs as the needs of the business evolve."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0016"

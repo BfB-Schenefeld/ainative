@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/010"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "An ART adds AI agents that act on live customer data. Which governance pillar keeps their actions visible and correctable?"
+options:
+  - key: "a"
+    text: "Monitoring Agentic Behaviors"
+    correct: true
+  - key: "b"
+    text: "Managing and Exploiting AI Risks"
+    correct: false
+  - key: "c"
+    text: "Enforcing Responsible AI"
+    correct: false
+  - key: "d"
+    text: "Controlling AI Spend"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is Monitoring Agentic Behaviors. Generative AI is inherently unpredictable, so monitoring what AI agents actually do keeps outcomes visible and correctable. See [AI Governance and Ethics](https://framework.scaledagile.com/ain-safe-ai-governance-and-ethics)."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0010"

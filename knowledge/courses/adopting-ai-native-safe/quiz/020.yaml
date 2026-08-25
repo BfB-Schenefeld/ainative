@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/020"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "Which course prepares the Lean-Agile change agents who will guide the implementation?"
+options:
+  - key: "a"
+    text: "Implementing AI-Native SAFe"
+    correct: true
+  - key: "b"
+    text: "Leading the AI-Native Organization"
+    correct: false
+  - key: "c"
+    text: "AI-Native SAFe Fundamentals"
+    correct: false
+  - key: "d"
+    text: "SAFe for AI-Native Teams"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is Implementing AI-Native SAFe. It equips the change agents who will guide the organization through the implementation roadmap."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0020"

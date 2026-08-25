@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/028"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "A transformation is growing beyond the SAFe implementation into a true organizational transformation. Who is equipped to guide it?"
+options:
+  - key: "a"
+    text: "An Advanced SPC"
+    correct: true
+  - key: "b"
+    text: "The AI Center of Excellence"
+    correct: false
+  - key: "c"
+    text: "An AI-Native Trainer"
+    correct: false
+  - key: "d"
+    text: "A SAFe Advanced Scrum Master"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is an Advanced SPC. Advanced SPCs bring the skills to engage executives and develop transformation strategies, going beyond implementation to address the question of 'now what?'."
+difficulty: harder
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0028"

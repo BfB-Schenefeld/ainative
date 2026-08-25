@@ -6,7 +6,7 @@ kind: upgrade-path
 duration_minutes: 100
 language: en
 url: "https://community.scaledagile.com/s/learning"
-delivery: rise360
+delivery: spa
 
 objectives:
   - id: "obj:ai-native-safe-overview/01"

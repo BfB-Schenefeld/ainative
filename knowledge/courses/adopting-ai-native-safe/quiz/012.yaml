@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/012"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "A launch plan groups work into what is needed before the first PI Outcome Planning event, before the first Sense and Respond event, and after both. What role do the two events play?"
+options:
+  - key: "a"
+    text: "Forcing functions that drive launch priorities"
+    correct: true
+  - key: "b"
+    text: "Formal approval gates the ART must pass before continuing"
+    correct: false
+  - key: "c"
+    text: "Ceremonies reserved for the ART leadership team"
+    correct: false
+  - key: "d"
+    text: "Checkpoints where executives reallocate the budget"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is forcing functions that drive launch priorities. Trying to do everything up front is an anti-pattern, and the lessons learned from both events feed back into the launch plan itself."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0012"

@@ -1,0 +1,205 @@
+{
+  "source_id": "src:2026-08-26/adopting-final-quiz",
+  "schema": "schemas/source.schema.json",
+  "extractor": {
+    "name": "extract_upgrade_path.py",
+    "version": "0.1.0"
+  },
+  "extracted_at": "2026-08-25T22:29:48+00:00",
+  "capture": {
+    "original_filename": "FinalQuiz-etnZrWxX.js",
+    "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/FinalQuiz-etnZrWxX.js",
+    "saved_at_raw": null,
+    "bytes": 19210,
+    "sha256": "ebcf7d80d3f95f5ca1dbb8b4d70551f5b3ba714a3b34143a89f328d8fde150c5"
+  },
+  "frame_chain": [
+    {
+      "path": "bundle-chunk",
+      "bytes": 19210
+    }
+  ],
+  "quiz_meta": {},
+  "blocks": [
+    {
+      "id": "b0001",
+      "type": "quiz_question",
+      "text": "What connects the five phases of the AI-Native SAFe Implementation Roadmap?",
+      "frame": "fq-e1"
+    },
+    {
+      "id": "b0002",
+      "type": "quiz_question",
+      "text": "On the roadmap, what do the grey steps indicate?",
+      "frame": "fq-e2"
+    },
+    {
+      "id": "b0003",
+      "type": "quiz_question",
+      "text": "What is the AI-Native ART Launch Readiness Assessment?",
+      "frame": "fq-e3"
+    },
+    {
+      "id": "b0004",
+      "type": "quiz_question",
+      "text": "How often should transformation key results be measured?",
+      "frame": "fq-e4"
+    },
+    {
+      "id": "b0005",
+      "type": "quiz_question",
+      "text": "At the Scale AI Capabilities step, where does the focus shift?",
+      "frame": "fq-e5"
+    },
+    {
+      "id": "b0006",
+      "type": "quiz_question",
+      "text": "Which training develops the core AI fluency every individual on an ART needs?",
+      "frame": "fq-e6"
+    },
+    {
+      "id": "b0007",
+      "type": "quiz_question",
+      "text": "An organization is drafting key results for its transformation OKR. Which candidate is a transformation outcome rather than an output?",
+      "frame": "fq-m1"
+    },
+    {
+      "id": "b0008",
+      "type": "quiz_question",
+      "text": "Executives fund the change and attend kickoffs, but route every AI decision to the change agents. What should they do instead?",
+      "frame": "fq-m2"
+    },
+    {
+      "id": "b0009",
+      "type": "quiz_question",
+      "text": "An organization has just begun its LPM path. How does that early work help decide where the change should start?",
+      "frame": "fq-m3"
+    },
+    {
+      "id": "b0010",
+      "type": "quiz_question",
+      "text": "An ART adds AI agents that act on live customer data. Which governance pillar keeps their actions visible and correctable?",
+      "frame": "fq-m4"
+    },
+    {
+      "id": "b0011",
+      "type": "quiz_question",
+      "text": "One ART owns a navigation app end-to-end, with its own customers and outcomes. Another ART is integrating legacy ERP systems and disbands at go-live. Which is organized around value?",
+      "frame": "fq-m5"
+    },
+    {
+      "id": "b0012",
+      "type": "quiz_question",
+      "text": "A launch plan groups work into what is needed before the first PI Outcome Planning event, before the first Sense and Respond event, and after both. What role do the two events play?",
+      "frame": "fq-m6"
+    },
+    {
+      "id": "b0013",
+      "type": "quiz_question",
+      "text": "Teams on an ART have finished AI-Native Foundations. Which training shows them how to operate together on an AI-Native ART?",
+      "frame": "fq-m7"
+    },
+    {
+      "id": "b0014",
+      "type": "quiz_question",
+      "text": "Who should attend the Launching AI-Native ARTs event?",
+      "frame": "fq-m8"
+    },
+    {
+      "id": "b0015",
+      "type": "quiz_question",
+      "text": "An organization wants its new RTEs to create an environment where teams and ARTs flourish. Why do the RTE and SAFe Advanced Scrum Master courses still apply?",
+      "frame": "fq-m9"
+    },
+    {
+      "id": "b0016",
+      "type": "quiz_question",
+      "text": "Beyond key results, an organization tracks KPIs such as progress against the critical success factors. What does this regular tracking enable?",
+      "frame": "fq-m10"
+    },
+    {
+      "id": "b0017",
+      "type": "quiz_question",
+      "text": "Which group sets enterprise AI policy and owns accountability for ethical, legal, and financial risk?",
+      "frame": "fq-m11"
+    },
+    {
+      "id": "b0018",
+      "type": "quiz_question",
+      "text": "Every team keeps rediscovering the same AI practices on its own. Which group exists to prevent this?",
+      "frame": "fq-m12"
+    },
+    {
+      "id": "b0019",
+      "type": "quiz_question",
+      "text": "Why would an organization pursue the AI-Native Trainer certification for its own people?",
+      "frame": "fq-m13"
+    },
+    {
+      "id": "b0020",
+      "type": "quiz_question",
+      "text": "Which course prepares the Lean-Agile change agents who will guide the implementation?",
+      "frame": "fq-m14"
+    },
+    {
+      "id": "b0021",
+      "type": "quiz_question",
+      "text": "During an ART's first PI, launch work and product work compete for capacity. What does PI Outcome Planning commit to?",
+      "frame": "fq-m15"
+    },
+    {
+      "id": "b0022",
+      "type": "quiz_question",
+      "text": "Over three PIs, an ART's velocity climbs from 520 to 700 while feature throughput falls from 46 to 22 and customer NPS drops. What does this pattern reveal?",
+      "frame": "fq-h1"
+    },
+    {
+      "id": "b0023",
+      "type": "quiz_question",
+      "text": "Two candidates compete to be the first AI-Native ART. One has AI-engaged leaders, a defined product with clear outcomes, teams using AI daily, and a sizeable challenge. The other has an eager manager and an undefined product. Why is the first the stronger choice?",
+      "frame": "fq-h2"
+    },
+    {
+      "id": "b0024",
+      "type": "quiz_question",
+      "text": "An ART suffered two weeks of public outages traced to tangled cross-portfolio dependencies and misaligned strategic themes. What does this reveal about how the organization is structured?",
+      "frame": "fq-h3"
+    },
+    {
+      "id": "b0025",
+      "type": "quiz_question",
+      "text": "An organization schedules every critical success factor before the ART's first PI Outcome Planning event. What is wrong with the plan?",
+      "frame": "fq-h4"
+    },
+    {
+      "id": "b0026",
+      "type": "quiz_question",
+      "text": "A division misses a transformation key result and its leaders quietly drop it from the dashboard. What should happen instead?",
+      "frame": "fq-h5"
+    },
+    {
+      "id": "b0027",
+      "type": "quiz_question",
+      "text": "An organization reports every existing workflow now has AI assistance and declares the evolve step complete. What is it missing?",
+      "frame": "fq-h6"
+    },
+    {
+      "id": "b0028",
+      "type": "quiz_question",
+      "text": "A transformation is growing beyond the SAFe implementation into a true organizational transformation. Who is equipped to guide it?",
+      "frame": "fq-h7"
+    },
+    {
+      "id": "b0029",
+      "type": "quiz_question",
+      "text": "An ART implements its full launch plan and declares its change journey finished. What does the pace of AI make necessary instead?",
+      "frame": "fq-h8"
+    },
+    {
+      "id": "b0030",
+      "type": "quiz_question",
+      "text": "An organization completes a full pass of the roadmap. How do the transformation outcomes defined in Align to Outcomes serve Amplify ROI?",
+      "frame": "fq-h9"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/002"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "On the roadmap, what do the grey steps indicate?"
+options:
+  - key: "a"
+    text: "Steps that are optional for smaller organizations"
+    correct: false
+  - key: "b"
+    text: "Steps requiring executive approval to begin"
+    correct: false
+  - key: "c"
+    text: "Ground Core SAFe organizations may have covered"
+    correct: true
+  - key: "d"
+    text: "Steps that have been retired from Core SAFe"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is ground Core SAFe organizations may have covered. The grey steps are shared with Core SAFe, so organizations that implemented it have a head start. The purple steps are where the AI-Native work begins."
+difficulty: easy
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0002"

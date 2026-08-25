@@ -12,7 +12,7 @@
     "duration_minutes": { "type": "integer", "minimum": 0 },
     "language": { "type": "string" },
     "url": { "type": "string" },
-    "delivery": { "enum": ["rise360", "scorm", "live", "article", "unknown"] },
+    "delivery": { "enum": ["rise360", "spa", "scorm", "live", "article", "unknown"] },
     "objectives": {
       "type": "array",
       "items": {

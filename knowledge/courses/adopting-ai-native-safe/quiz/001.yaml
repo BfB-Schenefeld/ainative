@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/001"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "What connects the five phases of the AI-Native SAFe Implementation Roadmap?"
+options:
+  - key: "a"
+    text: "A fixed timeline for completing each phase"
+    correct: false
+  - key: "b"
+    text: "An outcome-driven approach to the change"
+    correct: true
+  - key: "c"
+    text: "A required sequence of training courses"
+    correct: false
+  - key: "d"
+    text: "A single enterprise AI adoption tool"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is an outcome-driven approach to the change. Every new way of working is introduced in pursuit of defined transformation outcomes tied to business value."
+difficulty: easy
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0001"

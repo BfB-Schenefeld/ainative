@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/013"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "Teams on an ART have finished AI-Native Foundations. Which training shows them how to operate together on an AI-Native ART?"
+options:
+  - key: "a"
+    text: "AI Value Architect"
+    correct: false
+  - key: "b"
+    text: "Launching AI-Native ARTs"
+    correct: false
+  - key: "c"
+    text: "Implementing AI-Native SAFe"
+    correct: false
+  - key: "d"
+    text: "SAFe for AI-Native Teams"
+    correct: true
+answer_status: confirmed
+rationale: "The correct answer is SAFe for AI-Native Teams. It provides the time and space for the teams to understand what it means to be an AI-Native Team on an AI-Native ART."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0013"

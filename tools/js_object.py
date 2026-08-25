@@ -55,6 +55,15 @@ class Parser:
             return self.parse_array()
         if c in "\"'`":
             return self.parse_string()
+        if self.s.startswith("!0", self.i) and not self.s.startswith("!0x", self.i):
+            self.i += 2  # minified `true`
+            return True
+        if self.s.startswith("!1", self.i):
+            self.i += 2  # minified `false`
+            return False
+        if self.s.startswith("void 0", self.i):
+            self.i += 6  # minified `undefined`
+            return None
         if self.s.startswith("true", self.i):
             self.i += 4
             return True

@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/014"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "Who should attend the Launching AI-Native ARTs event?"
+options:
+  - key: "a"
+    text: "Only the RTE and Product Management"
+    correct: false
+  - key: "b"
+    text: "ART leadership plus key individuals from the teams"
+    correct: true
+  - key: "c"
+    text: "Every member of every team on the ART"
+    correct: false
+  - key: "d"
+    text: "The portfolio leadership team responsible for funding"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is ART leadership plus key individuals from the teams. Together the attendees combine the breadth of knowledge and the leadership authority to identify every critical activity that needs to be planned."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0014"

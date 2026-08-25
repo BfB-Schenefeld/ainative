@@ -1,0 +1,238 @@
+{
+  "har": "quiz2.har",
+  "origins": [
+    "ai-native-safe-expert-upgrade-path.replit.app"
+  ],
+  "assets": [
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/index-BmVGGqBP.js",
+      "filename": "index-BmVGGqBP.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:23.587Z",
+      "body_present": true,
+      "bytes": 342656,
+      "sha256": "95d968d1bcc5dc8b61898c5de61185248033a0ee1483683969b416a34b6b0122"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/index-BmX83jPd.css",
+      "filename": "index-BmX83jPd.css",
+      "status": 200,
+      "mime": "text/css",
+      "started": "2026-08-25T22:22:23.587Z",
+      "body_present": true,
+      "bytes": 135214,
+      "sha256": "d7a5682bbeced6bb25592cd2db13cc9d23efd7ae198c3f478945f8d6680c64fb"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/Welcome-Bz_qNdT_.js",
+      "filename": "Welcome-Bz_qNdT_.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:24.121Z",
+      "body_present": true,
+      "bytes": 4098,
+      "sha256": "b7bd09cb2f54994f8d7e9363e6d13838d01408674d74f65a9f8a68c471a22657"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/ReflectionBlock-DKKdozVm.js",
+      "filename": "ReflectionBlock-DKKdozVm.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:24.123Z",
+      "body_present": true,
+      "bytes": 3998,
+      "sha256": "58547cfa751ecaacb6400fbceae70bb2b2f94cfd7f8aaf9e7f6cf8987b49a7f6"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/PageSection-JS-54Qzw.js",
+      "filename": "PageSection-JS-54Qzw.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:24.124Z",
+      "body_present": true,
+      "bytes": 2310,
+      "sha256": "cb4a770fa0975bc2bed2943bd11226910c66ca4495124fcfce9d1bfc79783242"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/dialog-B1nKGN7C.js",
+      "filename": "dialog-B1nKGN7C.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:24.124Z",
+      "body_present": true,
+      "bytes": 79030,
+      "sha256": "5ada5b4c13d5d9b037cc4d9bee754e49480a5e1487b9d6a1320ee3b27257be89"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/InfoCallout-DuA1VZyH.js",
+      "filename": "InfoCallout-DuA1VZyH.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:24.124Z",
+      "body_present": true,
+      "bytes": 1591,
+      "sha256": "0b83660cde725df8efbf3894bb5952ec0591e0855b46b2719ccf444b446a2b27"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/Paragraph-3tSPVc-R.js",
+      "filename": "Paragraph-3tSPVc-R.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:24.125Z",
+      "body_present": true,
+      "bytes": 461,
+      "sha256": "92fa491ca31cee36942e91287aba007cf421dd3c5d81c9fa4efb17e7030def6c"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/Lesson01-C1aXr3fp.js",
+      "filename": "Lesson01-C1aXr3fp.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:36.818Z",
+      "body_present": true,
+      "bytes": 12220,
+      "sha256": "97e4c287111a07c2bc0378e8396c2f84560a8f9dfc41e7c2f31463e739e07016"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/ResourceCard-BDSLQyqw.js",
+      "filename": "ResourceCard-BDSLQyqw.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:36.818Z",
+      "body_present": true,
+      "bytes": 3480,
+      "sha256": "0bb156932fed477521f51cbfc0aa21d24ec6043bac057b5d727bfa057b2a61c8"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/image-iuaFk6et.js",
+      "filename": "image-iuaFk6et.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:36.818Z",
+      "body_present": true,
+      "bytes": 554,
+      "sha256": "e6b7e2b883c8b8ac49964b2910d5acc5d7176a2f482b2f3fc494f7f4ebf90971"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/QuizBlock-BASqdELu.js",
+      "filename": "QuizBlock-BASqdELu.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:36.818Z",
+      "body_present": true,
+      "bytes": 6509,
+      "sha256": "280b4cb627ac2354a9b448a17ccfec8f148c5d8cd4f4e43e09283f4827ab25e6"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/Lesson02-D0whmLjJ.js",
+      "filename": "Lesson02-D0whmLjJ.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:53.440Z",
+      "body_present": true,
+      "bytes": 14110,
+      "sha256": "9b01e700fb9c540ca659e5a417f98aa122b62977e7a8aabb7e80f014afe7e93c"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/CourseBadge-CiYkjXzt.js",
+      "filename": "CourseBadge-CiYkjXzt.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:53.440Z",
+      "body_present": true,
+      "bytes": 5420,
+      "sha256": "c6da061a89d2aae3fa150a8bcaab2b82b7c501597852cd631a1c34f5fdb2efa8"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/chevron-down-sg2Wzy_r.js",
+      "filename": "chevron-down-sg2Wzy_r.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:53.440Z",
+      "body_present": true,
+      "bytes": 129,
+      "sha256": "87bf5dc4d7c2b242f9f14b5a78b5d3d871c7f819f1f0486a9ac4b93ad9cafef9"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/PhaseStepThumb-C5m56FmX.js",
+      "filename": "PhaseStepThumb-C5m56FmX.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:53.441Z",
+      "body_present": true,
+      "bytes": 8136,
+      "sha256": "c33b9e145ec7fb32d2f331b3092260200c166ad77086a57b8a9c0fa827ed5786"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/trainings-8dYmUUdZ.js",
+      "filename": "trainings-8dYmUUdZ.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:22:53.441Z",
+      "body_present": true,
+      "bytes": 6058,
+      "sha256": "251a1347450553fb6c7ce38cb8d63b79cba885e7b6f50820265094d1080f54a8"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/Lesson03-C15L1smJ.js",
+      "filename": "Lesson03-C15L1smJ.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:23:22.657Z",
+      "body_present": true,
+      "bytes": 24079,
+      "sha256": "a621fb58617c58c2dbe32608336ac994c97c9722ae1699cedaeae2c2bf394774"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/Lesson04-Dfc-5BmD.js",
+      "filename": "Lesson04-Dfc-5BmD.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:23:46.150Z",
+      "body_present": true,
+      "bytes": 27285,
+      "sha256": "3ee5d4927886a0d8821b6f2a0402cb3e976286daaca0a057452f527210cdd1eb"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/Lesson05-BDZmGLLi.js",
+      "filename": "Lesson05-BDZmGLLi.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:24:13.675Z",
+      "body_present": true,
+      "bytes": 8695,
+      "sha256": "3b8210dc73f6607845714996bd5e6c70d9d0371f33b9451a388ef7eb329081c9"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/Lesson06-5xFVRWhz.js",
+      "filename": "Lesson06-5xFVRWhz.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:24:33.056Z",
+      "body_present": true,
+      "bytes": 18225,
+      "sha256": "b584f98f36d63ac7b390a820bd5618257319b98766a6eda7d4632817e818bbca"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/Lesson07-Bz7l9850.js",
+      "filename": "Lesson07-Bz7l9850.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:24:59.174Z",
+      "body_present": true,
+      "bytes": 18823,
+      "sha256": "a0c39b29f36516a95f9387f3f63cee4daaf6be122475ed030a61380220c08905"
+    },
+    {
+      "url": "https://ai-native-safe-expert-upgrade-path.replit.app/assets/FinalQuiz-etnZrWxX.js",
+      "filename": "FinalQuiz-etnZrWxX.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-08-25T22:25:03.554Z",
+      "body_present": true,
+      "bytes": 19210,
+      "sha256": "ebcf7d80d3f95f5ca1dbb8b4d70551f5b3ba714a3b34143a89f328d8fde150c5"
+    }
+  ]
+}

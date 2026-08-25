@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/008"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "Executives fund the change and attend kickoffs, but route every AI decision to the change agents. What should they do instead?"
+options:
+  - key: "a"
+    text: "Delegate the decisions to certified SPCs"
+    correct: false
+  - key: "b"
+    text: "Build their own capability to lead"
+    correct: true
+  - key: "c"
+    text: "Hire an external transformation office"
+    correct: false
+  - key: "d"
+    text: "Wait for the first ART to show results"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is build their own capability to lead. Leaders must know what it is they must do, and commitment alone is not enough to sponsor and lead the change."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0008"

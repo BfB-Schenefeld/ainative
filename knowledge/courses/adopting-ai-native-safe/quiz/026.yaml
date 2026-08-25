@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/026"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "A division misses a transformation key result and its leaders quietly drop it from the dashboard. What should happen instead?"
+options:
+  - key: "a"
+    text: "Reset the key result to a much more achievable target"
+    correct: false
+  - key: "b"
+    text: "Escalate the miss to the AI Council"
+    correct: false
+  - key: "c"
+    text: "Discuss the miss openly so the organization learns"
+    correct: true
+  - key: "d"
+    text: "Wait for the next quarterly measurement"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is to discuss the miss openly so the organization learns and improves together. Achieved improvements get the same openness, celebrated whatever their size, because tangible progress is tangible progress."
+difficulty: harder
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0026"

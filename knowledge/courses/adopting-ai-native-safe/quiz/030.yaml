@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/030"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "An organization completes a full pass of the roadmap. How do the transformation outcomes defined in Align to Outcomes serve Amplify ROI?"
+options:
+  - key: "a"
+    text: "They set the training calendar for the next pass"
+    correct: false
+  - key: "b"
+    text: "Their key results validate the investment"
+    correct: true
+  - key: "c"
+    text: "They determine which ARTs are dissolved"
+    correct: false
+  - key: "d"
+    text: "Their targets become each ART's velocity goals"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is that their key results validate the investment. The business-focused key results are one half of the ROI equation, and along the way the outcomes kept everyone focused on what was important."
+difficulty: harder
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0030"

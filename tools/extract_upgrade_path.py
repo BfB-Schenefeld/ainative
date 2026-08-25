@@ -68,6 +68,9 @@ def main() -> int:
     ap.add_argument("--quiz-dir", required=True)
     ap.add_argument("--course", required=True)
     ap.add_argument("--set", default="final")
+    ap.add_argument("--banks", default="QUESTION_BANK",
+                    help="comma-separated export names to read, e.g. EASY,MEDIUM,HARDER. "
+                         "Each bank's name becomes the item's difficulty.")
     ap.add_argument("--url", default="")
     ap.add_argument("--course-file", default=None,
                     help="course.yaml used to resolve 'Lesson N' labels to real lesson IDs")
@@ -84,11 +87,25 @@ def main() -> int:
         meta = {k: preparsed[k] for k in ("QUIZ_SIZE", "PASSING_SCORE") if k in preparsed}
         lesson_map = preparsed.get("SOURCE_LESSONS", {})
     else:
-        try:
-            bank = find_binding(text, "QUESTION_BANK")
-        except JSParseError as e:
-            print(f"Could not locate QUESTION_BANK: {e}", file=sys.stderr)
-            print("Check you saved the FinalQuiz-*.js chunk, not index-*.js.", file=sys.stderr)
+        bank = []
+        names = [n.strip() for n in args.banks.split(",") if n.strip()]
+        for name in names:
+            try:
+                got = find_binding(text, name)
+            except JSParseError as e:
+                if len(names) == 1:
+                    print(f"Could not locate {name}: {e}", file=sys.stderr)
+                    print("Check you saved the FinalQuiz-*.js chunk, not index-*.js.", file=sys.stderr)
+                    print("Tip: `grep -o \'export{[^}]*}\' chunk.js` lists what it exports.",
+                          file=sys.stderr)
+                    return 1
+                print(f"note: bank {name} not found, skipping", file=sys.stderr)
+                continue
+            for q in got:
+                q["_difficulty"] = name.lower()
+            bank.extend(got)
+        if not bank:
+            print("no questions found in any named bank", file=sys.stderr)
             return 1
         meta = {}
         for name in ("QUIZ_SIZE", "PASSING_SCORE"):
@@ -144,7 +161,9 @@ def main() -> int:
     for n, q in enumerate(bank, 1):
         opts = q.get("options", []) or []
         correct = q.get("correctAnswer")
+        # two shapes seen in the wild: per-option feedback map, or one shared string
         fb = q.get("optionFeedback", {}) or {}
+        shared_feedback = q.get("feedback") if isinstance(q.get("feedback"), str) else None
         multi = isinstance(correct, list)
         correct_set = set(correct) if multi else {correct}
 
@@ -164,6 +183,10 @@ def main() -> int:
             if opt in fb:
                 lines.append(f"    feedback: {yaml_str(fb[opt], 4)}")
         lines.append("answer_status: confirmed")
+        if shared_feedback:
+            lines.append(f"rationale: {yaml_str(shared_feedback, 0)}")
+        if q.get("_difficulty"):
+            lines.append(f"difficulty: {q['_difficulty']}")
         src_lesson = resolve_lesson(lesson_map.get(q.get("id", "")), lesson_ids)
         if src_lesson:
             lines.append(f'lesson: "{src_lesson}"')

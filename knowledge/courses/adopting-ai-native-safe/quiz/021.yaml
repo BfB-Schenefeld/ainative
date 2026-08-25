@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/021"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "During an ART's first PI, launch work and product work compete for capacity. What does PI Outcome Planning commit to?"
+options:
+  - key: "a"
+    text: "Product outcomes only, to protect delivery"
+    correct: false
+  - key: "b"
+    text: "Transformation outcomes only, until launch completes"
+    correct: false
+  - key: "c"
+    text: "Whatever the ART leadership decides that day"
+    correct: false
+  - key: "d"
+    text: "Both transformation and product outcomes"
+    correct: true
+answer_status: confirmed
+rationale: "The correct answer is both transformation and product outcomes. The first PI mixes work from the launch plan with work on the product the ART is tasked with delivering, and PI Outcome Planning commits to both."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0021"

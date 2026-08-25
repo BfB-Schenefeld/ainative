@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/017"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "Which group sets enterprise AI policy and owns accountability for ethical, legal, and financial risk?"
+options:
+  - key: "a"
+    text: "The AI Center of Excellence"
+    correct: false
+  - key: "b"
+    text: "The AI Council"
+    correct: true
+  - key: "c"
+    text: "The LACE"
+    correct: false
+  - key: "d"
+    text: "The Scaled Partner Network"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is the AI Council, a cross-functional executive body spanning IT, legal, compliance, finance, and business leadership. It sets the rules of the road and ensures AI decisions align with the organization's values, regulatory obligations, and risk tolerance."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0017"

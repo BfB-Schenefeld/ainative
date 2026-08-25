@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/003"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "What is the AI-Native ART Launch Readiness Assessment?"
+options:
+  - key: "a"
+    text: "A gap analysis of foundational readiness"
+    correct: true
+  - key: "b"
+    text: "A certification exam for ART leadership"
+    correct: false
+  - key: "c"
+    text: "A ranking of candidate ARTs across the portfolio"
+    correct: false
+  - key: "d"
+    text: "A quarterly review of transformation OKRs"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is a gap analysis of foundational readiness. It determines whether key readiness elements are in place ahead of the launch, and areas that are lacking get planned activities to address them."
+difficulty: easy
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0003"

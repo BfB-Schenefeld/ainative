@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/009"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "An organization has just begun its LPM path. How does that early work help decide where the change should start?"
+options:
+  - key: "a"
+    text: "It assigns each of the divisions a fixed launch date"
+    correct: false
+  - key: "b"
+    text: "It removes the need for AI governance"
+    correct: false
+  - key: "c"
+    text: "It transfers funding decisions to the LACE"
+    correct: false
+  - key: "d"
+    text: "It gives visibility into opportunities and key work"
+    correct: true
+answer_status: confirmed
+rationale: "The correct answer is that it gives visibility into opportunities and key work. Even before LPM is fully in place, that visibility reveals the areas with the biggest opportunities and the most important work."
+difficulty: medium
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0009"

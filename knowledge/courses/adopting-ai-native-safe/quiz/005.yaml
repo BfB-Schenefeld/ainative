@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/adopting-ai-native-safe/final/005"
+course: "course:scaledagile/adopting-ai-native-safe"
+set: final
+type: single-choice
+stem: "At the Scale AI Capabilities step, where does the focus shift?"
+options:
+  - key: "a"
+    text: "From individual ARTs to the organization"
+    correct: true
+  - key: "b"
+    text: "From executives to the operational teams"
+    correct: false
+  - key: "c"
+    text: "From AI governance to product delivery work"
+    correct: false
+  - key: "d"
+    text: "From training courses to tooling investments"
+    correct: false
+answer_status: confirmed
+rationale: "The correct answer is from individual ARTs to the organization. Scaling AI capabilities across the organization scales success and drives more value from the transformation."
+difficulty: easy
+sources:
+  - "src:2026-08-26/adopting-final-quiz#b0005"
