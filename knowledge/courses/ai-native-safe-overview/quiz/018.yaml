@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/018"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "Teams on an AI-Native ART can move faster than ever. Why does the ART still keep a regular cadence?"
+options:
+  - key: "a"
+    text: "Cadence builds in time to reconcile local decisions and dependencies before they accumulate."
+    correct: true
+    feedback: "Correct. Cadence gives the organization the structure to metabolize the learning coming from fast-moving teams. It balances rapid innovation with cadence-based learning."
+  - key: "b"
+    text: "Cadence slows the teams down to a pace leadership can supervise."
+    correct: false
+    feedback: "Incorrect. Cadence is not a brake. It provides the structure that lets work move at the speed of AI safely."
+  - key: "c"
+    text: "Cadence is kept only for tradition, since the events no longer serve a purpose."
+    correct: false
+    feedback: "Incorrect. The events matter more at AI speed, not less. They are where local decisions get reconciled."
+  - key: "d"
+    text: "Cadence gives AI agents fixed deadlines to work toward."
+    correct: false
+    feedback: "Incorrect. Cadence exists for human alignment and learning, not for agent scheduling."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/03-cross-functional-ai-augmented-teams"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0018"

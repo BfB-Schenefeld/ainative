@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/001"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "Which four shifts define the AI-Native upgrade to SAFe?"
+options:
+  - key: "a"
+    text: "Full Automation of Delivery; Autonomous AI-Only Teams; Longer and More Stable Planning Cadences; Centralized Innovation Labs."
+    correct: false
+    feedback: "Incorrect. AI-Native SAFe keeps humans in the loop, keeps teams cross-functional and human-led, shortens cadences, and spreads innovation across the organization rather than centralizing it."
+  - key: "b"
+    text: "Focus on Outputs and Velocity; Specialist Silo Teams with AI Support; Annual Learning and Improvement Reviews; Innovation Restricted to Research and Development."
+    correct: false
+    feedback: "Incorrect. This is the opposite direction on every count: the shifts move away from output-centric management, silos, slow learning loops, and gatekept innovation."
+  - key: "c"
+    text: "Optimized for Outcome-Driven Flow; Cross-Functional, AI-Augmented Teams; Iterative Learning and Rapid Experimentation Cycles; Development and Innovation at Scale."
+    correct: true
+    feedback: "Correct. These four shifts amplify the core Lean-Agile practices: outcomes gain intent, teams become AI-augmented, learning cycles gain rapid experimentation, and development at scale gains innovation at scale."
+  - key: "d"
+    text: "Prompt Engineering; Model Selection and Fine-Tuning; Token Economics; Agent Orchestration; Inference Cost Management."
+    correct: false
+    feedback: "Incorrect. These are AI techniques, not organizational shifts. The four shifts to become AI-Native describe how the operating model changes, not which tools get used."
+answer_status: confirmed
+concepts:
+  - "concept:four-shifts"
+lesson: "lesson:scaledagile/ai-native-safe-overview/01-ai-native-safe-overview"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0001"

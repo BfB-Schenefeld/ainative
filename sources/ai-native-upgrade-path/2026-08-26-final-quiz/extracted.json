@@ -1,0 +1,208 @@
+{
+  "source_id": "src:2026-08-26/upgrade-path-final-quiz",
+  "schema": "schemas/source.schema.json",
+  "extractor": {
+    "name": "extract_upgrade_path.py",
+    "version": "0.1.0"
+  },
+  "extracted_at": "2026-08-25T22:06:03+00:00",
+  "capture": {
+    "original_filename": "FinalQuiz-DUvUYCnK.question-bank.json",
+    "url": "https://ai-native-safe-upgrade-path.replit.app/assets/FinalQuiz-DUvUYCnK.js",
+    "saved_at_raw": null,
+    "bytes": 46076,
+    "sha256": "38166e6267aa906f55ffacc09dbc0f386227dbe079573cbbe8175dd316e014f5"
+  },
+  "frame_chain": [
+    {
+      "path": "bundle-chunk",
+      "bytes": 46076
+    }
+  ],
+  "quiz_meta": {
+    "QUIZ_SIZE": 15,
+    "PASSING_SCORE": 12
+  },
+  "blocks": [
+    {
+      "id": "b0001",
+      "type": "quiz_question",
+      "text": "Which four shifts define the AI-Native upgrade to SAFe?",
+      "frame": "final-q1"
+    },
+    {
+      "id": "b0002",
+      "type": "quiz_question",
+      "text": "With AI, a team triples its feature output this quarter. When is that work actually “done”?",
+      "frame": "final-q2"
+    },
+    {
+      "id": "b0003",
+      "type": "quiz_question",
+      "text": "A prompt tells an AI agent exactly what to build and how, yet the agent's proposals keep missing the point and ignoring organizational standards. Which pillars of direction are missing?",
+      "frame": "final-q3"
+    },
+    {
+      "id": "b0004",
+      "type": "quiz_question",
+      "text": "An AI-Native team gathers to decide together how it will split an upcoming outcome between its humans and its AI agents. In the team's Align-Sense-Respond rhythm, which interaction is that?",
+      "frame": "final-q4"
+    },
+    {
+      "id": "b0005",
+      "type": "quiz_question",
+      "text": "You're forming a new AI-Native team. What's the right way to describe what the team needs?",
+      "frame": "final-q5"
+    },
+    {
+      "id": "b0006",
+      "type": "quiz_question",
+      "text": "AI compresses parts of the Plan-Do-Check-Adjust learning cycle. Which parts shrink, and what do teams do with the time they gain?",
+      "frame": "final-q6"
+    },
+    {
+      "id": "b0007",
+      "type": "quiz_question",
+      "text": "When AI makes everyone in the organization a potential innovator, what keeps that innovation scalable and safe?",
+      "frame": "final-q7"
+    },
+    {
+      "id": "b0008",
+      "type": "quiz_question",
+      "text": "What does the AI-Native Professional combine?",
+      "frame": "final-q8"
+    },
+    {
+      "id": "b0009",
+      "type": "quiz_question",
+      "text": "Why is experimenting with AI no longer enough for an organization?",
+      "frame": "final-q9"
+    },
+    {
+      "id": "b0010",
+      "type": "quiz_question",
+      "text": "What does AI-Native SAFe provide to help organizations get a return from AI?",
+      "frame": "final-q10"
+    },
+    {
+      "id": "b0011",
+      "type": "quiz_question",
+      "text": "Reviewing the AI-Native SAFe Big Picture, a colleague points to the portfolio level, where connected OKRs cascade from portfolio strategy and curated data keeps work at every level aligned to value. Which critical shift does this part of the Big Picture express?",
+      "frame": "final-q11"
+    },
+    {
+      "id": "b0012",
+      "type": "quiz_question",
+      "text": "In a human-centric AI culture, what becomes the organization's most important asset?",
+      "frame": "final-q12"
+    },
+    {
+      "id": "b0013",
+      "type": "quiz_question",
+      "text": "In the outcome-driven product development cycle, what do measurements show?",
+      "frame": "final-q13"
+    },
+    {
+      "id": "b0014",
+      "type": "quiz_question",
+      "text": "Why must Portfolio Leadership include the organization's AI spend in its investment strategy?",
+      "frame": "final-q14"
+    },
+    {
+      "id": "b0015",
+      "type": "quiz_question",
+      "text": "In AI-Native SAFe, where are OKRs used?",
+      "frame": "final-q15"
+    },
+    {
+      "id": "b0016",
+      "type": "quiz_question",
+      "text": "What is curated data?",
+      "frame": "final-q16"
+    },
+    {
+      "id": "b0017",
+      "type": "quiz_question",
+      "text": "Data has been successfully curated when it meets which conditions?",
+      "frame": "final-q17"
+    },
+    {
+      "id": "b0018",
+      "type": "quiz_question",
+      "text": "Teams on an AI-Native ART can move faster than ever. Why does the ART still keep a regular cadence?",
+      "frame": "final-q18"
+    },
+    {
+      "id": "b0019",
+      "type": "quiz_question",
+      "text": "On an AI-Native Team, which capability brings the specialized customer and business context that makes solutions fit the organization?",
+      "frame": "final-q19"
+    },
+    {
+      "id": "b0020",
+      "type": "quiz_question",
+      "text": "What is the “POC Graveyard”?",
+      "frame": "final-q20"
+    },
+    {
+      "id": "b0021",
+      "type": "quiz_question",
+      "text": "Who is well positioned to become an AI Value Architect?",
+      "frame": "final-q21"
+    },
+    {
+      "id": "b0022",
+      "type": "quiz_question",
+      "text": "What makes a product vision compelling in AI-Native SAFe?",
+      "frame": "final-q22"
+    },
+    {
+      "id": "b0023",
+      "type": "quiz_question",
+      "text": "On the Outcome-Driven Roadmap, what is a “moonshot”?",
+      "frame": "final-q23"
+    },
+    {
+      "id": "b0024",
+      "type": "quiz_question",
+      "text": "What is the most significant logistical change in PI Outcome Planning compared to traditional PI Planning?",
+      "frame": "final-q24"
+    },
+    {
+      "id": "b0025",
+      "type": "quiz_question",
+      "text": "Which two SAFe events does the Sense and Respond event replace?",
+      "frame": "final-q25"
+    },
+    {
+      "id": "b0026",
+      "type": "quiz_question",
+      "text": "Early in development, a team wants honest reactions to a prototype from a small group of real customers. Which demo fits?",
+      "frame": "final-q26"
+    },
+    {
+      "id": "b0027",
+      "type": "quiz_question",
+      "text": "AI-Native SAFe defines two types of specifications. What are they?",
+      "frame": "final-q27"
+    },
+    {
+      "id": "b0028",
+      "type": "quiz_question",
+      "text": "Which four work items does AI-Native SAFe recommend at a minimum on the AI Innovation Pipeline?",
+      "frame": "final-q28"
+    },
+    {
+      "id": "b0029",
+      "type": "quiz_question",
+      "text": "Which AI Governance pillar tracks token growth, sets usage caps, and attributes consumption costs to teams and products?",
+      "frame": "final-q29"
+    },
+    {
+      "id": "b0030",
+      "type": "quiz_question",
+      "text": "What is the foundation that the four AI Governance pillars stand on?",
+      "frame": "final-q30"
+    }
+  ]
+}

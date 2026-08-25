@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/003"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "A prompt tells an AI agent exactly what to build and how, yet the agent's proposals keep missing the point and ignoring organizational standards. Which pillars of direction are missing?"
+options:
+  - key: "a"
+    text: "Specifications: the prompt simply needs more technical detail about what and how."
+    correct: false
+    feedback: "Incorrect. The what and how are already covered. More technical detail can't tell the agent why the work matters or which organizational standards apply: those are the intent and context pillars."
+  - key: "b"
+    text: "Access: the agent needs the permissions to deploy directly to production."
+    correct: false
+    feedback: "Incorrect. Deployment permissions don't help an agent understand why work exists or where it must fit, and keeping humans in the validation loop is a feature, not a limitation."
+  - key: "c"
+    text: "Intent (the why) and context (the organizational reality the work must fit)."
+    correct: true
+    feedback: "Correct. Directing AI reliably takes all three pillars connected: intent (why), specifications (what and how), and context (where). This prompt covers only specifications: without intent and context, the agent can't aim at the change being sought or fit the organization's standards."
+  - key: "d"
+    text: "Nothing is missing: the agent just needs a more capable underlying model."
+    correct: false
+    feedback: "Incorrect. A stronger model still can't infer the purpose behind the work or the organization's standards from a prompt that never provides them."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/05-development-and-innovation-at-scale"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0003"

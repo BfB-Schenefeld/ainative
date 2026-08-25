@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/026"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "Early in development, a team wants honest reactions to a prototype from a small group of real customers. Which demo fits?"
+options:
+  - key: "a"
+    text: "A personal, learning demo, such as a hand-picked focus group."
+    correct: true
+    feedback: "Correct. This is the Test Hypotheses Before Scaling quadrant. Small audiences allow deeper interactions and repeated demos with the same group."
+  - key: "b"
+    text: "A broadcast, persuading demo, such as a launch event."
+    correct: false
+    feedback: "Incorrect. Launch events generate broad demand. That comes after the team has learned what works."
+  - key: "c"
+    text: "A personal, persuading demo for the biggest customer."
+    correct: false
+    feedback: "Incorrect. Persuading assumes the solution already works as intended. The team is still learning."
+  - key: "d"
+    text: "A broadcast, learning demo through self-guided product access."
+    correct: false
+    feedback: "Incorrect. Broadcast learning suits products already tested with a smaller group. This prototype has not reached that stage."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/04-iterative-learning-and-rapid-experimentation-cycles"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0026"

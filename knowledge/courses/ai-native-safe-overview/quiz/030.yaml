@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/030"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "What is the foundation that the four AI Governance pillars stand on?"
+options:
+  - key: "a"
+    text: "AI Ethics"
+    correct: true
+    feedback: "Correct. AI Ethics covers the values an organization holds itself to beyond legal requirements. Regulation asks whether something violates the law, and ethics asks whether it disrespects or exploits human beings."
+  - key: "b"
+    text: "Legal compliance"
+    correct: false
+    feedback: "Incorrect. Compliance is the regulatory minimum. The ethical foundation goes beyond what the law requires."
+  - key: "c"
+    text: "Shared platforms"
+    correct: false
+    feedback: "Incorrect. Shared platforms belong to the AI Innovation Pipeline. The governance pillars stand on AI Ethics."
+  - key: "d"
+    text: "The investment strategy"
+    correct: false
+    feedback: "Incorrect. Investment strategy is part of portfolio strategy. The governance pillars stand on AI Ethics."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/05-development-and-innovation-at-scale"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0030"

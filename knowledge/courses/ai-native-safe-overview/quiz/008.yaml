@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/008"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "What does the AI-Native Professional combine?"
+options:
+  - key: "a"
+    text: "Technical AI skills, fully replacing the human skills that AI has now commoditized."
+    correct: false
+    feedback: "Incorrect. AI commoditizes execution, not human skills. As it does, context, empathy, ethics, judgment, and strategy become more valuable, not less."
+  - key: "b"
+    text: "AI fluency (directing and evaluating AI) with human context, empathy, judgment, and strategy."
+    correct: true
+    feedback: "Correct. The AI-Native Professional lives in the overlap of the two domains: AI handles tasks that don't require human judgment, and the professional directs the AI, not just its output, while applying the human skills that have become the organization's most important asset."
+  - key: "c"
+    text: "Deep expertise in one AI tool combined with certification in the organization's compliance standards."
+    correct: false
+    feedback: "Incorrect. Tools keep changing: what endures is AI fluency, knowing how to direct whatever AI comes next, paired with the human skills AI cannot supply."
+  - key: "d"
+    text: "Prompt-writing speed with the ability to approve AI output quickly enough to keep up the pace."
+    correct: false
+    feedback: "Incorrect. Approving output quickly is the opposite of the role: the AI-Native Professional critically evaluates AI output and stays accountable for it."
+answer_status: confirmed
+concepts:
+  - "concept:ai-native-professional"
+  - "concept:ai-fluency"
+lesson: "lesson:scaledagile/ai-native-safe-overview/01-ai-native-safe-overview"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0008"

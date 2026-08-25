@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/029"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "Which AI Governance pillar tracks token growth, sets usage caps, and attributes consumption costs to teams and products?"
+options:
+  - key: "a"
+    text: "Controlling AI Spend"
+    correct: true
+    feedback: "Correct. AI spend scales with adoption because pricing is usage-based. This pillar tracks consumption growth, sets caps and alerts, and attributes costs clearly."
+  - key: "b"
+    text: "Enforcing Responsible AI"
+    correct: false
+    feedback: "Incorrect. That pillar covers ethical, transparent, and compliant use. Cost tracking belongs to Controlling AI Spend."
+  - key: "c"
+    text: "Monitoring Agentic Behaviors"
+    correct: false
+    feedback: "Incorrect. That pillar gives visibility into what autonomous agents do. Cost tracking belongs to Controlling AI Spend."
+  - key: "d"
+    text: "Managing and Exploiting AI Risks"
+    correct: false
+    feedback: "Incorrect. That pillar manages the portfolio's risk posture. Cost tracking belongs to Controlling AI Spend."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/05-development-and-innovation-at-scale"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0029"

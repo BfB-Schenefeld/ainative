@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/002"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "With AI, a team triples its feature output this quarter. When is that work actually “done”?"
+options:
+  - key: "a"
+    text: "When every one of the features has shipped all the way to production."
+    correct: false
+    feedback: "Incorrect. Shipping is an output event. With no evidence of changed customer or business value, an organization can optimize ever faster for the wrong thing."
+  - key: "b"
+    text: "When customer and business impact is validated and the learning is captured."
+    correct: true
+    feedback: "Correct. AI removes the constraint on producing outputs, so shipping volume stops being the measure. Work is done when there is evidence the outcome moved, and the learning from that evidence is captured."
+  - key: "c"
+    text: "When the AI-generated code passes all of the automated tests and reviews."
+    correct: false
+    feedback: "Incorrect. Passing tests confirms the output works as specified: it says nothing about whether the work created the change in value it was meant to create."
+  - key: "d"
+    text: "When the team's velocity target is met and the burn-down chart reaches zero."
+    correct: false
+    feedback: "Incorrect. Velocity and burn-down measure volume delivered: exactly the output-driven measures that lose meaning once producing more is easy."
+answer_status: confirmed
+concepts:
+  - "concept:outcome-driven-flow"
+lesson: "lesson:scaledagile/ai-native-safe-overview/02-optimized-for-outcome-driven-flow"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0002"

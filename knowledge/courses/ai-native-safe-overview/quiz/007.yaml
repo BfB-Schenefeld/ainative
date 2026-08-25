@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/007"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "When AI makes everyone in the organization a potential innovator, what keeps that innovation scalable and safe?"
+options:
+  - key: "a"
+    text: "Restricting AI-powered building to the IT department, where it can be properly controlled."
+    correct: false
+    feedback: "Incorrect. Gatekeeping innovation back into one department gives up the shift's whole benefit. The answer to broad innovation is enablement with guardrails, not restriction."
+  - key: "b"
+    text: "Nothing: guardrails would only slow innovation down, defeating the whole purpose."
+    correct: false
+    feedback: "Incorrect. Ungoverned AI solutions create fragile systems and technical debt. Guidelines and governance are what let innovation scale safely: they're the enabler, not the brake."
+  - key: "c"
+    text: "Clear guidelines, shared AI infrastructure, and governance against fragile solutions."
+    correct: true
+    feedback: "Correct. When employees across every department start building AI-powered tools, guidelines, shared infrastructure, and governance are what keep that innovation scalable, maintainable, and safe: without them, ungoverned solutions create fragile systems and technical debt."
+  - key: "d"
+    text: "A freeze on new AI tools until every existing solution is fully documented and audited."
+    correct: false
+    feedback: "Incorrect. A freeze halts the innovation the shift exists to unlock. Scalability comes from guidelines, shared infrastructure, and governance operating alongside innovation, not ahead of it."
+answer_status: confirmed
+concepts:
+  - "concept:development-and-innovation-at-scale"
+lesson: "lesson:scaledagile/ai-native-safe-overview/05-development-and-innovation-at-scale"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0007"

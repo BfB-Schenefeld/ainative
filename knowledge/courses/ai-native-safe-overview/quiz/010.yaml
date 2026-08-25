@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/010"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "What does AI-Native SAFe provide to help organizations get a return from AI?"
+options:
+  - key: "a"
+    text: "A catalog of approved AI tools and vendors."
+    correct: false
+    feedback: "Incorrect. AI-Native SAFe is an operating model, not a tool list. Tools change quickly, but the roles and structures endure."
+  - key: "b"
+    text: "The roles, processes, and structures needed to achieve a return from AI."
+    correct: true
+    feedback: "Correct. Research found that the missing piece was a standard framework. AI-Native SAFe fills that gap with an outcome-driven operating model."
+  - key: "c"
+    text: "A guarantee that AI investments will pay off within one year."
+    correct: false
+    feedback: "Incorrect. No framework can guarantee returns. AI-Native SAFe provides the structure that makes returns achievable."
+  - key: "d"
+    text: "A dedicated AI department that runs all AI work centrally."
+    correct: false
+    feedback: "Incorrect. AI-Native SAFe spreads AI capability across the whole organization instead of centralizing it in one department."
+answer_status: confirmed
+concepts:
+  - "concept:ai-native-safe"
+  - "concept:return-on-ai"
+lesson: "lesson:scaledagile/ai-native-safe-overview/01-ai-native-safe-overview"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0010"

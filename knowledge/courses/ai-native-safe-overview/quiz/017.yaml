@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/017"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "Data has been successfully curated when it meets which conditions?"
+options:
+  - key: "a"
+    text: "It is complete, accurate, well-maintained, securely accessible, and clearly owned."
+    correct: true
+    feedback: "Correct. These five conditions are what turn proprietary data into reliable raw material for AI."
+  - key: "b"
+    text: "It is stored in a single central warehouse with one global owner."
+    correct: false
+    feedback: "Incorrect. Curation is about the quality and stewardship of the data, not where it lives. Owners must be identifiable, but not singular."
+  - key: "c"
+    text: "It is fully structured, with all documents converted into tables."
+    correct: false
+    feedback: "Incorrect. Curation extends beyond structured records. Documents and slide decks hold much of an organization's knowledge and are prepared for AI too."
+  - key: "d"
+    text: "It is encrypted, backed up, and retained for at least seven years."
+    correct: false
+    feedback: "Incorrect. Those are IT practices, not the curation conditions. Curated data must also be complete, accurate, maintained, accessible, and owned."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/02-optimized-for-outcome-driven-flow"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0017"

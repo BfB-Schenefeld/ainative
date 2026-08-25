@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/025"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "Which two SAFe events does the Sense and Respond event replace?"
+options:
+  - key: "a"
+    text: "PI Planning and the Solution Demo."
+    correct: false
+    feedback: "Incorrect. PI-level planning becomes PI Outcome Planning, a separate event. Sense and Respond replaces Inspect and Adapt and the System Demo."
+  - key: "b"
+    text: "Inspect and Adapt and the System Demo."
+    correct: true
+    feedback: "Correct. Sense and Respond is a two-hour event at each iteration boundary. The first hour senses what happened, and the second hour decides what changes."
+  - key: "c"
+    text: "The Daily Stand-up and the Iteration Review."
+    correct: false
+    feedback: "Incorrect. Team-level rhythms continue through Align, Sense, Respond. The ART-level event replaces Inspect and Adapt and the System Demo."
+  - key: "d"
+    text: "Backlog Refinement and the Iteration Retrospective."
+    correct: false
+    feedback: "Incorrect. Those team practices are not what changed. Sense and Respond replaces the two ART-level learning events."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/04-iterative-learning-and-rapid-experimentation-cycles"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0025"

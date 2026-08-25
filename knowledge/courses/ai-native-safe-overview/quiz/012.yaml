@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/012"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "In a human-centric AI culture, what becomes the organization's most important asset?"
+options:
+  - key: "a"
+    text: "The size of its AI infrastructure budget."
+    correct: false
+    feedback: "Incorrect. Anyone can spend on infrastructure. The differentiator is the human judgment that directs what the AI produces."
+  - key: "b"
+    text: "Human skills such as creativity, empathy, and strategic decision-making."
+    correct: true
+    feedback: "Correct. When AI handles the tasks that do not require human judgment, people are freed to direct outcomes. The ability to apply these human skills becomes the most important asset."
+  - key: "c"
+    text: "The number of AI agents deployed across its teams."
+    correct: false
+    feedback: "Incorrect. Agents are widely available. The value comes from the people who direct them well."
+  - key: "d"
+    text: "Exclusive contracts with the leading AI model providers."
+    correct: false
+    feedback: "Incorrect. Models are a commodity that any competitor can rent. Human skills are what cannot be copied."
+answer_status: confirmed
+concepts:
+  - "concept:human-centric-ai-culture"
+lesson: "lesson:scaledagile/ai-native-safe-overview/01-ai-native-safe-overview"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0012"

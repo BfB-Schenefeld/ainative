@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/016"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "What is curated data?"
+options:
+  - key: "a"
+    text: "Enterprise information deliberately prepared for AI."
+    correct: true
+    feedback: "Correct. Curated data enables reliable and unique insights. Without it, AI produces fragmented or conflicting results."
+  - key: "b"
+    text: "Any data an organization stores in a database."
+    correct: false
+    feedback: "Incorrect. Storage alone is not curation. The data must be deliberately prepared so AI can use it well."
+  - key: "c"
+    text: "Data that has been anonymized for privacy compliance."
+    correct: false
+    feedback: "Incorrect. Anonymization is a privacy technique. Curation is about preparing data so it produces reliable insights."
+  - key: "d"
+    text: "Public data purchased from third-party providers."
+    correct: false
+    feedback: "Incorrect. Purchased data is available to competitors too. Curated proprietary data is the advantage no one else can copy."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/02-optimized-for-outcome-driven-flow"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0016"

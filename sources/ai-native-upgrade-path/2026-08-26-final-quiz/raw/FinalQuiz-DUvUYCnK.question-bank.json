@@ -1,0 +1,524 @@
+{
+  "_recovered": {
+    "note": "Recovered from the bundle chunk FinalQuiz-DUvUYCnK.js before the app was redeployed. The original .js artifact is no longer retrievable at its URL; this JSON is a faithful transcription of its QUESTION_BANK export, not the original file. sha256 of the original chunk is therefore unknown.",
+    "original_url": "https://ai-native-safe-upgrade-path.replit.app/assets/FinalQuiz-DUvUYCnK.js",
+    "build_index_chunk": "index-ILRrM1cq.js",
+    "superseded_by_build": "index-W5CxIBYO.js"
+  },
+  "QUIZ_SIZE": 15,
+  "PASSING_SCORE": 12,
+  "SOURCE_LESSONS": {
+    "final-q1": "Lesson 1 (Overview)", "final-q2": "Lesson 2", "final-q3": "Lesson 5",
+    "final-q4": "Lesson 3", "final-q5": "Lesson 3", "final-q6": "Lesson 4",
+    "final-q7": "Lesson 5", "final-q8": "Lesson 1 (Overview)", "final-q9": "Lesson 1 (Overview)",
+    "final-q10": "Lesson 1 (Overview)", "final-q11": "Lesson 1 (Overview)", "final-q12": "Lesson 1 (Overview)",
+    "final-q13": "Lesson 2", "final-q14": "Lesson 2", "final-q15": "Lesson 2",
+    "final-q16": "Lesson 2", "final-q17": "Lesson 2", "final-q18": "Lesson 3",
+    "final-q19": "Lesson 3", "final-q20": "Lesson 3", "final-q21": "Lesson 3",
+    "final-q22": "Lesson 4", "final-q23": "Lesson 4", "final-q24": "Lesson 4",
+    "final-q25": "Lesson 4", "final-q26": "Lesson 4", "final-q27": "Lesson 5",
+    "final-q28": "Lesson 5", "final-q29": "Lesson 5", "final-q30": "Lesson 5"
+  },
+  "QUESTION_BANK": [
+    {
+      "id": "final-q1", "type": "mcq",
+      "question": "Which four shifts define the AI-Native upgrade to SAFe?",
+      "options": [
+        "Full Automation of Delivery; Autonomous AI-Only Teams; Longer and More Stable Planning Cadences; Centralized Innovation Labs.",
+        "Focus on Outputs and Velocity; Specialist Silo Teams with AI Support; Annual Learning and Improvement Reviews; Innovation Restricted to Research and Development.",
+        "Optimized for Outcome-Driven Flow; Cross-Functional, AI-Augmented Teams; Iterative Learning and Rapid Experimentation Cycles; Development and Innovation at Scale.",
+        "Prompt Engineering; Model Selection and Fine-Tuning; Token Economics; Agent Orchestration; Inference Cost Management."
+      ],
+      "correctAnswer": "Optimized for Outcome-Driven Flow; Cross-Functional, AI-Augmented Teams; Iterative Learning and Rapid Experimentation Cycles; Development and Innovation at Scale.",
+      "optionFeedback": {
+        "Optimized for Outcome-Driven Flow; Cross-Functional, AI-Augmented Teams; Iterative Learning and Rapid Experimentation Cycles; Development and Innovation at Scale.": "Correct. These four shifts amplify the core Lean-Agile practices: outcomes gain intent, teams become AI-augmented, learning cycles gain rapid experimentation, and development at scale gains innovation at scale.",
+        "Full Automation of Delivery; Autonomous AI-Only Teams; Longer and More Stable Planning Cadences; Centralized Innovation Labs.": "Incorrect. AI-Native SAFe keeps humans in the loop, keeps teams cross-functional and human-led, shortens cadences, and spreads innovation across the organization rather than centralizing it.",
+        "Focus on Outputs and Velocity; Specialist Silo Teams with AI Support; Annual Learning and Improvement Reviews; Innovation Restricted to Research and Development.": "Incorrect. This is the opposite direction on every count: the shifts move away from output-centric management, silos, slow learning loops, and gatekept innovation.",
+        "Prompt Engineering; Model Selection and Fine-Tuning; Token Economics; Agent Orchestration; Inference Cost Management.": "Incorrect. These are AI techniques, not organizational shifts. The four shifts to become AI-Native describe how the operating model changes, not which tools get used."
+      }
+    },
+    {
+      "id": "final-q2", "type": "mcq",
+      "question": "With AI, a team triples its feature output this quarter. When is that work actually \u201cdone\u201d?",
+      "options": [
+        "When every one of the features has shipped all the way to production.",
+        "When customer and business impact is validated and the learning is captured.",
+        "When the AI-generated code passes all of the automated tests and reviews.",
+        "When the team's velocity target is met and the burn-down chart reaches zero."
+      ],
+      "correctAnswer": "When customer and business impact is validated and the learning is captured.",
+      "optionFeedback": {
+        "When customer and business impact is validated and the learning is captured.": "Correct. AI removes the constraint on producing outputs, so shipping volume stops being the measure. Work is done when there is evidence the outcome moved, and the learning from that evidence is captured.",
+        "When every one of the features has shipped all the way to production.": "Incorrect. Shipping is an output event. With no evidence of changed customer or business value, an organization can optimize ever faster for the wrong thing.",
+        "When the team's velocity target is met and the burn-down chart reaches zero.": "Incorrect. Velocity and burn-down measure volume delivered: exactly the output-driven measures that lose meaning once producing more is easy.",
+        "When the AI-generated code passes all of the automated tests and reviews.": "Incorrect. Passing tests confirms the output works as specified: it says nothing about whether the work created the change in value it was meant to create."
+      }
+    },
+    {
+      "id": "final-q3", "type": "mcq",
+      "question": "A prompt tells an AI agent exactly what to build and how, yet the agent's proposals keep missing the point and ignoring organizational standards. Which pillars of direction are missing?",
+      "options": [
+        "Specifications: the prompt simply needs more technical detail about what and how.",
+        "Access: the agent needs the permissions to deploy directly to production.",
+        "Intent (the why) and context (the organizational reality the work must fit).",
+        "Nothing is missing: the agent just needs a more capable underlying model."
+      ],
+      "correctAnswer": "Intent (the why) and context (the organizational reality the work must fit).",
+      "optionFeedback": {
+        "Intent (the why) and context (the organizational reality the work must fit).": "Correct. Directing AI reliably takes all three pillars connected: intent (why), specifications (what and how), and context (where). This prompt covers only specifications: without intent and context, the agent can't aim at the change being sought or fit the organization's standards.",
+        "Specifications: the prompt simply needs more technical detail about what and how.": "Incorrect. The what and how are already covered. More technical detail can't tell the agent why the work matters or which organizational standards apply: those are the intent and context pillars.",
+        "Nothing is missing: the agent just needs a more capable underlying model.": "Incorrect. A stronger model still can't infer the purpose behind the work or the organization's standards from a prompt that never provides them.",
+        "Access: the agent needs the permissions to deploy directly to production.": "Incorrect. Deployment permissions don't help an agent understand why work exists or where it must fit, and keeping humans in the validation loop is a feature, not a limitation."
+      }
+    },
+    {
+      "id": "final-q4", "type": "mcq",
+      "question": "An AI-Native team gathers to decide together how it will split an upcoming outcome between its humans and its AI agents. In the team's Align-Sense-Respond rhythm, which interaction is that?",
+      "options": [
+        "Sense: the team is gathering new information about its own workload and capacity.",
+        "Respond: any change to how the work is divided counts as a response.",
+        "None of them: staffing decisions sit outside the team rhythm.",
+        "Align: a key decision made together that moves the team toward the outcome."
+      ],
+      "correctAnswer": "Align: a key decision made together that moves the team toward the outcome.",
+      "optionFeedback": {
+        "Align: a key decision made together that moves the team toward the outcome.": "Correct. Align is where the team makes key decisions together so everyone, human and AI, moves in the same direction toward the outcome. Deciding how to split the work is exactly such a decision.",
+        "Sense: the team is gathering new information about its own workload and capacity.": "Incorrect. Sense is the deliberate gathering and analysis of feedback and learning from multiple sources. This scenario is a decision being made, not feedback being analyzed.",
+        "Respond: any change to how the work is divided counts as a response.": "Incorrect. Respond is the adjustment a team makes to workflows and products after sensing something. Here nothing was sensed: the team is making a forward-looking key decision, which is Align.",
+        "None of them: staffing decisions sit outside the team rhythm.": "Incorrect. Deciding how humans and AI agents share the work is central to how an AI-Native team operates: it's a textbook Align moment."
+      }
+    },
+    {
+      "id": "final-q5", "type": "mcq",
+      "question": "You're forming a new AI-Native team. What's the right way to describe what the team needs?",
+      "options": [
+        "By headcount: AI-Native teams should be as large as possible to absorb AI's extra output.",
+        "By traditional role titles: one developer, one tester, one analyst, one designer per seat.",
+        "By its four core capabilities: Product, Builder, Domain Expert, and AI.",
+        "By AI agents first: humans are added only where agents fall short."
+      ],
+      "correctAnswer": "By its four core capabilities: Product, Builder, Domain Expert, and AI.",
+      "optionFeedback": {
+        "By its four core capabilities: Product, Builder, Domain Expert, and AI.": "Correct. AI-Native teams are smaller, nimbler, and described through capabilities rather than fixed role titles: Product anchors the team in customer needs, Builder turns outcomes into working solutions, the Domain Expert makes solutions fit the organization, and AI provides data and automation at speed.",
+        "By traditional role titles: one developer, one tester, one analyst, one designer per seat.": "Incorrect. Fixed role-per-seat staffing is what the capability model replaces. Describing teams through the Product, Builder, Domain Expert, and AI capabilities keeps them small and flexible as AI absorbs more of the execution work.",
+        "By AI agents first: humans are added only where agents fall short.": "Incorrect. AI augments professionals rather than replacing them. Teams stay human-led: humans own the strategy, judgment, and domain expertise that direct what AI produces.",
+        "By headcount: AI-Native teams should be as large as possible to absorb AI's extra output.": "Incorrect. The direction is the opposite: teams get smaller and nimbler because AI collaboration lets fewer people cover more capability."
+      }
+    },
+    {
+      "id": "final-q6", "type": "mcq",
+      "question": "AI compresses parts of the Plan-Do-Check-Adjust learning cycle. Which parts shrink, and what do teams do with the time they gain?",
+      "options": [
+        "Plan and Adjust shrink: AI makes planning largely unnecessary, so teams simply build continuously.",
+        "Do and Check shrink: teams reinvest the time in planning, adaptive decisions, and experiments.",
+        "None of them shrink: AI adds review overhead that lengthens every phase of the cycle.",
+        "All four phases shrink equally, so the cadences stay in the same proportion as before."
+      ],
+      "correctAnswer": "Do and Check shrink: teams reinvest the time in planning, adaptive decisions, and experiments.",
+      "optionFeedback": {
+        "Do and Check shrink: teams reinvest the time in planning, adaptive decisions, and experiments.": "Correct. AI accelerates execution (Do) and validation (Check), so cadences compress and experimentation accelerates: teams spend the recovered time on Plan and Adjust, where human judgment matters most, and let evidence decide what happens next.",
+        "Plan and Adjust shrink: AI makes planning largely unnecessary, so teams simply build continuously.": "Incorrect. It's the reverse: Plan and Adjust gain time and importance. AI speeds up doing and checking, which makes deliberate human planning and adaptive decisions more valuable, not less.",
+        "All four phases shrink equally, so the cadences stay in the same proportion as before.": "Incorrect. The compression is uneven: AI shortens Do and Check specifically, which is what frees teams to shift their attention toward Plan and Adjust.",
+        "None of them shrink: AI adds review overhead that lengthens every phase of the cycle.": "Incorrect. Human validation stays in the loop, but the net effect of AI is dramatically faster Do and Check phases: that's what makes rapid experimentation cycles possible."
+      }
+    },
+    {
+      "id": "final-q7", "type": "mcq",
+      "question": "When AI makes everyone in the organization a potential innovator, what keeps that innovation scalable and safe?",
+      "options": [
+        "Restricting AI-powered building to the IT department, where it can be properly controlled.",
+        "Nothing: guardrails would only slow innovation down, defeating the whole purpose.",
+        "Clear guidelines, shared AI infrastructure, and governance against fragile solutions.",
+        "A freeze on new AI tools until every existing solution is fully documented and audited."
+      ],
+      "correctAnswer": "Clear guidelines, shared AI infrastructure, and governance against fragile solutions.",
+      "optionFeedback": {
+        "Clear guidelines, shared AI infrastructure, and governance against fragile solutions.": "Correct. When employees across every department start building AI-powered tools, guidelines, shared infrastructure, and governance are what keep that innovation scalable, maintainable, and safe: without them, ungoverned solutions create fragile systems and technical debt.",
+        "Restricting AI-powered building to the IT department, where it can be properly controlled.": "Incorrect. Gatekeeping innovation back into one department gives up the shift's whole benefit. The answer to broad innovation is enablement with guardrails, not restriction.",
+        "Nothing: guardrails would only slow innovation down, defeating the whole purpose.": "Incorrect. Ungoverned AI solutions create fragile systems and technical debt. Guidelines and governance are what let innovation scale safely: they're the enabler, not the brake.",
+        "A freeze on new AI tools until every existing solution is fully documented and audited.": "Incorrect. A freeze halts the innovation the shift exists to unlock. Scalability comes from guidelines, shared infrastructure, and governance operating alongside innovation, not ahead of it."
+      }
+    },
+    {
+      "id": "final-q8", "type": "mcq",
+      "question": "What does the AI-Native Professional combine?",
+      "options": [
+        "Technical AI skills, fully replacing the human skills that AI has now commoditized.",
+        "AI fluency (directing and evaluating AI) with human context, empathy, judgment, and strategy.",
+        "Deep expertise in one AI tool combined with certification in the organization's compliance standards.",
+        "Prompt-writing speed with the ability to approve AI output quickly enough to keep up the pace."
+      ],
+      "correctAnswer": "AI fluency (directing and evaluating AI) with human context, empathy, judgment, and strategy.",
+      "optionFeedback": {
+        "AI fluency (directing and evaluating AI) with human context, empathy, judgment, and strategy.": "Correct. The AI-Native Professional lives in the overlap of the two domains: AI handles tasks that don't require human judgment, and the professional directs the AI, not just its output, while applying the human skills that have become the organization's most important asset.",
+        "Deep expertise in one AI tool combined with certification in the organization's compliance standards.": "Incorrect. Tools keep changing: what endures is AI fluency, knowing how to direct whatever AI comes next, paired with the human skills AI cannot supply.",
+        "Prompt-writing speed with the ability to approve AI output quickly enough to keep up the pace.": "Incorrect. Approving output quickly is the opposite of the role: the AI-Native Professional critically evaluates AI output and stays accountable for it.",
+        "Technical AI skills, fully replacing the human skills that AI has now commoditized.": "Incorrect. AI commoditizes execution, not human skills. As it does, context, empathy, ethics, judgment, and strategy become more valuable, not less."
+      }
+    },
+    {
+      "id": "final-q9", "type": "mcq",
+      "question": "Why is experimenting with AI no longer enough for an organization?",
+      "options": [
+        "Experiments are too expensive to run at today's model prices.",
+        "Becoming AI-Native is a whole-organization way of working, not a set of pilots.",
+        "Most AI experiments fail for technical reasons.",
+        "Regulators now require organizations to move past the experimental stage."
+      ],
+      "correctAnswer": "Becoming AI-Native is a whole-organization way of working, not a set of pilots.",
+      "optionFeedback": {
+        "Becoming AI-Native is a whole-organization way of working, not a set of pilots.": "Correct. The pace and scale of change demand more than isolated experiments. Unlocking value from AI takes a unified, organization-wide approach.",
+        "Experiments are too expensive to run at today's model prices.": "Incorrect. Cost is not the reason. The problem is that isolated experiments do not change how the organization works.",
+        "Most AI experiments fail for technical reasons.": "Incorrect. The technology usually works. The gap is organizational, not technical.",
+        "Regulators now require organizations to move past the experimental stage.": "Incorrect. No regulation drives this. The driver is the need to unlock real value from AI across the whole organization."
+      }
+    },
+    {
+      "id": "final-q10", "type": "mcq",
+      "question": "What does AI-Native SAFe provide to help organizations get a return from AI?",
+      "options": [
+        "A catalog of approved AI tools and vendors.",
+        "The roles, processes, and structures needed to achieve a return from AI.",
+        "A guarantee that AI investments will pay off within one year.",
+        "A dedicated AI department that runs all AI work centrally."
+      ],
+      "correctAnswer": "The roles, processes, and structures needed to achieve a return from AI.",
+      "optionFeedback": {
+        "The roles, processes, and structures needed to achieve a return from AI.": "Correct. Research found that the missing piece was a standard framework. AI-Native SAFe fills that gap with an outcome-driven operating model.",
+        "A catalog of approved AI tools and vendors.": "Incorrect. AI-Native SAFe is an operating model, not a tool list. Tools change quickly, but the roles and structures endure.",
+        "A guarantee that AI investments will pay off within one year.": "Incorrect. No framework can guarantee returns. AI-Native SAFe provides the structure that makes returns achievable.",
+        "A dedicated AI department that runs all AI work centrally.": "Incorrect. AI-Native SAFe spreads AI capability across the whole organization instead of centralizing it in one department."
+      }
+    },
+    {
+      "id": "final-q11", "type": "mcq",
+      "question": "Reviewing the AI-Native SAFe Big Picture, a colleague points to the portfolio level, where connected OKRs cascade from portfolio strategy and curated data keeps work at every level aligned to value. Which critical shift does this part of the Big Picture express?",
+      "options": [
+        "Development at Scale to Development and Innovation at Scale",
+        "Optimized for Flow to Optimized for Outcome-Driven Flow",
+        "Iterative Learning Cycles to Iterative Learning and Rapid Experimentation Cycles",
+        "Cross-Functional Teams to Cross-Functional, AI-Augmented Teams"
+      ],
+      "correctAnswer": "Optimized for Flow to Optimized for Outcome-Driven Flow",
+      "optionFeedback": {
+        "Optimized for Flow to Optimized for Outcome-Driven Flow": "Correct. Connected OKRs, portfolio strategy, and curated data are the outcome-driven elements of the Big Picture. They keep everything flowing through the system aligned to value instead of output volume.",
+        "Development at Scale to Development and Innovation at Scale": "Incorrect. That shift is expressed by the AI Innovation Pipeline, whose shared platforms and embedded policies make innovation scalable across the organization.",
+        "Iterative Learning Cycles to Iterative Learning and Rapid Experimentation Cycles": "Incorrect. That shift appears in the cadenced events on the Big Picture, such as PI Outcome Planning and Sense and Respond, which shorten learning cycles across the ART.",
+        "Cross-Functional Teams to Cross-Functional, AI-Augmented Teams": "Incorrect. That shift is expressed by the AI-Native ARTs and AI-Native Teams, smaller teams described through Product, Builder, Domain Expert, and AI capabilities."
+      }
+    },
+    {
+      "id": "final-q12", "type": "mcq",
+      "question": "In a human-centric AI culture, what becomes the organization's most important asset?",
+      "options": [
+        "The size of its AI infrastructure budget.",
+        "Human skills such as creativity, empathy, and strategic decision-making.",
+        "The number of AI agents deployed across its teams.",
+        "Exclusive contracts with the leading AI model providers."
+      ],
+      "correctAnswer": "Human skills such as creativity, empathy, and strategic decision-making.",
+      "optionFeedback": {
+        "Human skills such as creativity, empathy, and strategic decision-making.": "Correct. When AI handles the tasks that do not require human judgment, people are freed to direct outcomes. The ability to apply these human skills becomes the most important asset.",
+        "The size of its AI infrastructure budget.": "Incorrect. Anyone can spend on infrastructure. The differentiator is the human judgment that directs what the AI produces.",
+        "The number of AI agents deployed across its teams.": "Incorrect. Agents are widely available. The value comes from the people who direct them well.",
+        "Exclusive contracts with the leading AI model providers.": "Incorrect. Models are a commodity that any competitor can rent. Human skills are what cannot be copied."
+      }
+    },
+    {
+      "id": "final-q13", "type": "mcq",
+      "question": "In the outcome-driven product development cycle, what do measurements show?",
+      "options": [
+        "How many outputs each team produced during the PI.",
+        "Whether the outputs are making progress against the defined outcomes.",
+        "Which teams are working the fastest.",
+        "How much of the budget has been spent so far."
+      ],
+      "correctAnswer": "Whether the outputs are making progress against the defined outcomes.",
+      "optionFeedback": {
+        "Whether the outputs are making progress against the defined outcomes.": "Correct. Measurements provide the insight to change or keep the current plan. They connect the work back to the outcomes it was meant to move.",
+        "How many outputs each team produced during the PI.": "Incorrect. Counting outputs is output-driven measurement. The cycle measures progress toward outcomes instead.",
+        "Which teams are working the fastest.": "Incorrect. Speed of production stopped being the constraint once AI removed the output bottleneck. The question is whether the work is moving the outcome.",
+        "How much of the budget has been spent so far.": "Incorrect. Spend tracking matters elsewhere, but measurements in this cycle show progress against outcomes."
+      }
+    },
+    {
+      "id": "final-q14", "type": "mcq",
+      "question": "Why must Portfolio Leadership include the organization's AI spend in its investment strategy?",
+      "options": [
+        "AI costs are usage-driven, and consumption at scale can outrun a fixed budget.",
+        "AI vendors require an annual spending commitment before granting access.",
+        "AI spend is small enough to hide inside existing license budgets.",
+        "Accounting rules require AI costs to be reported separately."
+      ],
+      "correctAnswer": "AI costs are usage-driven, and consumption at scale can outrun a fixed budget.",
+      "optionFeedback": {
+        "AI costs are usage-driven, and consumption at scale can outrun a fixed budget.": "Correct. Costs shift from fixed salaries and licenses to variable consumption. Agents are paid in tokens, so usage must be modeled and managed.",
+        "AI vendors require an annual spending commitment before granting access.": "Incorrect. Vendor terms are not the reason. The reason is that usage-driven costs behave differently from fixed costs.",
+        "AI spend is small enough to hide inside existing license budgets.": "Incorrect. The opposite is true. A capability that costs little in pilot can become a major line item at scale.",
+        "Accounting rules require AI costs to be reported separately.": "Incorrect. This is about investment strategy, not reporting rules. Usage-driven consumption changes how budgets must be planned."
+      }
+    },
+    {
+      "id": "final-q15", "type": "mcq",
+      "question": "In AI-Native SAFe, where are OKRs used?",
+      "options": [
+        "Only at the portfolio level, where strategy is set.",
+        "Only at the team level, where the work gets done.",
+        "At every level, from portfolios to teams.",
+        "OKRs are optional and each ART decides whether to use them."
+      ],
+      "correctAnswer": "At every level, from portfolios to teams.",
+      "optionFeedback": {
+        "At every level, from portfolios to teams.": "Correct. AI-Native SAFe mandates OKRs at every level. Cascading outcomes keep ART and team work connected to strategy.",
+        "Only at the portfolio level, where strategy is set.": "Incorrect. Portfolio OKRs alone leave teams disconnected from strategy. Every level writes outcomes relevant to its own work.",
+        "Only at the team level, where the work gets done.": "Incorrect. Team OKRs need portfolio and ART outcomes above them to cascade from. Otherwise teams pull in different directions.",
+        "OKRs are optional and each ART decides whether to use them.": "Incorrect. AI-Native SAFe now mandates OKRs at every level. They are how daily work connects to overall strategy."
+      }
+    },
+    {
+      "id": "final-q16", "type": "mcq",
+      "question": "What is curated data?",
+      "options": [
+        "Enterprise information deliberately prepared for AI.",
+        "Any data an organization stores in a database.",
+        "Data that has been anonymized for privacy compliance.",
+        "Public data purchased from third-party providers."
+      ],
+      "correctAnswer": "Enterprise information deliberately prepared for AI.",
+      "optionFeedback": {
+        "Enterprise information deliberately prepared for AI.": "Correct. Curated data enables reliable and unique insights. Without it, AI produces fragmented or conflicting results.",
+        "Any data an organization stores in a database.": "Incorrect. Storage alone is not curation. The data must be deliberately prepared so AI can use it well.",
+        "Data that has been anonymized for privacy compliance.": "Incorrect. Anonymization is a privacy technique. Curation is about preparing data so it produces reliable insights.",
+        "Public data purchased from third-party providers.": "Incorrect. Purchased data is available to competitors too. Curated proprietary data is the advantage no one else can copy."
+      }
+    },
+    {
+      "id": "final-q17", "type": "mcq",
+      "question": "Data has been successfully curated when it meets which conditions?",
+      "options": [
+        "It is complete, accurate, well-maintained, securely accessible, and clearly owned.",
+        "It is stored in a single central warehouse with one global owner.",
+        "It is fully structured, with all documents converted into tables.",
+        "It is encrypted, backed up, and retained for at least seven years."
+      ],
+      "correctAnswer": "It is complete, accurate, well-maintained, securely accessible, and clearly owned.",
+      "optionFeedback": {
+        "It is complete, accurate, well-maintained, securely accessible, and clearly owned.": "Correct. These five conditions are what turn proprietary data into reliable raw material for AI.",
+        "It is stored in a single central warehouse with one global owner.": "Incorrect. Curation is about the quality and stewardship of the data, not where it lives. Owners must be identifiable, but not singular.",
+        "It is fully structured, with all documents converted into tables.": "Incorrect. Curation extends beyond structured records. Documents and slide decks hold much of an organization's knowledge and are prepared for AI too.",
+        "It is encrypted, backed up, and retained for at least seven years.": "Incorrect. Those are IT practices, not the curation conditions. Curated data must also be complete, accurate, maintained, accessible, and owned."
+      }
+    },
+    {
+      "id": "final-q18", "type": "mcq",
+      "question": "Teams on an AI-Native ART can move faster than ever. Why does the ART still keep a regular cadence?",
+      "options": [
+        "Cadence builds in time to reconcile local decisions and dependencies before they accumulate.",
+        "Cadence slows the teams down to a pace leadership can supervise.",
+        "Cadence is kept only for tradition, since the events no longer serve a purpose.",
+        "Cadence gives AI agents fixed deadlines to work toward."
+      ],
+      "correctAnswer": "Cadence builds in time to reconcile local decisions and dependencies before they accumulate.",
+      "optionFeedback": {
+        "Cadence builds in time to reconcile local decisions and dependencies before they accumulate.": "Correct. Cadence gives the organization the structure to metabolize the learning coming from fast-moving teams. It balances rapid innovation with cadence-based learning.",
+        "Cadence slows the teams down to a pace leadership can supervise.": "Incorrect. Cadence is not a brake. It provides the structure that lets work move at the speed of AI safely.",
+        "Cadence is kept only for tradition, since the events no longer serve a purpose.": "Incorrect. The events matter more at AI speed, not less. They are where local decisions get reconciled.",
+        "Cadence gives AI agents fixed deadlines to work toward.": "Incorrect. Cadence exists for human alignment and learning, not for agent scheduling."
+      }
+    },
+    {
+      "id": "final-q19", "type": "mcq",
+      "question": "On an AI-Native Team, which capability brings the specialized customer and business context that makes solutions fit the organization?",
+      "options": ["Product", "Builder", "Domain Expert", "AI"],
+      "correctAnswer": "Domain Expert",
+      "optionFeedback": {
+        "Domain Expert": "Correct. The Domain Expert brings deep customer, business, or regulatory knowledge. That context keeps solutions from staying generic.",
+        "Product": "Incorrect. Product defines the vision and anchors the team in customer needs. The specialized domain context comes from the Domain Expert.",
+        "Builder": "Incorrect. The Builder uses AI to turn outcomes into working solutions. The Domain Expert supplies the context those solutions must fit.",
+        "AI": "Incorrect. AI provides data and automation under human supervision. It cannot supply the organization's specialized business context."
+      }
+    },
+    {
+      "id": "final-q20", "type": "mcq",
+      "question": "What is the \u201cPOC Graveyard\u201d?",
+      "options": [
+        "The archive where retired AI models are stored.",
+        "Promising AI demonstrations that never reach scaled, sustained use.",
+        "A list of AI vendors that went out of business.",
+        "The backlog of AI ideas a team has not started yet."
+      ],
+      "correctAnswer": "Promising AI demonstrations that never reach scaled, sustained use.",
+      "optionFeedback": {
+        "Promising AI demonstrations that never reach scaled, sustained use.": "Correct. Most AI initiatives fail because no one owned the path from prototype to production. The AI Value Architect exists to fill that gap.",
+        "The archive where retired AI models are stored.": "Incorrect. The term is about failed adoption, not model storage. It names the pile of demos that never became real products.",
+        "A list of AI vendors that went out of business.": "Incorrect. The graveyard is inside organizations, not the vendor market. It holds proofs of concept that never scaled.",
+        "The backlog of AI ideas a team has not started yet.": "Incorrect. These initiatives were started and even demonstrated. They died on the way from prototype to production."
+      }
+    },
+    {
+      "id": "final-q21", "type": "mcq",
+      "question": "Who is well positioned to become an AI Value Architect?",
+      "options": [
+        "Outside specialists hired specifically for the role.",
+        "Systems thinkers and coaches the organization already has, such as Scrum Masters, RTEs, and Architects.",
+        "The most senior AI engineer on each team.",
+        "Any volunteer, since the role needs no particular background."
+      ],
+      "correctAnswer": "Systems thinkers and coaches the organization already has, such as Scrum Masters, RTEs, and Architects.",
+      "optionFeedback": {
+        "Systems thinkers and coaches the organization already has, such as Scrum Masters, RTEs, and Architects.": "Correct. The role grows out of roles SAFe already has. People who already coach and hold the systems view can add AI fluency and step in.",
+        "Outside specialists hired specifically for the role.": "Incorrect. The AI Value Architect is not a new specialist hired from outside. It grows from existing roles.",
+        "The most senior AI engineer on each team.": "Incorrect. Technical depth alone is not the qualification. The role needs coaching skill and a systems view across the ART.",
+        "Any volunteer, since the role needs no particular background.": "Incorrect. The role draws on coaching experience and systems thinking. That is why existing SAFe roles are the natural candidates."
+      }
+    },
+    {
+      "id": "final-q22", "type": "mcq",
+      "question": "What makes a product vision compelling in AI-Native SAFe?",
+      "options": [
+        "It is informed by data, aligned with strategy, and anchored to architectural foundations.",
+        "It is ambitious enough that no competitor could promise the same.",
+        "It is written by leadership and kept stable for at least three years.",
+        "It lists every feature the ART plans to build."
+      ],
+      "correctAnswer": "It is informed by data, aligned with strategy, and anchored to architectural foundations.",
+      "optionFeedback": {
+        "It is informed by data, aligned with strategy, and anchored to architectural foundations.": "Correct. These three characteristics identify a compelling vision. A clear vision lets teams and AI agents make local decisions aligned to the long-term trajectory.",
+        "It is ambitious enough that no competitor could promise the same.": "Incorrect. Ambition alone is not the test. The vision also needs data, strategy alignment, and architectural grounding.",
+        "It is written by leadership and kept stable for at least three years.": "Incorrect. Who writes it and how long it lasts are not the defining traits. The three characteristics are data, strategy, and architecture.",
+        "It lists every feature the ART plans to build.": "Incorrect. A feature list is a roadmap artifact, and an output-driven one at that. The vision defines the mission and long-term goals."
+      }
+    },
+    {
+      "id": "final-q23", "type": "mcq",
+      "question": "On the Outcome-Driven Roadmap, what is a \u201cmoonshot\u201d?",
+      "options": [
+        "A milestone with an immovable external date.",
+        "A bold, aspirational outcome that prioritizes innovation.",
+        "An outcome used to predictably optimize an existing product.",
+        "A release that reaches customers ahead of schedule."
+      ],
+      "correctAnswer": "A bold, aspirational outcome that prioritizes innovation.",
+      "optionFeedback": {
+        "A bold, aspirational outcome that prioritizes innovation.": "Correct. A moonshot is a bold aspiration in its own outcome swimlane. Roofshots are the outcomes used to predictably optimize or iterate a product.",
+        "A milestone with an immovable external date.": "Incorrect. That describes a fixed-date milestone. A moonshot is an outcome, not a milestone.",
+        "An outcome used to predictably optimize an existing product.": "Incorrect. That is a roofshot. Moonshots prioritize innovation over predictability.",
+        "A release that reaches customers ahead of schedule.": "Incorrect. Releases mark when value reaches customers. A moonshot is a type of ART outcome on the roadmap."
+      }
+    },
+    {
+      "id": "final-q24", "type": "mcq",
+      "question": "What is the most significant logistical change in PI Outcome Planning compared to traditional PI Planning?",
+      "options": [
+        "Only team leads attend, to keep the event small.",
+        "The event is accomplished in a single day.",
+        "The event is fully asynchronous, with no live sessions.",
+        "It happens once a year instead of every PI."
+      ],
+      "correctAnswer": "The event is accomplished in a single day.",
+      "optionFeedback": {
+        "The event is accomplished in a single day.": "Correct. PI Outcome Planning is a one-day event held at the start of every PI. The entire AI-Native ART attends.",
+        "Only team leads attend, to keep the event small.": "Incorrect. The entire ART attends. The change is the length, not the attendance.",
+        "The event is fully asynchronous, with no live sessions.": "Incorrect. It is a live, facilitated day with breakouts, reviews, and a confidence vote.",
+        "It happens once a year instead of every PI.": "Incorrect. It happens at the start of every PI. What changed is that it now fits in one day."
+      }
+    },
+    {
+      "id": "final-q25", "type": "mcq",
+      "question": "Which two SAFe events does the Sense and Respond event replace?",
+      "options": [
+        "PI Planning and the Solution Demo.",
+        "Inspect and Adapt and the System Demo.",
+        "The Daily Stand-up and the Iteration Review.",
+        "Backlog Refinement and the Iteration Retrospective."
+      ],
+      "correctAnswer": "Inspect and Adapt and the System Demo.",
+      "optionFeedback": {
+        "Inspect and Adapt and the System Demo.": "Correct. Sense and Respond is a two-hour event at each iteration boundary. The first hour senses what happened, and the second hour decides what changes.",
+        "PI Planning and the Solution Demo.": "Incorrect. PI-level planning becomes PI Outcome Planning, a separate event. Sense and Respond replaces Inspect and Adapt and the System Demo.",
+        "The Daily Stand-up and the Iteration Review.": "Incorrect. Team-level rhythms continue through Align, Sense, Respond. The ART-level event replaces Inspect and Adapt and the System Demo.",
+        "Backlog Refinement and the Iteration Retrospective.": "Incorrect. Those team practices are not what changed. Sense and Respond replaces the two ART-level learning events."
+      }
+    },
+    {
+      "id": "final-q26", "type": "mcq",
+      "question": "Early in development, a team wants honest reactions to a prototype from a small group of real customers. Which demo fits?",
+      "options": [
+        "A personal, learning demo, such as a hand-picked focus group.",
+        "A broadcast, persuading demo, such as a launch event.",
+        "A personal, persuading demo for the biggest customer.",
+        "A broadcast, learning demo through self-guided product access."
+      ],
+      "correctAnswer": "A personal, learning demo, such as a hand-picked focus group.",
+      "optionFeedback": {
+        "A personal, learning demo, such as a hand-picked focus group.": "Correct. This is the Test Hypotheses Before Scaling quadrant. Small audiences allow deeper interactions and repeated demos with the same group.",
+        "A broadcast, persuading demo, such as a launch event.": "Incorrect. Launch events generate broad demand. That comes after the team has learned what works.",
+        "A personal, persuading demo for the biggest customer.": "Incorrect. Persuading assumes the solution already works as intended. The team is still learning.",
+        "A broadcast, learning demo through self-guided product access.": "Incorrect. Broadcast learning suits products already tested with a smaller group. This prototype has not reached that stage."
+      }
+    },
+    {
+      "id": "final-q27", "type": "mcq",
+      "question": "AI-Native SAFe defines two types of specifications. What are they?",
+      "options": [
+        "Functionality specifications and policy specifications.",
+        "Technical specifications and business specifications.",
+        "Draft specifications and approved specifications.",
+        "Human specifications and agent specifications."
+      ],
+      "correctAnswer": "Functionality specifications and policy specifications.",
+      "optionFeedback": {
+        "Functionality specifications and policy specifications.": "Correct. Functionality specifications describe the intended implementation. Policy specifications set the limits the Builders must stay within.",
+        "Technical specifications and business specifications.": "Incorrect. The split is not technical versus business. It is what to build versus the limits to build within.",
+        "Draft specifications and approved specifications.": "Incorrect. Approval status is not the distinction. The two types are functionality and policy.",
+        "Human specifications and agent specifications.": "Incorrect. Specifications serve people and agents alike. The two types are functionality and policy."
+      }
+    },
+    {
+      "id": "final-q28", "type": "mcq",
+      "question": "Which four work items does AI-Native SAFe recommend at a minimum on the AI Innovation Pipeline?",
+      "options": [
+        "Epics, Capabilities, Features, and Stories.",
+        "Prototypes, Experiments, Features, and Enablers.",
+        "Tasks, Bugs, Spikes, and Releases.",
+        "Outcomes, Outputs, Measurements, and Value."
+      ],
+      "correctAnswer": "Prototypes, Experiments, Features, and Enablers.",
+      "optionFeedback": {
+        "Prototypes, Experiments, Features, and Enablers.": "Correct. Teams are free to use more work items, but these four are the recommended minimum for managing work on the pipeline.",
+        "Epics, Capabilities, Features, and Stories.": "Incorrect. That is the traditional SAFe requirements hierarchy. The pipeline's recommended set is Prototypes, Experiments, Features, and Enablers.",
+        "Tasks, Bugs, Spikes, and Releases.": "Incorrect. Those are day-to-day tracking items. The recommended pipeline set is Prototypes, Experiments, Features, and Enablers.",
+        "Outcomes, Outputs, Measurements, and Value.": "Incorrect. Those are steps in the outcome-driven cycle, not work items."
+      }
+    },
+    {
+      "id": "final-q29", "type": "mcq",
+      "question": "Which AI Governance pillar tracks token growth, sets usage caps, and attributes consumption costs to teams and products?",
+      "options": [
+        "Controlling AI Spend",
+        "Enforcing Responsible AI",
+        "Monitoring Agentic Behaviors",
+        "Managing and Exploiting AI Risks"
+      ],
+      "correctAnswer": "Controlling AI Spend",
+      "optionFeedback": {
+        "Controlling AI Spend": "Correct. AI spend scales with adoption because pricing is usage-based. This pillar tracks consumption growth, sets caps and alerts, and attributes costs clearly.",
+        "Enforcing Responsible AI": "Incorrect. That pillar covers ethical, transparent, and compliant use. Cost tracking belongs to Controlling AI Spend.",
+        "Monitoring Agentic Behaviors": "Incorrect. That pillar gives visibility into what autonomous agents do. Cost tracking belongs to Controlling AI Spend.",
+        "Managing and Exploiting AI Risks": "Incorrect. That pillar manages the portfolio's risk posture. Cost tracking belongs to Controlling AI Spend."
+      }
+    },
+    {
+      "id": "final-q30", "type": "mcq",
+      "question": "What is the foundation that the four AI Governance pillars stand on?",
+      "options": ["AI Ethics", "Legal compliance", "Shared platforms", "The investment strategy"],
+      "correctAnswer": "AI Ethics",
+      "optionFeedback": {
+        "AI Ethics": "Correct. AI Ethics covers the values an organization holds itself to beyond legal requirements. Regulation asks whether something violates the law, and ethics asks whether it disrespects or exploits human beings.",
+        "Legal compliance": "Incorrect. Compliance is the regulatory minimum. The ethical foundation goes beyond what the law requires.",
+        "Shared platforms": "Incorrect. Shared platforms belong to the AI Innovation Pipeline. The governance pillars stand on AI Ethics.",
+        "The investment strategy": "Incorrect. Investment strategy is part of portfolio strategy. The governance pillars stand on AI Ethics."
+      }
+    }
+  ]
+}

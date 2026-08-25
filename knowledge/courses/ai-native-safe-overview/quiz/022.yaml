@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/022"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "What makes a product vision compelling in AI-Native SAFe?"
+options:
+  - key: "a"
+    text: "It is informed by data, aligned with strategy, and anchored to architectural foundations."
+    correct: true
+    feedback: "Correct. These three characteristics identify a compelling vision. A clear vision lets teams and AI agents make local decisions aligned to the long-term trajectory."
+  - key: "b"
+    text: "It is ambitious enough that no competitor could promise the same."
+    correct: false
+    feedback: "Incorrect. Ambition alone is not the test. The vision also needs data, strategy alignment, and architectural grounding."
+  - key: "c"
+    text: "It is written by leadership and kept stable for at least three years."
+    correct: false
+    feedback: "Incorrect. Who writes it and how long it lasts are not the defining traits. The three characteristics are data, strategy, and architecture."
+  - key: "d"
+    text: "It lists every feature the ART plans to build."
+    correct: false
+    feedback: "Incorrect. A feature list is a roadmap artifact, and an output-driven one at that. The vision defines the mission and long-term goals."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/04-iterative-learning-and-rapid-experimentation-cycles"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0022"

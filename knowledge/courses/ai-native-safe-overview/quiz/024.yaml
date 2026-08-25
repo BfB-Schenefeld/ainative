@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/024"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "What is the most significant logistical change in PI Outcome Planning compared to traditional PI Planning?"
+options:
+  - key: "a"
+    text: "Only team leads attend, to keep the event small."
+    correct: false
+    feedback: "Incorrect. The entire ART attends. The change is the length, not the attendance."
+  - key: "b"
+    text: "The event is accomplished in a single day."
+    correct: true
+    feedback: "Correct. PI Outcome Planning is a one-day event held at the start of every PI. The entire AI-Native ART attends."
+  - key: "c"
+    text: "The event is fully asynchronous, with no live sessions."
+    correct: false
+    feedback: "Incorrect. It is a live, facilitated day with breakouts, reviews, and a confidence vote."
+  - key: "d"
+    text: "It happens once a year instead of every PI."
+    correct: false
+    feedback: "Incorrect. It happens at the start of every PI. What changed is that it now fits in one day."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/04-iterative-learning-and-rapid-experimentation-cycles"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0024"

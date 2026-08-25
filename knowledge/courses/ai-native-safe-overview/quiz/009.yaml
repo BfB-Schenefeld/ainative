@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/009"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "Why is experimenting with AI no longer enough for an organization?"
+options:
+  - key: "a"
+    text: "Experiments are too expensive to run at today's model prices."
+    correct: false
+    feedback: "Incorrect. Cost is not the reason. The problem is that isolated experiments do not change how the organization works."
+  - key: "b"
+    text: "Becoming AI-Native is a whole-organization way of working, not a set of pilots."
+    correct: true
+    feedback: "Correct. The pace and scale of change demand more than isolated experiments. Unlocking value from AI takes a unified, organization-wide approach."
+  - key: "c"
+    text: "Most AI experiments fail for technical reasons."
+    correct: false
+    feedback: "Incorrect. The technology usually works. The gap is organizational, not technical."
+  - key: "d"
+    text: "Regulators now require organizations to move past the experimental stage."
+    correct: false
+    feedback: "Incorrect. No regulation drives this. The driver is the need to unlock real value from AI across the whole organization."
+answer_status: confirmed
+concepts:
+  - "concept:ai-native-safe"
+lesson: "lesson:scaledagile/ai-native-safe-overview/01-ai-native-safe-overview"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0009"

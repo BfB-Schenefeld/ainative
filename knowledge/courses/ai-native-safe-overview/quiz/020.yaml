@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/020"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "What is the “POC Graveyard”?"
+options:
+  - key: "a"
+    text: "The archive where retired AI models are stored."
+    correct: false
+    feedback: "Incorrect. The term is about failed adoption, not model storage. It names the pile of demos that never became real products."
+  - key: "b"
+    text: "Promising AI demonstrations that never reach scaled, sustained use."
+    correct: true
+    feedback: "Correct. Most AI initiatives fail because no one owned the path from prototype to production. The AI Value Architect exists to fill that gap."
+  - key: "c"
+    text: "A list of AI vendors that went out of business."
+    correct: false
+    feedback: "Incorrect. The graveyard is inside organizations, not the vendor market. It holds proofs of concept that never scaled."
+  - key: "d"
+    text: "The backlog of AI ideas a team has not started yet."
+    correct: false
+    feedback: "Incorrect. These initiatives were started and even demonstrated. They died on the way from prototype to production."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/03-cross-functional-ai-augmented-teams"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0020"

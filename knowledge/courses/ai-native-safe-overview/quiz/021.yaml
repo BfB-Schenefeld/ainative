@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/021"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "Who is well positioned to become an AI Value Architect?"
+options:
+  - key: "a"
+    text: "Outside specialists hired specifically for the role."
+    correct: false
+    feedback: "Incorrect. The AI Value Architect is not a new specialist hired from outside. It grows from existing roles."
+  - key: "b"
+    text: "Systems thinkers and coaches the organization already has, such as Scrum Masters, RTEs, and Architects."
+    correct: true
+    feedback: "Correct. The role grows out of roles SAFe already has. People who already coach and hold the systems view can add AI fluency and step in."
+  - key: "c"
+    text: "The most senior AI engineer on each team."
+    correct: false
+    feedback: "Incorrect. Technical depth alone is not the qualification. The role needs coaching skill and a systems view across the ART."
+  - key: "d"
+    text: "Any volunteer, since the role needs no particular background."
+    correct: false
+    feedback: "Incorrect. The role draws on coaching experience and systems thinking. That is why existing SAFe roles are the natural candidates."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/03-cross-functional-ai-augmented-teams"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0021"

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/014"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "Why must Portfolio Leadership include the organization's AI spend in its investment strategy?"
+options:
+  - key: "a"
+    text: "AI costs are usage-driven, and consumption at scale can outrun a fixed budget."
+    correct: true
+    feedback: "Correct. Costs shift from fixed salaries and licenses to variable consumption. Agents are paid in tokens, so usage must be modeled and managed."
+  - key: "b"
+    text: "AI vendors require an annual spending commitment before granting access."
+    correct: false
+    feedback: "Incorrect. Vendor terms are not the reason. The reason is that usage-driven costs behave differently from fixed costs."
+  - key: "c"
+    text: "AI spend is small enough to hide inside existing license budgets."
+    correct: false
+    feedback: "Incorrect. The opposite is true. A capability that costs little in pilot can become a major line item at scale."
+  - key: "d"
+    text: "Accounting rules require AI costs to be reported separately."
+    correct: false
+    feedback: "Incorrect. This is about investment strategy, not reporting rules. Usage-driven consumption changes how budgets must be planned."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/02-optimized-for-outcome-driven-flow"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0014"

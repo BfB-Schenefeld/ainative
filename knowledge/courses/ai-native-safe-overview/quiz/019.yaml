@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/019"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "On an AI-Native Team, which capability brings the specialized customer and business context that makes solutions fit the organization?"
+options:
+  - key: "a"
+    text: "Product"
+    correct: false
+    feedback: "Incorrect. Product defines the vision and anchors the team in customer needs. The specialized domain context comes from the Domain Expert."
+  - key: "b"
+    text: "Builder"
+    correct: false
+    feedback: "Incorrect. The Builder uses AI to turn outcomes into working solutions. The Domain Expert supplies the context those solutions must fit."
+  - key: "c"
+    text: "Domain Expert"
+    correct: true
+    feedback: "Correct. The Domain Expert brings deep customer, business, or regulatory knowledge. That context keeps solutions from staying generic."
+  - key: "d"
+    text: "AI"
+    correct: false
+    feedback: "Incorrect. AI provides data and automation under human supervision. It cannot supply the organization's specialized business context."
+answer_status: confirmed
+concepts:
+  - "concept:cross-functional-ai-augmented-teams"
+lesson: "lesson:scaledagile/ai-native-safe-overview/03-cross-functional-ai-augmented-teams"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0019"

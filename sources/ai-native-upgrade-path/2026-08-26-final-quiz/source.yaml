@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=../../../schemas/source.schema.json
+source_id: "src:2026-08-26/upgrade-path-final-quiz"
+provider: "provider:scaledagile"
+
+capture:
+  url: "https://ai-native-safe-upgrade-path.replit.app/assets/FinalQuiz-DUvUYCnK.js"
+  captured_at: "2026-08-26T00:00:00Z"
+  method: manual-transcription
+  tool_version: "extract_upgrade_path.py 0.1.0 (JSON mode)"
+  sha256: "0000000000000000000000000000000000000000000000000000000000000000"
+  bytes: 42852
+  captured_by: "Jörg Christoffers"
+
+coverage:
+  status: complete
+  contains:
+    - "Full final-quiz question bank: 30 single-choice items"
+    - "Correct answer for every item"
+    - "Per-option feedback for correct AND incorrect options"
+    - "Question-to-source-lesson map (all 6 lessons)"
+    - "Quiz mechanics: 15 drawn at random from 30, passing score 12 (80%)"
+  missing:
+    - "Lesson body prose (lives in separate per-lesson bundle chunks)"
+    - "The original .js artifact — the app was redeployed and the hash-named file is gone"
+  notes: >-
+    The upgrade path is a Vite/React SPA on a public static host, not a Rise 360 course
+    (see docs/adr/0003-not-a-rise-course.md). The quiz is graded client-side, so the
+    entire bank ships in the FinalQuiz-* chunk with correctAnswer and optionFeedback
+    attached.
+
+    PROVENANCE CAVEAT: the chunk was read at its URL, but the app was redeployed shortly
+    afterwards (build index chunk went from index-ILRrM1cq.js to index-W5CxIBYO.js) and
+    a later fetch of the same path returned the SPA's index.html fallback. The original
+    binary is therefore unrecoverable and its sha256 is recorded as all-zero to mark it
+    unverifiable. raw/FinalQuiz-DUvUYCnK.question-bank.json is a transcription of the
+    chunk's QUESTION_BANK export, not the artifact itself. Treat it as high-confidence
+    but not byte-verified.
+
+    Lesson: content-hashed bundle filenames are build-scoped. Download chunks the moment
+    they are identified.
+
+rights:
+  holder: "Scaled Agile, Inc."
+  basis: "Personal learner access to licensed training content"
+  redistribution: none
+
+derives:
+  - "course:scaledagile/ai-native-safe-overview"

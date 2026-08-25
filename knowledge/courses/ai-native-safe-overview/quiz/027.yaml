@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/027"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "AI-Native SAFe defines two types of specifications. What are they?"
+options:
+  - key: "a"
+    text: "Functionality specifications and policy specifications."
+    correct: true
+    feedback: "Correct. Functionality specifications describe the intended implementation. Policy specifications set the limits the Builders must stay within."
+  - key: "b"
+    text: "Technical specifications and business specifications."
+    correct: false
+    feedback: "Incorrect. The split is not technical versus business. It is what to build versus the limits to build within."
+  - key: "c"
+    text: "Draft specifications and approved specifications."
+    correct: false
+    feedback: "Incorrect. Approval status is not the distinction. The two types are functionality and policy."
+  - key: "d"
+    text: "Human specifications and agent specifications."
+    correct: false
+    feedback: "Incorrect. Specifications serve people and agents alike. The two types are functionality and policy."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/05-development-and-innovation-at-scale"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0027"

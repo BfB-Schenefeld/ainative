@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/028"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "Which four work items does AI-Native SAFe recommend at a minimum on the AI Innovation Pipeline?"
+options:
+  - key: "a"
+    text: "Epics, Capabilities, Features, and Stories."
+    correct: false
+    feedback: "Incorrect. That is the traditional SAFe requirements hierarchy. The pipeline's recommended set is Prototypes, Experiments, Features, and Enablers."
+  - key: "b"
+    text: "Prototypes, Experiments, Features, and Enablers."
+    correct: true
+    feedback: "Correct. Teams are free to use more work items, but these four are the recommended minimum for managing work on the pipeline."
+  - key: "c"
+    text: "Tasks, Bugs, Spikes, and Releases."
+    correct: false
+    feedback: "Incorrect. Those are day-to-day tracking items. The recommended pipeline set is Prototypes, Experiments, Features, and Enablers."
+  - key: "d"
+    text: "Outcomes, Outputs, Measurements, and Value."
+    correct: false
+    feedback: "Incorrect. Those are steps in the outcome-driven cycle, not work items."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/05-development-and-innovation-at-scale"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0028"

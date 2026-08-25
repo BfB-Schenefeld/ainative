@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/011"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "Reviewing the AI-Native SAFe Big Picture, a colleague points to the portfolio level, where connected OKRs cascade from portfolio strategy and curated data keeps work at every level aligned to value. Which critical shift does this part of the Big Picture express?"
+options:
+  - key: "a"
+    text: "Development at Scale to Development and Innovation at Scale"
+    correct: false
+    feedback: "Incorrect. That shift is expressed by the AI Innovation Pipeline, whose shared platforms and embedded policies make innovation scalable across the organization."
+  - key: "b"
+    text: "Optimized for Flow to Optimized for Outcome-Driven Flow"
+    correct: true
+    feedback: "Correct. Connected OKRs, portfolio strategy, and curated data are the outcome-driven elements of the Big Picture. They keep everything flowing through the system aligned to value instead of output volume."
+  - key: "c"
+    text: "Iterative Learning Cycles to Iterative Learning and Rapid Experimentation Cycles"
+    correct: false
+    feedback: "Incorrect. That shift appears in the cadenced events on the Big Picture, such as PI Outcome Planning and Sense and Respond, which shorten learning cycles across the ART."
+  - key: "d"
+    text: "Cross-Functional Teams to Cross-Functional, AI-Augmented Teams"
+    correct: false
+    feedback: "Incorrect. That shift is expressed by the AI-Native ARTs and AI-Native Teams, smaller teams described through Product, Builder, Domain Expert, and AI capabilities."
+answer_status: confirmed
+concepts:
+  - "concept:four-shifts"
+  - "concept:outcome-driven-flow"
+lesson: "lesson:scaledagile/ai-native-safe-overview/01-ai-native-safe-overview"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0011"

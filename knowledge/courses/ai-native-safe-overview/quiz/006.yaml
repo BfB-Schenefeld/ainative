@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/006"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "AI compresses parts of the Plan-Do-Check-Adjust learning cycle. Which parts shrink, and what do teams do with the time they gain?"
+options:
+  - key: "a"
+    text: "Plan and Adjust shrink: AI makes planning largely unnecessary, so teams simply build continuously."
+    correct: false
+    feedback: "Incorrect. It's the reverse: Plan and Adjust gain time and importance. AI speeds up doing and checking, which makes deliberate human planning and adaptive decisions more valuable, not less."
+  - key: "b"
+    text: "Do and Check shrink: teams reinvest the time in planning, adaptive decisions, and experiments."
+    correct: true
+    feedback: "Correct. AI accelerates execution (Do) and validation (Check), so cadences compress and experimentation accelerates: teams spend the recovered time on Plan and Adjust, where human judgment matters most, and let evidence decide what happens next."
+  - key: "c"
+    text: "None of them shrink: AI adds review overhead that lengthens every phase of the cycle."
+    correct: false
+    feedback: "Incorrect. Human validation stays in the loop, but the net effect of AI is dramatically faster Do and Check phases: that's what makes rapid experimentation cycles possible."
+  - key: "d"
+    text: "All four phases shrink equally, so the cadences stay in the same proportion as before."
+    correct: false
+    feedback: "Incorrect. The compression is uneven: AI shortens Do and Check specifically, which is what frees teams to shift their attention toward Plan and Adjust."
+answer_status: confirmed
+concepts:
+  - "concept:iterative-learning-and-rapid-experimentation"
+lesson: "lesson:scaledagile/ai-native-safe-overview/04-iterative-learning-and-rapid-experimentation-cycles"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0006"

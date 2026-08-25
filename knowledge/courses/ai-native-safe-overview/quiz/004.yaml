@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/004"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "An AI-Native team gathers to decide together how it will split an upcoming outcome between its humans and its AI agents. In the team's Align-Sense-Respond rhythm, which interaction is that?"
+options:
+  - key: "a"
+    text: "Sense: the team is gathering new information about its own workload and capacity."
+    correct: false
+    feedback: "Incorrect. Sense is the deliberate gathering and analysis of feedback and learning from multiple sources. This scenario is a decision being made, not feedback being analyzed."
+  - key: "b"
+    text: "Respond: any change to how the work is divided counts as a response."
+    correct: false
+    feedback: "Incorrect. Respond is the adjustment a team makes to workflows and products after sensing something. Here nothing was sensed: the team is making a forward-looking key decision, which is Align."
+  - key: "c"
+    text: "None of them: staffing decisions sit outside the team rhythm."
+    correct: false
+    feedback: "Incorrect. Deciding how humans and AI agents share the work is central to how an AI-Native team operates: it's a textbook Align moment."
+  - key: "d"
+    text: "Align: a key decision made together that moves the team toward the outcome."
+    correct: true
+    feedback: "Correct. Align is where the team makes key decisions together so everyone, human and AI, moves in the same direction toward the outcome. Deciding how to split the work is exactly such a decision."
+answer_status: confirmed
+concepts:
+  - "concept:cross-functional-ai-augmented-teams"
+lesson: "lesson:scaledagile/ai-native-safe-overview/03-cross-functional-ai-augmented-teams"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0004"

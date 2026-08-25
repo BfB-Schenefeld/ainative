@@ -77,28 +77,34 @@ def main() -> int:
     raw = chunk.read_bytes()
     text = raw.decode("utf-8", errors="replace")
 
-    try:
-        bank = find_binding(text, "QUESTION_BANK")
-    except JSParseError as e:
-        print(f"Could not locate QUESTION_BANK: {e}", file=sys.stderr)
-        print("Check you saved the FinalQuiz-*.js chunk, not index-*.js.", file=sys.stderr)
-        return 1
+    preparsed = json.loads(text) if chunk.suffix == ".json" else None
 
-    meta = {}
-    for name in ("QUIZ_SIZE", "PASSING_SCORE"):
+    if preparsed is not None:
+        bank = preparsed["QUESTION_BANK"]
+        meta = {k: preparsed[k] for k in ("QUIZ_SIZE", "PASSING_SCORE") if k in preparsed}
+        lesson_map = preparsed.get("SOURCE_LESSONS", {})
+    else:
         try:
-            meta[name] = find_binding(text, name)
-        except JSParseError:
-            pass
-    # source-lesson map is usually an unexported local; find it by shape
-    lesson_map = {}
-    m = re.search(r'\{"(?:final-)?q?\w+-?q?\d+"\s*:\s*"Lesson', text)
-    if m:
-        try:
-            from js_object import parse_at
-            lesson_map = parse_at(text, m.start())[0]
-        except JSParseError:
-            pass
+            bank = find_binding(text, "QUESTION_BANK")
+        except JSParseError as e:
+            print(f"Could not locate QUESTION_BANK: {e}", file=sys.stderr)
+            print("Check you saved the FinalQuiz-*.js chunk, not index-*.js.", file=sys.stderr)
+            return 1
+        meta = {}
+        for name in ("QUIZ_SIZE", "PASSING_SCORE"):
+            try:
+                meta[name] = find_binding(text, name)
+            except JSParseError:
+                pass
+        # source-lesson map is usually an unexported local; find it by shape
+        lesson_map = {}
+        m = re.search(r'\{"(?:final-)?q?\w+-?q?\d+"\s*:\s*"Lesson', text)
+        if m:
+            try:
+                from js_object import parse_at
+                lesson_map = parse_at(text, m.start())[0]
+            except JSParseError:
+                pass
 
     # ---- source layer ----
     sdir = pathlib.Path(args.source_dir)

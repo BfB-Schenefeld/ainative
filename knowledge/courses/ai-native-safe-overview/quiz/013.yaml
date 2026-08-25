@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/013"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "In the outcome-driven product development cycle, what do measurements show?"
+options:
+  - key: "a"
+    text: "How many outputs each team produced during the PI."
+    correct: false
+    feedback: "Incorrect. Counting outputs is output-driven measurement. The cycle measures progress toward outcomes instead."
+  - key: "b"
+    text: "Whether the outputs are making progress against the defined outcomes."
+    correct: true
+    feedback: "Correct. Measurements provide the insight to change or keep the current plan. They connect the work back to the outcomes it was meant to move."
+  - key: "c"
+    text: "Which teams are working the fastest."
+    correct: false
+    feedback: "Incorrect. Speed of production stopped being the constraint once AI removed the output bottleneck. The question is whether the work is moving the outcome."
+  - key: "d"
+    text: "How much of the budget has been spent so far."
+    correct: false
+    feedback: "Incorrect. Spend tracking matters elsewhere, but measurements in this cycle show progress against outcomes."
+answer_status: confirmed
+concepts:
+  - "concept:outcome-driven-flow"
+lesson: "lesson:scaledagile/ai-native-safe-overview/02-optimized-for-outcome-driven-flow"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0013"

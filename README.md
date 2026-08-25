@@ -43,7 +43,7 @@ From `src:2026-08-25/learning-plans-exams`:
 - 1 lesson captured in full (Welcome); 8 known by name only
 - 11 concepts (2 defined, 9 stubs)
 - 3 certifications with their upgrade paths
-- 0 quiz items
+- 30 quiz items with confirmed answer keys and per-option feedback
 
 `index/coverage.md` shows the gaps after every build.
 

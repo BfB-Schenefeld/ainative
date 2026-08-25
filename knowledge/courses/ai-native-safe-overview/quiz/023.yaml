@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/023"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "On the Outcome-Driven Roadmap, what is a “moonshot”?"
+options:
+  - key: "a"
+    text: "A milestone with an immovable external date."
+    correct: false
+    feedback: "Incorrect. That describes a fixed-date milestone. A moonshot is an outcome, not a milestone."
+  - key: "b"
+    text: "A bold, aspirational outcome that prioritizes innovation."
+    correct: true
+    feedback: "Correct. A moonshot is a bold aspiration in its own outcome swimlane. Roofshots are the outcomes used to predictably optimize or iterate a product."
+  - key: "c"
+    text: "An outcome used to predictably optimize an existing product."
+    correct: false
+    feedback: "Incorrect. That is a roofshot. Moonshots prioritize innovation over predictability."
+  - key: "d"
+    text: "A release that reaches customers ahead of schedule."
+    correct: false
+    feedback: "Incorrect. Releases mark when value reaches customers. A moonshot is a type of ART outcome on the roadmap."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/04-iterative-learning-and-rapid-experimentation-cycles"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0023"

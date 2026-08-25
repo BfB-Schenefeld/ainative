@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/015"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "In AI-Native SAFe, where are OKRs used?"
+options:
+  - key: "a"
+    text: "Only at the portfolio level, where strategy is set."
+    correct: false
+    feedback: "Incorrect. Portfolio OKRs alone leave teams disconnected from strategy. Every level writes outcomes relevant to its own work."
+  - key: "b"
+    text: "Only at the team level, where the work gets done."
+    correct: false
+    feedback: "Incorrect. Team OKRs need portfolio and ART outcomes above them to cascade from. Otherwise teams pull in different directions."
+  - key: "c"
+    text: "At every level, from portfolios to teams."
+    correct: true
+    feedback: "Correct. AI-Native SAFe mandates OKRs at every level. Cascading outcomes keep ART and team work connected to strategy."
+  - key: "d"
+    text: "OKRs are optional and each ART decides whether to use them."
+    correct: false
+    feedback: "Incorrect. AI-Native SAFe now mandates OKRs at every level. They are how daily work connects to overall strategy."
+answer_status: confirmed
+lesson: "lesson:scaledagile/ai-native-safe-overview/02-optimized-for-outcome-driven-flow"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0015"

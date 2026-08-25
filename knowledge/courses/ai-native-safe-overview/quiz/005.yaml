@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/ai-native-safe-overview/final/005"
+course: "course:scaledagile/ai-native-safe-overview"
+set: final
+type: single-choice
+stem: "You're forming a new AI-Native team. What's the right way to describe what the team needs?"
+options:
+  - key: "a"
+    text: "By headcount: AI-Native teams should be as large as possible to absorb AI's extra output."
+    correct: false
+    feedback: "Incorrect. The direction is the opposite: teams get smaller and nimbler because AI collaboration lets fewer people cover more capability."
+  - key: "b"
+    text: "By traditional role titles: one developer, one tester, one analyst, one designer per seat."
+    correct: false
+    feedback: "Incorrect. Fixed role-per-seat staffing is what the capability model replaces. Describing teams through the Product, Builder, Domain Expert, and AI capabilities keeps them small and flexible as AI absorbs more of the execution work."
+  - key: "c"
+    text: "By its four core capabilities: Product, Builder, Domain Expert, and AI."
+    correct: true
+    feedback: "Correct. AI-Native teams are smaller, nimbler, and described through capabilities rather than fixed role titles: Product anchors the team in customer needs, Builder turns outcomes into working solutions, the Domain Expert makes solutions fit the organization, and AI provides data and automation at speed."
+  - key: "d"
+    text: "By AI agents first: humans are added only where agents fall short."
+    correct: false
+    feedback: "Incorrect. AI augments professionals rather than replacing them. Teams stay human-led: humans own the strategy, judgment, and domain expertise that direct what AI produces."
+answer_status: confirmed
+concepts:
+  - "concept:cross-functional-ai-augmented-teams"
+lesson: "lesson:scaledagile/ai-native-safe-overview/03-cross-functional-ai-augmented-teams"
+sources:
+  - "src:2026-08-26/upgrade-path-final-quiz#b0005"
