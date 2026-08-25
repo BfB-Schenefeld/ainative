@@ -50,8 +50,12 @@ From `src:2026-08-25/learning-plans-exams`:
 ## Read this before adding more captures
 
 That first export was 8.5 MB and yielded one lesson. **Full-page HTML exports are the
-wrong capture method for these courses** — `docs/capture-rise.md` has the method that
-works, `docs/adr/0002-capture-strategy.md` has the reasoning. Fixing the capture step is worth more than any amount of work on
+wrong capture method for these courses.**
+
+The upgrade path turned out to be a public Vite/React SPA, not a Rise 360 course — its
+bundle chunks are static files containing the full quiz bank with answer keys. See
+`docs/capture-upgrade-path.md` for the procedure and `docs/adr/0003-not-a-rise-course.md`
+for how that was found. `docs/capture-rise.md` still applies to actual Rise courses. Fixing the capture step is worth more than any amount of work on
 this repo.
 
 ## Rights

@@ -145,6 +145,8 @@ def main() -> int:
         known_ids.add(doc["id"])
         collect_sources(doc, qfile)
         refs.append(("course", doc["course"], qfile))
+        if doc.get("lesson"):
+            refs.append(("lesson", doc["lesson"], qfile))
         opts = doc.get("options") or []
         correct = [o for o in opts if o.get("correct")]
         if doc.get("answer_status") == "confirmed" and not correct:

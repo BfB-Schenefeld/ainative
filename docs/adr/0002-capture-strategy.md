@@ -1,6 +1,7 @@
 # ADR 0002 — Capture strategy: stop using full-page HTML exports
 
-**Status:** accepted · 2026-08-25
+**Status:** accepted · 2026-08-25 — mechanism partly superseded by [ADR-0003](0003-not-a-rise-course.md);
+the conclusion (stop using full-page exports) holds, the Rise diagnosis does not
 
 ## Context
 The first capture (`src:2026-08-25/learning-plans-exams`) is an 8.5 MB SingleFile export
