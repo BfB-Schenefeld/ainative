@@ -9,38 +9,44 @@ That makes capture far easier than the Rise procedure in `capture-rise.md`: you 
 need a HAR at all once you know the chunk filenames. You need the HAR exactly once, to
 discover them.
 
-## 1. Get the chunk filenames (once per app build)
+## 1. Capture a HAR
 
-Filenames are content-hashed (`FinalQuiz-DUvUYCnK.js`) and change on every redeploy, so
-they cannot be hardcoded. Two ways to list them:
+DevTools → Network → tick **Preserve log** and **Disable cache** → hard reload → click
+through every lesson and open the quiz → Export button → **Export HAR (sanitized)**.
+Details in `capture-rise.md` steps 1–4.
 
-**From a HAR** you already captured (see `capture-rise.md` steps 1–4):
+## 2. Take the assets out of the HAR
 
-```bash
-python3 - <<'PY'
-import json, re
-har = json.load(open("community.scaledagile.com.har", encoding="utf-8"))
-for e in har["log"]["entries"]:
-    u = e["request"]["url"]
-    if "/assets/" in u and u.endswith(".js"):
-        print(e["response"]["content"].get("size", 0), u)
-PY
-```
-
-**From the app itself**, which is simpler if you have the origin: open the upgrade path,
-DevTools → Network → filter `.js`, and read the filenames. Or fetch the app's
-`index.html` and read the `<script type="module" src="/assets/index-*.js">` entry; the
-index chunk imports everything else and the import specifiers are the full manifest.
-
-## 2. Download the chunks
+**Do not download the chunks.** A HAR saved with content already holds every response
+body, and bundle filenames are content-hashed: a redeploy 404s them within minutes. The
+HAR copy cannot go stale. This was learned the hard way — see ADR-0003.
 
 ```bash
-BASE=https://<the-app-origin>/assets
-curl -sO "$BASE/FinalQuiz-DUvUYCnK.js"
-# ...and one per lesson chunk
+# which origin is serving the app?
+python3 tools/extract_assets_from_har.py capture.har --list
 ```
 
-No cookies, no headers, no session. These are static assets.
+The content app is **not** the origin you browsed to. Look for a third-party host
+serving a pile of hash-named `.js` files — for the AI-Native upgrade path that was
+`ai-native-safe-upgrade-path.replit.app`. Ignore the LMS origin entirely.
+
+```bash
+python3 tools/extract_assets_from_har.py capture.har \
+    --origin <that-host> --out chunks/
+```
+
+Every asset lands in `chunks/` with a `manifest.json` recording URL, sha256 and byte
+count. The tool names any quiz chunks it spots.
+
+**If it warns that a response had no body**, DevTools dropped it from its buffer. That
+one URL does need refetching, and it needs refetching *now*, before the next deploy:
+
+```bash
+curl -sO "<the url from manifest.json>"
+```
+
+A downloaded file that comes back as HTML starting `<!DOCTYPE html>` is the SPA's
+404 fallback served with status 200 — the chunk is already gone. Recapture the HAR.
 
 ## 3. Extract the quiz
 
