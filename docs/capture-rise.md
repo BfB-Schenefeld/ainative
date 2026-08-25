@@ -50,13 +50,20 @@ Everything that loads lands in the log. Over-clicking costs nothing.
 
 ### 4. Export
 
-Right-click anywhere in the request list → **Save all as HAR with content**.
+Click the **download arrow** in the Network panel action bar: **Export HAR (sanitized)**.
 
-The "**with content**" part is mandatory. Plain "Save as HAR" in some browsers omits
-response bodies and you get a useless index of URLs.
+That is the correct button. Chrome 130 renamed the old "Save all as HAR with content";
+if you are looking for that label you will not find it.
 
-Firefox: right-click → *Save All As HAR*. Safari: enable the Develop menu, then
-*Export HAR* from the Network tab's export button.
+**Sanitized only strips headers** — `Cookie`, `Set-Cookie`, `Authorization`. Response
+bodies are fully included, which is the only part we need. There is also an
+"Export HAR (with sensitive data)" variant behind
+*Settings → Preferences → Network → Allow to generate HAR with sensitive data*, then a
+long-press on the Export button. **Do not use it.** It exists for debugging auth
+failures and it would put your session tokens in the file for no benefit.
+
+Firefox: gear icon → *Save All As HAR*. Safari: enable the Develop menu, then export
+from the Network tab.
 
 Expect 5–50 MB. That's fine, it's a working file and never gets committed.
 
@@ -93,11 +100,23 @@ normal `validate.py` / `build_index.py` cycle applies.
 
 ---
 
+## If scan_har.py comes up empty
+
+DevTools drops response bodies for very large resources once its buffer fills, so the
+payload can be listed in the HAR with no `content.text`. Grab that one request directly
+instead: sort the Network list by **Size** descending, find the outlier, right-click →
+**Copy → Copy response**, paste into a file, and run `probe_json.py` on that.
+
+Other causes, in order of likelihood: *Disable cache* was not ticked; the export
+happened before the course finished loading; the quiz was never opened.
+
 ## Security
 
-**HAR files contain your session cookies and bearer tokens.** Anyone with the HAR can
-log in as you until those expire. `*.har` is in `.gitignore`. Keep them local, delete
-them once the payload is extracted, and never attach one to an issue or a chat.
+Sanitized HAR export strips `Cookie`, `Set-Cookie` and `Authorization` headers, so a
+sanitized file is not a session-hijacking risk. It can still contain account
+identifiers, request bodies and response bodies with personal data. `*.har` is in
+`.gitignore` regardless — HARs are working files, not artifacts. Delete them once the
+payload is extracted.
 
 ---
 
