@@ -52,9 +52,31 @@ def main() -> int:
     ap.add_argument("--origin", action="append", default=[], help="hostname to extract (repeatable)")
     ap.add_argument("--out", default="chunks")
     ap.add_argument("--all-types", action="store_true", help="extract every response, not just JS/CSS/JSON")
+    ap.add_argument("--show-raw", metavar="TEXT",
+                    help="print the raw bytes of the HAR file around the first occurrence "
+                         "of TEXT, exactly as stored. Shows the JSON escaping for yourself.")
     args = ap.parse_args()
 
-    har = json.loads(pathlib.Path(args.har).read_text(encoding="utf-8", errors="replace"))
+    har_path = pathlib.Path(args.har)
+
+    if args.show_raw:
+        blob = har_path.read_bytes()
+        needle = args.show_raw.encode("utf-8")
+        at = blob.find(needle)
+        if at < 0:
+            print(f"{args.show_raw!r} not found as raw bytes.\n"
+                  "If it contains quotes, umlauts, dashes or curly quotes, the HAR stores "
+                  "them escaped (\\\" and \\uXXXX). Search a plain-ASCII fragment instead.",
+                  file=sys.stderr)
+            return 1
+        lo, hi = max(0, at - 220), min(len(blob), at + 520)
+        print(f"file: {har_path.name}   size: {len(blob):,} bytes   match at byte offset {at:,}\n")
+        print("--- raw bytes, verbatim ---")
+        print(blob[lo:hi].decode("utf-8", errors="replace"))
+        print("--- end ---")
+        return 0
+
+    har = json.loads(har_path.read_text(encoding="utf-8", errors="replace"))
     entries = har.get("log", {}).get("entries", [])
 
     if args.list:
