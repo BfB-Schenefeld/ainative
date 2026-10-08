@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/046"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/06-creating-an-ai-native-art-launch-plan"
+objective: "obj:art-leader-trainer-enablement/l6-o4"
+set: knowledge-check
+type: single-choice
+stem: "A leader is preparing to share the launch plan with teams and executives. Which approach best supports follow-through after class?"
+options:
+  - key: "a"
+    text: "Send the same summary to everyone without asking for a response"
+    correct: false
+    feedback: "Incorrect. Please review launch-plan audiences, communication formats, and requested responses in Lesson 6."
+  - key: "b"
+    text: "Name the people, format, and needed response, and plan communication, owner updates, and progress measures"
+    correct: true
+    feedback: "Correct. The sharing plan covers specific audiences and formats as well as communication, owner reporting, and measuring progress."
+  - key: "c"
+    text: "Share it only with action owners and avoid further communication"
+    correct: false
+    feedback: "Incorrect. Please review audience-specific sharing and ongoing launch-plan communication in Lesson 6."
+  - key: "d"
+    text: "Wait to communicate until every success factor has been implemented"
+    correct: false
+    feedback: "Incorrect. Please review owner updates and progress measures during implementation in Lesson 6."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0046"

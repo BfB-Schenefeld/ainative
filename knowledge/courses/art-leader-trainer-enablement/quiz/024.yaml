@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/024"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/03-cross-functional-ai-augmented-teams"
+objective: "obj:art-leader-trainer-enablement/l3-o4"
+set: knowledge-check
+type: single-choice
+stem: "After everyone rates the ART's assessment statements individually, what is the purpose of comparing results as a group?"
+options:
+  - key: "a"
+    text: "To check shared understanding and discuss differences in ratings"
+    correct: true
+    feedback: "Correct. Group discussion checks whether statements were understood alike and explores why ratings differ."
+  - key: "b"
+    text: "To replace individual ratings with the facilitator's score"
+    correct: false
+    feedback: "Incorrect. Please review individual assessment ratings and the facilitator's discussion role in Lesson 3."
+  - key: "c"
+    text: "To require every participant to choose the same rating"
+    correct: false
+    feedback: "Incorrect. Please review group discussion of differing assessment ratings in Lesson 3."
+  - key: "d"
+    text: "To skip discussion and average all ratings automatically"
+    correct: false
+    feedback: "Incorrect. Please review discussing rating differences rather than averaging scores in Lesson 3."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0024"

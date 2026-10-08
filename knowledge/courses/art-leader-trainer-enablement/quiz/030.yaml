@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/030"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/04-iterative-learning-and-rapid-experimentation-cycles"
+objective: "obj:art-leader-trainer-enablement/l4-o3"
+set: knowledge-check
+type: single-choice
+stem: "An experiment shows no measurable lift but exposes a flawed assumption shared by several teams. What is the best reason to raise it at Sense and Respond?"
+options:
+  - key: "a"
+    text: "It proves the teams should release the original feature unchanged"
+    correct: false
+    feedback: "Incorrect. Please review interpreting experiment results and challenging flawed assumptions in Lesson 4."
+  - key: "b"
+    text: "It is a significant shared insight that can inform a response across the ART"
+    correct: true
+    feedback: "Correct. Sense and Respond shares learning across the ART and aligns action on meaningful evidence."
+  - key: "c"
+    text: "It removes the need to inspect customer feedback or other metrics"
+    correct: false
+    feedback: "Incorrect. Please review combining experiment insights with customer feedback and data in Lesson 4."
+  - key: "d"
+    text: "It belongs only in a team backlog because it produced no lift"
+    correct: false
+    feedback: "Incorrect. Please review sharing significant cross-team insights at Sense and Respond in Lesson 4."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0030"

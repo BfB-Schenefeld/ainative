@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/041"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/06-creating-an-ai-native-art-launch-plan"
+objective: "obj:art-leader-trainer-enablement/l6-o1"
+set: knowledge-check
+type: single-choice
+stem: "Two assessment gaps can be addressed by one concrete change. How should the group represent that work in the launch plan?"
+options:
+  - key: "a"
+    text: "Create one specific action, link both gaps to it, and name an owner"
+    correct: true
+    feedback: "Correct. Multiple gaps can be added to one specific action, and each gap and action needs an owner."
+  - key: "b"
+    text: "Leave both gaps off the plan until the work is complete"
+    correct: false
+    feedback: "Incorrect. Please review documenting selected assessment gaps in the launch plan in Lesson 6."
+  - key: "c"
+    text: "Create two vague actions and assign ownership to the whole ART"
+    correct: false
+    feedback: "Incorrect. Please review specific launch-plan actions and named owners in Lesson 6."
+  - key: "d"
+    text: "Accept both gaps automatically because they share a cause"
+    correct: false
+    feedback: "Incorrect. Please review explicit gap decisions and acceptance in Lesson 6."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0041"

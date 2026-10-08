@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/038"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/05-development-and-innovation-at-scale"
+objective: "obj:art-leader-trainer-enablement/l5-o3"
+set: knowledge-check
+type: single-choice
+stem: "A portfolio sets AI risk limits, but teams' workflows have no permissions, approvals, or stop rules. What would make governance executable?"
+options:
+  - key: "a"
+    text: "Keep the limits at portfolio level and let every workflow interpret them"
+    correct: false
+    feedback: "Incorrect. Please review translating portfolio risk limits into workflow controls in Lesson 5."
+  - key: "b"
+    text: "Replace limits with a one-time statement of organizational values"
+    correct: false
+    feedback: "Incorrect. Please review executable governance, permissions, and approvals in Lesson 5."
+  - key: "c"
+    text: "Translate boundaries into workflow permissions, approvals, evidence, and stopping rules"
+    correct: true
+    feedback: "Correct. Workflow controls make portfolio risk tolerance and shared standards actionable, with evidence and recovery paths."
+  - key: "d"
+    text: "Allow agents to set their own authority as they gain experience"
+    correct: false
+    feedback: "Incorrect. Please review agent authority and workflow stopping rules in Lesson 5."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0038"

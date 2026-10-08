@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/019"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/03-cross-functional-ai-augmented-teams"
+objective: "obj:art-leader-trainer-enablement/l3-o2"
+set: knowledge-check
+type: single-choice
+stem: "Which set names the four capabilities an AI-Native Team brings to its work?"
+options:
+  - key: "a"
+    text: "Product, Portfolio, Operations, and AI"
+    correct: false
+    feedback: "Incorrect. Please review the Product, Builder, Domain Expert, and AI capabilities in Lesson 3."
+  - key: "b"
+    text: "Product, Builder, Domain Expert, and AI"
+    correct: true
+    feedback: "Correct. AI-Native Teams combine Product, Builder, Domain Expert, and AI capabilities, which may be shared across the team."
+  - key: "c"
+    text: "Product, Scrum Master, Developer, and Subject Matter Expert"
+    correct: false
+    feedback: "Incorrect. Please review team capabilities versus job roles in Lesson 3."
+  - key: "d"
+    text: "Builder, Data Steward, RTE, and AI"
+    correct: false
+    feedback: "Incorrect. Please review the Product, Builder, Domain Expert, and AI capabilities in Lesson 3."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0019"

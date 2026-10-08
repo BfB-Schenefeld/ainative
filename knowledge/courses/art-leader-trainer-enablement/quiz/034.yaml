@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/034"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/05-development-and-innovation-at-scale"
+objective: "obj:art-leader-trainer-enablement/l5-o1"
+set: knowledge-check
+type: single-choice
+stem: "A team knows the product goal but needs details both people and AI agents can build from. What should its specifications provide?"
+options:
+  - key: "a"
+    text: "The customer, market, and operating environment"
+    correct: false
+    feedback: "Incorrect. Please review product context and specification details in Lesson 5."
+  - key: "b"
+    text: "The outcome's purpose and strategic reason"
+    correct: false
+    feedback: "Incorrect. Please review product intent versus specifications in Lesson 5."
+  - key: "c"
+    text: "What the solution does and the boundaries it must respect"
+    correct: true
+    feedback: "Correct. Specifications describe functionality and policy limits in detail people and AI agents can build from."
+  - key: "d"
+    text: "A record of which model and data version were used"
+    correct: false
+    feedback: "Incorrect. Please review audit evidence and product specifications in Lesson 5."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0034"

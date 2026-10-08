@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/023"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/03-cross-functional-ai-augmented-teams"
+objective: "obj:art-leader-trainer-enablement/l3-o4"
+set: knowledge-check
+type: single-choice
+stem: "When individually scoring an assessment statement for an ART, which rating choices are used?"
+options:
+  - key: "a"
+    text: "Ready, At Risk, or Blocked"
+    correct: false
+    feedback: "Incorrect. Please review the success-factor assessment's in-place rating scale in Lesson 3."
+  - key: "b"
+    text: "High, Medium, or Low"
+    correct: false
+    feedback: "Incorrect. Please review ratings for whether success factors are in place in Lesson 3."
+  - key: "c"
+    text: "Agree, Disagree, or Unsure"
+    correct: false
+    feedback: "Incorrect. Please review the success-factor assessment scale in Lesson 3."
+  - key: "d"
+    text: "Fully in place, Partially in place, or Not in place"
+    correct: true
+    feedback: "Correct. Each assessment statement is rated Fully in place, Partially in place, or Not in place."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0023"

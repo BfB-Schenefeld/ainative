@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/002"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/01-introducing-ai-native-safe"
+objective: "obj:art-leader-trainer-enablement/l1-o1"
+set: knowledge-check
+type: single-choice
+stem: "Teams are adopting AI independently, with little connection to the organization’s products or ways of working. Which response best reflects the course’s case for a framework?"
+options:
+  - key: "a"
+    text: "Expand each team’s experiments without changing shared practices"
+    correct: false
+    feedback: "Incorrect. Please review shared practices and the AI-Native operating model in Lesson 1."
+  - key: "b"
+    text: "Use proven patterns to connect AI adoption to products and organizational ways of working"
+    correct: true
+    feedback: "Correct. The framework connects AI with products, ways of working, and mindset to amplify value."
+  - key: "c"
+    text: "Pause all AI work until every team can use the same model"
+    correct: false
+    feedback: "Incorrect. Please review proven patterns for AI adoption in Lesson 1."
+  - key: "d"
+    text: "Focus on buying more compute before defining how AI creates value"
+    correct: false
+    feedback: "Incorrect. Please review connecting AI adoption to products and value in Lesson 1."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0002"

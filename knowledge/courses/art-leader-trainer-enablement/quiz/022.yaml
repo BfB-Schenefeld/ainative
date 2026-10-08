@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/022"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/03-cross-functional-ai-augmented-teams"
+objective: "obj:art-leader-trainer-enablement/l3-o3"
+set: knowledge-check
+type: single-choice
+stem: "Who is a plausible candidate to step into the AI Value Architect role?"
+options:
+  - key: "a"
+    text: "A newly hired specialist who has not led change in the organization"
+    correct: false
+    feedback: "Incorrect. Please review AI Value Architect candidates and existing change leadership in Lesson 3."
+  - key: "b"
+    text: "An existing change leader such as an RTE, System Architect, or Product Manager"
+    correct: true
+    feedback: "Correct. RTEs, System Architects, Product Management, SPCs, and Scrum Masters or Team Coaches are common starting points."
+  - key: "c"
+    text: "Only a dedicated AI engineer who owns model development"
+    correct: false
+    feedback: "Incorrect. Please review the AI Value Architect's broader change role across teams and ARTs in Lesson 3."
+  - key: "d"
+    text: "A portfolio executive who does not work with ART teams"
+    correct: false
+    feedback: "Incorrect. Please review how AI Value Architects support teams and ART AI initiatives in Lesson 3."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0022"

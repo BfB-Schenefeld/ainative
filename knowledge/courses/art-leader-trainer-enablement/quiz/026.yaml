@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/026"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/04-iterative-learning-and-rapid-experimentation-cycles"
+objective: "obj:art-leader-trainer-enablement/l4-o1"
+set: knowledge-check
+type: single-choice
+stem: "A roadmap must guide teams while leaving room to change the solution as they learn. What approach fits best?"
+options:
+  - key: "a"
+    text: "List fixed feature commitments and lock in their solutions early"
+    correct: false
+    feedback: "Incorrect. Please review outcome-driven roadmaps and adapting solutions as assumptions change in Lesson 4."
+  - key: "b"
+    text: "Describe intended outcomes and treat the roadmap as a rolling forecast"
+    correct: true
+    feedback: "Correct. An outcome-driven roadmap expresses intended business and customer outcomes and adapts as learning resolves."
+  - key: "c"
+    text: "Replace longer-term direction with a list of sprint tasks"
+    correct: false
+    feedback: "Incorrect. Please review how rolling roadmaps connect the ART's direction to its vision in Lesson 4."
+  - key: "d"
+    text: "Set feature release dates that cannot change when assumptions change"
+    correct: false
+    feedback: "Incorrect. Please review rolling forecasts and roadmap adaptation to new learning in Lesson 4."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0026"

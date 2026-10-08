@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/018"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/03-cross-functional-ai-augmented-teams"
+objective: "obj:art-leader-trainer-enablement/l3-o1"
+set: knowledge-check
+type: single-choice
+stem: "Why does an AI-Native ART use cadence-based events when teams can move quickly and independently?"
+options:
+  - key: "a"
+    text: "To require every team to wait for approval before beginning an experiment"
+    correct: false
+    feedback: "Incorrect. Please review cadence, governance, and shared learning in Lesson 3."
+  - key: "b"
+    text: "To prevent teams from making changes between planning events"
+    correct: false
+    feedback: "Incorrect. Please review cadence, ART learning, and dependency management in Lesson 3."
+  - key: "c"
+    text: "To support governance and shared learning before local decisions and dependencies accumulate"
+    correct: true
+    feedback: "Correct. Cadence helps fast-moving teams govern work and learn collectively before local decisions and dependencies build up."
+  - key: "d"
+    text: "To ensure that governance, ethics, and responsible AI usage are being rigidly enforced across the organization"
+    correct: false
+    feedback: "Incorrect. Please review shared governance and responsible AI learning in Lesson 3."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0018"

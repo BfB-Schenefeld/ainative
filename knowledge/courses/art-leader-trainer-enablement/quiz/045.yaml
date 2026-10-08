@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/045"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/06-creating-an-ai-native-art-launch-plan"
+objective: "obj:art-leader-trainer-enablement/l6-o3"
+set: knowledge-check
+type: single-choice
+stem: "During the confidence check, one participant shows three fingers. What should happen before the plan moves forward?"
+options:
+  - key: "a"
+    text: "The group proceeds because three indicates majority support"
+    correct: false
+    feedback: "Incorrect. Please review the three-or-below explanation threshold in the fist-of-five check in Lesson 6."
+  - key: "b"
+    text: "The participant explains the concern, and the group considers it"
+    correct: true
+    feedback: "Correct. The activity calls for anyone at three or below to explain why before the plan proceeds."
+  - key: "c"
+    text: "The facilitator removes that person's actions from the plan"
+    correct: false
+    feedback: "Incorrect. Please review discussing confidence concerns without removing launch-plan actions in Lesson 6."
+  - key: "d"
+    text: "The participant must raise their rating to five"
+    correct: false
+    feedback: "Incorrect. Please review explaining low confidence rather than changing a fist-of-five rating in Lesson 6."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0045"

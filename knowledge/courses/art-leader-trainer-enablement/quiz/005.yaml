@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/005"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/01-introducing-ai-native-safe"
+objective: "obj:art-leader-trainer-enablement/l1-o3"
+set: knowledge-check
+type: single-choice
+stem: "A team has agreed on some working agreements, but important agreements are still missing. Which assessment rating best fits?"
+options:
+  - key: "a"
+    text: "Fully in place"
+    correct: false
+    feedback: "Incorrect. Please review the assessment ratings and what fully in place means in Lesson 1."
+  - key: "b"
+    text: "Partially in place"
+    correct: true
+    feedback: "Correct. Partially in place fits a statement that has been addressed but is not fully established."
+  - key: "c"
+    text: "Not in place"
+    correct: false
+    feedback: "Incorrect. Please review the difference between partially in place and not in place in Lesson 1."
+  - key: "d"
+    text: "Ready for launch"
+    correct: false
+    feedback: "Incorrect. Please review the three assessment ratings in Lesson 1."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0005"

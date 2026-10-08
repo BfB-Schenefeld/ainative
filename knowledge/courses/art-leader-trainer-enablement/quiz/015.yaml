@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/015"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/02-optimized-for-outcome-driven-flow"
+objective: "obj:art-leader-trainer-enablement/l2-o4"
+set: knowledge-check
+type: single-choice
+stem: "A data source is accurate and available, but the information is outdated. Which curation quality is missing?"
+options:
+  - key: "a"
+    text: "Completeness"
+    correct: false
+    feedback: "Incorrect. Please review data completeness versus maintenance in Lesson 2."
+  - key: "b"
+    text: "Accuracy"
+    correct: false
+    feedback: "Incorrect. Please review accuracy, trustworthy information, and data maintenance in Lesson 2."
+  - key: "c"
+    text: "Maintenance"
+    correct: true
+    feedback: "Correct. Maintained data stays current, so outdated information indicates a maintenance gap."
+  - key: "d"
+    text: "Secure access"
+    correct: false
+    feedback: "Incorrect. Please review secure access versus data maintenance in Lesson 2."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0015"

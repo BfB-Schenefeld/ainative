@@ -1,0 +1,28 @@
+{
+  "har": "capture.har",
+  "origins": [
+    "art-leader-trainer-enablement.scaledagile.com"
+  ],
+  "assets": [
+    {
+      "url": "https://art-leader-trainer-enablement.scaledagile.com/assets/index-D1iRUco4.js",
+      "filename": "index-D1iRUco4.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "started": "2026-10-08T10:27:34.739Z",
+      "body_present": true,
+      "bytes": 1211928,
+      "sha256": "f347ea6896284f0403f5ecd3cce529c7d5be46891410324756e9072607e14f01"
+    },
+    {
+      "url": "https://art-leader-trainer-enablement.scaledagile.com/assets/index-D2c-WIkB.css",
+      "filename": "index-D2c-WIkB.css",
+      "status": 200,
+      "mime": "text/css",
+      "started": "2026-10-08T10:27:34.739Z",
+      "body_present": true,
+      "bytes": 122855,
+      "sha256": "8dc93e3189a670726752cadde0f4a84501bf692772fa7f449e5a518c0a4d3b0f"
+    }
+  ]
+}

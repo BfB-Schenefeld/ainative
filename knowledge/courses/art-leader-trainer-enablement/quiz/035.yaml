@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/035"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/05-development-and-innovation-at-scale"
+objective: "obj:art-leader-trainer-enablement/l5-o2"
+set: knowledge-check
+type: single-choice
+stem: "Which sequence describes the AI Innovation Pipeline from a problem worth addressing through delivery?"
+options:
+  - key: "a"
+    text: "Specify, Discover, Build, Release, Validate"
+    correct: false
+    feedback: "Incorrect. Please review the pipeline order: Discover, Specify, Build, Validate, Release in Lesson 5."
+  - key: "b"
+    text: "Discover, Build, Specify, Validate, Release"
+    correct: false
+    feedback: "Incorrect. Please review specification before building in the AI Innovation Pipeline in Lesson 5."
+  - key: "c"
+    text: "Build, Specify, Discover, Release, Validate"
+    correct: false
+    feedback: "Incorrect. Please review discovery, specification, and validation-before-release in Lesson 5."
+  - key: "d"
+    text: "Discover, Specify, Build, Validate, Release"
+    correct: true
+    feedback: "Correct. The pipeline discovers a problem, specifies acceptable results and limits, builds, validates evidence, and releases."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0035"

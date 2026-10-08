@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/042"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/06-creating-an-ai-native-art-launch-plan"
+objective: "obj:art-leader-trainer-enablement/l6-o1"
+set: knowledge-check
+type: single-choice
+stem: "A draft launch plan has been assembled from gap decisions. What should the group do before finalizing its adjustments?"
+options:
+  - key: "a"
+    text: "Review it only for activities already completed"
+    correct: false
+    feedback: "Incorrect. Please review checking the draft launch plan for gaps, risks, and opportunities in Lesson 6."
+  - key: "b"
+    text: "Look for missing items, risks, and opportunities, then agree on changes"
+    correct: true
+    feedback: "Correct. The group reviews the draft for these findings, discusses them, and adjusts the plan to resolve outstanding items."
+  - key: "c"
+    text: "Remove actions that do not fit before the first event"
+    correct: false
+    feedback: "Incorrect. Please review sequencing launch-plan actions around the ART events in Lesson 6."
+  - key: "d"
+    text: "Treat the draft as final so the sequence cannot change"
+    correct: false
+    feedback: "Incorrect. Please review reviewing and adjusting the draft launch plan in Lesson 6."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0042"

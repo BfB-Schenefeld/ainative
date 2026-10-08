@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/033"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/05-development-and-innovation-at-scale"
+objective: "obj:art-leader-trainer-enablement/l5-o1"
+set: knowledge-check
+type: single-choice
+stem: "An AI agent produces irrelevant work because it lacks the purpose behind a product outcome. Which shared foundation should clarify that purpose?"
+options:
+  - key: "a"
+    text: "Product context describing the environment"
+    correct: false
+    feedback: "Incorrect. Please review product context versus product intent in Lesson 5."
+  - key: "b"
+    text: "Product intent describing the underlying why"
+    correct: true
+    feedback: "Correct. Intent makes the purpose behind an outcome specific and gives people and AI a shared reason for decisions."
+  - key: "c"
+    text: "Policy specifications defining limits"
+    correct: false
+    feedback: "Incorrect. Please review policy boundaries versus product intent in Lesson 5."
+  - key: "d"
+    text: "Audit evidence describing past decisions"
+    correct: false
+    feedback: "Incorrect. Please review audit evidence and product intent in Lesson 5."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0033"

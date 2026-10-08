@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/013"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/02-optimized-for-outcome-driven-flow"
+objective: "obj:art-leader-trainer-enablement/l2-o3"
+set: knowledge-check
+type: single-choice
+stem: "An ART’s AI inference usage varies from week to week. Which portfolio approach best fits this cost pattern?"
+options:
+  - key: "a"
+    text: "Set a fixed annual amount and review usage only during annual planning"
+    correct: false
+    feedback: "Incorrect. Please review variable AI costs and continuous usage monitoring in Lesson 2."
+  - key: "b"
+    text: "Separate fixed and variable costs, set spend limits, and monitor usage continuously"
+    correct: true
+    feedback: "Correct. The course calls for guardrails that distinguish fixed and variable costs and continuously monitor AI spend."
+  - key: "c"
+    text: "Treat all AI compute as a fixed cost and stop tracking it after approval"
+    correct: false
+    feedback: "Incorrect. Please review fixed versus variable AI costs and spend monitoring in Lesson 2."
+  - key: "d"
+    text: "Increase the budget whenever usage rises without setting cost guardrails"
+    correct: false
+    feedback: "Incorrect. Please review spend limits and continuous AI cost monitoring in Lesson 2."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0013"

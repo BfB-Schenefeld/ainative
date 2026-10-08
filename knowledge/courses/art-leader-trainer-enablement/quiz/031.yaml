@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/031"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/04-iterative-learning-and-rapid-experimentation-cycles"
+objective: "obj:art-leader-trainer-enablement/l4-o4"
+set: knowledge-check
+type: single-choice
+stem: "Which rating scale is used when evaluating each ART success-factor statement?"
+options:
+  - key: "a"
+    text: "Complete, In Progress, or Deferred"
+    correct: false
+    feedback: "Incorrect. Please review the success-factor assessment's in-place rating scale in Lesson 4."
+  - key: "b"
+    text: "Exceeds, Meets, or Falls Short"
+    correct: false
+    feedback: "Incorrect. Please review the three in-place ratings for ART success factors in Lesson 4."
+  - key: "c"
+    text: "Fully in place, Partially in place, or Not in place"
+    correct: true
+    feedback: "Correct. Each statement is evaluated as Fully in place, Partially in place, or Not in place."
+  - key: "d"
+    text: "Agree, Neutral, or Disagree"
+    correct: false
+    feedback: "Incorrect. Please review assessing the ART's current state with in-place ratings in Lesson 4."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0031"

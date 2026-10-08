@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/040"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/05-development-and-innovation-at-scale"
+objective: "obj:art-leader-trainer-enablement/l5-o4"
+set: knowledge-check
+type: single-choice
+stem: "Two participants rate the same success-factor statement differently. What should the group do before they adjust their individual assessments?"
+options:
+  - key: "a"
+    text: "Take a majority vote and require everyone to use that rating"
+    correct: false
+    feedback: "Incorrect. Please review discussing different success factor ratings without forcing agreement in Lesson 5."
+  - key: "b"
+    text: "Keep the original ratings without discussing them"
+    correct: false
+    feedback: "Incorrect. Please review comparing interpretations and discussing assessment differences in Lesson 5."
+  - key: "c"
+    text: "Check whether they understood the statement the same way, then discuss their reasons"
+    correct: true
+    feedback: "Correct. The group first checks shared understanding, discusses differences, and participants can then reconsider their own evaluations."
+  - key: "d"
+    text: "Replace the statement with a new success factor"
+    correct: false
+    feedback: "Incorrect. Please review interpreting existing critical success factor statements in Lesson 5."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0040"

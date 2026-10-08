@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/025"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/04-iterative-learning-and-rapid-experimentation-cycles"
+objective: "obj:art-leader-trainer-enablement/l4-o1"
+set: knowledge-check
+type: single-choice
+stem: "Which combination best describes what informs and anchors an effective product vision?"
+options:
+  - key: "a"
+    text: "Team capacity, feature estimates, and fixed release dates"
+    correct: false
+    feedback: "Incorrect. Please review customer insight, portfolio strategy, and technology foundations for product vision in Lesson 4."
+  - key: "b"
+    text: "Customer feedback, portfolio outcomes, and technology and architecture"
+    correct: true
+    feedback: "Correct. User feedback and customer insights inform the vision, portfolio outcomes align it with strategy, and technology and architecture anchor it."
+  - key: "c"
+    text: "Current sprint tasks, team velocity, and an implementation design"
+    correct: false
+    feedback: "Incorrect. Please review product vision inputs and its strategic, architectural anchors in Lesson 4."
+  - key: "d"
+    text: "A feature backlog, delivery milestones, and team-level output targets"
+    correct: false
+    feedback: "Incorrect. Please review product vision's customer data, strategy, and technology foundations in Lesson 4."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0025"

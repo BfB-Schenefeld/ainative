@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/012"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/02-optimized-for-outcome-driven-flow"
+objective: "obj:art-leader-trainer-enablement/l2-o2"
+set: knowledge-check
+type: single-choice
+stem: "How do portfolio OKRs help align work across portfolio, ART, and team levels?"
+options:
+  - key: "a"
+    text: "They replace ART outcomes with a single portfolio feature list"
+    correct: false
+    feedback: "Incorrect. Please review how portfolio OKRs inform ART outcomes in Lesson 2."
+  - key: "b"
+    text: "They inform ART outcomes and help teams connect contributions to broader goals"
+    correct: true
+    feedback: "Correct. Portfolio outcomes provide context for ART outcomes and help align contributions and decisions at lower levels."
+  - key: "c"
+    text: "They replace WSJF and allow teams to set priorities without considering portfolio outcomes"
+    correct: false
+    feedback: "Incorrect. Please review portfolio alignment, ART outcomes, and prioritization methods in Lesson 2."
+  - key: "d"
+    text: "They keep strategy at the portfolio level so it does not affect ART decisions or team commitments"
+    correct: false
+    feedback: "Incorrect. Please review connecting portfolio outcomes to ART decisions and team contributions in Lesson 2."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0012"

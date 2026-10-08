@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/027"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/04-iterative-learning-and-rapid-experimentation-cycles"
+objective: "obj:art-leader-trainer-enablement/l4-o2"
+set: knowledge-check
+type: single-choice
+stem: "What is PI Outcome Planning designed to accomplish?"
+options:
+  - key: "a"
+    text: "Assign detailed feature work to teams for the entire PI"
+    correct: false
+    feedback: "Incorrect. Please review PI outcomes versus detailed feature work breakdowns in Lesson 4."
+  - key: "b"
+    text: "Finalize all solutions before teams can consider new evidence"
+    correct: false
+    feedback: "Incorrect. Please review testing and refining draft outcomes through learning in Lesson 4."
+  - key: "c"
+    text: "Align and commit to PI outcomes, team outcomes, and milestones that form an executable plan"
+    correct: true
+    feedback: "Correct. The event aligns PI outcomes, develops team contributions, and identifies milestones for an executable plan."
+  - key: "d"
+    text: "Replace ART outcomes with individual team backlogs"
+    correct: false
+    feedback: "Incorrect. Please review how team outcomes contribute to ART-level PI outcomes in Lesson 4."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0027"

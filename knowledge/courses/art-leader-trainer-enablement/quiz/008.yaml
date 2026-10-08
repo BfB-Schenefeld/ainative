@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/008"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/01-introducing-ai-native-safe"
+objective: "obj:art-leader-trainer-enablement/l1-o4"
+set: knowledge-check
+type: single-choice
+stem: "After the assessment, an ART has several gaps. What is the intended next step for turning them into a launch plan?"
+options:
+  - key: "a"
+    text: "Keep the ratings as a record and assign actions after launch, to make use of rapid learning cycles"
+    correct: false
+    feedback: "Incorrect. Please review turning assessment gaps into sequenced launch-plan actions in Lesson 1."
+  - key: "b"
+    text: "Resolve the gaps into planned actions and sequence them around upcoming ART events"
+    correct: true
+    feedback: "Correct. Gaps inform actions that are placed before PI Outcome Planning, before Sense and Respond, or after both."
+  - key: "c"
+    text: "Treat every gap as a reason to delay all AI work indefinitely"
+    correct: false
+    feedback: "Incorrect. Please review using assessment gaps to create a sequenced launch plan in Lesson 1."
+  - key: "d"
+    text: "Convert every gap directly into a fixed feature for the next PI"
+    correct: false
+    feedback: "Incorrect. Please review launch-plan actions and sequencing; gaps are not always PI features in Lesson 1."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0008"

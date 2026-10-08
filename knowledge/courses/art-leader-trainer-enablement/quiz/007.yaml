@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/007"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/01-introducing-ai-native-safe"
+objective: "obj:art-leader-trainer-enablement/l1-o4"
+set: knowledge-check
+type: single-choice
+stem: "An assessment identifies a gap that would prevent a successful PI Outcome Planning event. Where should it be placed in the launch plan?"
+options:
+  - key: "a"
+    text: "After both PI Outcome Planning and Sense and Respond"
+    correct: false
+    feedback: "Incorrect. Please review sequencing launch-plan actions around PI Outcome Planning and Sense and Respond in Lesson 1."
+  - key: "b"
+    text: "Before the first Sense and Respond event"
+    correct: false
+    feedback: "Incorrect. Please review the event sequence and addressing blockers before PI Outcome Planning in Lesson 1."
+  - key: "c"
+    text: "Before the first PI Outcome Planning event"
+    correct: true
+    feedback: "Correct. Launch plan actions are sequenced in relation to PI Outcome Planning and Sense and Respond."
+  - key: "d"
+    text: "In an unsequenced list for the ART to revisit after launch"
+    correct: false
+    feedback: "Incorrect. Please review launch-plan timing around PI Outcome Planning and Sense and Respond in Lesson 1."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0007"

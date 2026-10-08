@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/014"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/02-optimized-for-outcome-driven-flow"
+objective: "obj:art-leader-trainer-enablement/l2-o4"
+set: knowledge-check
+type: single-choice
+stem: "Which set contains all four qualities used to judge whether data is curated?"
+options:
+  - key: "a"
+    text: "Complete, accurate, maintained, and securely accessed"
+    correct: true
+    feedback: "Correct. The four core qualities are complete, accurate, maintained, and securely accessed."
+  - key: "b"
+    text: "Available, popular, recent, and easy to export"
+    correct: false
+    feedback: "Incorrect. Please review completeness, accuracy, maintenance, and secure access in Lesson 2."
+  - key: "c"
+    text: "Complete, inexpensive, automated, and widely shared"
+    correct: false
+    feedback: "Incorrect. Please review secure access in data curation in Lesson 2."
+  - key: "d"
+    text: "Accurate, approved, duplicated, and publicly accessible"
+    correct: false
+    feedback: "Incorrect. Please review maintained data and secure access as curation qualities in Lesson 2."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0014"

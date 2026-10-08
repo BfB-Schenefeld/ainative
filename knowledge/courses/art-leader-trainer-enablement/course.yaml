@@ -1,0 +1,145 @@
+# yaml-language-server: $schema=../../../schemas/course.schema.json
+id: "course:scaledagile/art-leader-trainer-enablement"
+title: "AI-Native ART Leader Trainer Enablement"
+provider: "provider:scaledagile"
+kind: certification-course
+language: en
+url: "https://art-leader-trainer-enablement.scaledagile.com/assets/index-D1iRUco4.js"
+delivery: spa
+
+objectives:
+  - id: "obj:art-leader-trainer-enablement/l1-o1"
+    text: "Explain why organizations need a proven framework to succeed with AI"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0048"
+  - id: "obj:art-leader-trainer-enablement/l1-o2"
+    text: "Describe the four Lean-Agile shifts and the 12 critical success factors of AI-Native SAFe"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0049"
+  - id: "obj:art-leader-trainer-enablement/l1-o3"
+    text: "Familiarize yourself with the AI-Native ART Launch Readiness Assessment rating scale"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0050"
+  - id: "obj:art-leader-trainer-enablement/l1-o4"
+    text: "Understand how assessment gaps translate into a sequenced launch plan"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0051"
+  - id: "obj:art-leader-trainer-enablement/l2-o1"
+    text: "Explain the outcome-driven product development cycle adopted by AI-Native ARTs"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0052"
+  - id: "obj:art-leader-trainer-enablement/l2-o2"
+    text: "Evaluate if an OKR is well-formed, and recognize how OKRs align your organization at every level"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0053"
+  - id: "obj:art-leader-trainer-enablement/l2-o3"
+    text: "Recognize why AI compute costs need ongoing management instead of fixed budgeting"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0054"
+  - id: "obj:art-leader-trainer-enablement/l2-o4"
+    text: "Explore the concept of curated data and judge whether a data source meets the four qualities of curated data"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0055"
+  - id: "obj:art-leader-trainer-enablement/l2-o5"
+    text: "Score your organization against the critical success factors"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0056"
+  - id: "obj:art-leader-trainer-enablement/l3-o1"
+    text: "Recognize the six characteristics of an AI-Native ART, and how they shape your launch plan"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0057"
+  - id: "obj:art-leader-trainer-enablement/l3-o2"
+    text: "Describe how AI-Native Teams combine capabilities and align, sense, and respond activities to drive learning"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0058"
+  - id: "obj:art-leader-trainer-enablement/l3-o3"
+    text: "Describe the AI Value Architect's five areas of responsibility, and identify who might step into the role"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0059"
+  - id: "obj:art-leader-trainer-enablement/l3-o4"
+    text: "Score your organization against the critical success factors"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0060"
+  - id: "obj:art-leader-trainer-enablement/l4-o1"
+    text: "Explain how product vision and outcome-driven roadmaps set direction without fixing output"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0061"
+  - id: "obj:art-leader-trainer-enablement/l4-o2"
+    text: "Describe the PI Outcome Planning event and how the ART commits to outcomes"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0062"
+  - id: "obj:art-leader-trainer-enablement/l4-o3"
+    text: "Describe how Sense and Respond events turn evidence into action"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0063"
+  - id: "obj:art-leader-trainer-enablement/l4-o4"
+    text: "Score your organization against the critical success factors"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0064"
+  - id: "obj:art-leader-trainer-enablement/l5-o1"
+    text: "Explain how intent, specifications, and context give teams and AI agents a shared foundation"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0065"
+  - id: "obj:art-leader-trainer-enablement/l5-o2"
+    text: "Describe how the AI Innovation Pipeline turns outcomes into real value"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0066"
+  - id: "obj:art-leader-trainer-enablement/l5-o3"
+    text: "Recognize what responsible AI requires of an ART's governance and ethics"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0067"
+  - id: "obj:art-leader-trainer-enablement/l5-o4"
+    text: "Score your organization against the critical success factors"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0068"
+  - id: "obj:art-leader-trainer-enablement/l6-o1"
+    text: "Resolve gaps from your assessment into specific, owned actions"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0069"
+  - id: "obj:art-leader-trainer-enablement/l6-o2"
+    text: "Build a launch plan that sequences these actions before PI Outcome Planning, before Sense and Respond, or after both"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0070"
+  - id: "obj:art-leader-trainer-enablement/l6-o3"
+    text: "Commit to the plan as a group"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0071"
+  - id: "obj:art-leader-trainer-enablement/l6-o4"
+    text: "Discuss how you will share your plan and prepare for what happens after this class"
+    sources:
+      - "src:2026-10-08/art-leader-trainer-enablement#b0072"
+
+lessons:
+  - id: "lesson:scaledagile/art-leader-trainer-enablement/01-introducing-ai-native-safe"
+    order: 1
+    title: "Introducing AI-Native SAFe"
+    capture_status: partial
+    file: "lessons/01-introducing-ai-native-safe.md"
+  - id: "lesson:scaledagile/art-leader-trainer-enablement/02-optimized-for-outcome-driven-flow"
+    order: 2
+    title: "Optimized for outcome-driven flow"
+    capture_status: partial
+    file: "lessons/02-optimized-for-outcome-driven-flow.md"
+  - id: "lesson:scaledagile/art-leader-trainer-enablement/03-cross-functional-ai-augmented-teams"
+    order: 3
+    title: "Cross-functional, AI-augmented teams"
+    capture_status: partial
+    file: "lessons/03-cross-functional-ai-augmented-teams.md"
+  - id: "lesson:scaledagile/art-leader-trainer-enablement/04-iterative-learning-and-rapid-experimentation-cycles"
+    order: 4
+    title: "Iterative learning and rapid experimentation cycles"
+    capture_status: partial
+    file: "lessons/04-iterative-learning-and-rapid-experimentation-cycles.md"
+  - id: "lesson:scaledagile/art-leader-trainer-enablement/05-development-and-innovation-at-scale"
+    order: 5
+    title: "Development and innovation at scale"
+    capture_status: partial
+    file: "lessons/05-development-and-innovation-at-scale.md"
+  - id: "lesson:scaledagile/art-leader-trainer-enablement/06-creating-an-ai-native-art-launch-plan"
+    order: 6
+    title: "Creating an AI-Native ART launch plan"
+    capture_status: partial
+    file: "lessons/06-creating-an-ai-native-art-launch-plan.md"
+
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0073"

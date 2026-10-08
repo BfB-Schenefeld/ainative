@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/001"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/01-introducing-ai-native-safe"
+objective: "obj:art-leader-trainer-enablement/l1-o1"
+set: knowledge-check
+type: single-choice
+stem: "An organization has many AI pilots but struggles to turn them into lasting value. What can a proven framework provide?"
+options:
+  - key: "a"
+    text: "A repeatable operating model that embeds AI in products, ways of working, and mindset"
+    correct: true
+    feedback: "Correct. AI-Native SAFe provides proven patterns for an operating model that embeds AI across the organization."
+  - key: "b"
+    text: "A fixed list of AI tools that every team must use for every product"
+    correct: false
+    feedback: "Incorrect. Please review the AI-Native operating model and proven patterns in Lesson 1."
+  - key: "c"
+    text: "A guarantee that each AI experiment will produce immediate financial returns"
+    correct: false
+    feedback: "Incorrect. Please review the framework’s role and expected outcomes in Lesson 1."
+  - key: "d"
+    text: "A way to replace customer outcomes with measures of model performance"
+    correct: false
+    feedback: "Incorrect. Please review customer value and business growth in Lesson 1."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0001"

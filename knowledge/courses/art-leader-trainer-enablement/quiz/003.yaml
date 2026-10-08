@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/003"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/01-introducing-ai-native-safe"
+objective: "obj:art-leader-trainer-enablement/l1-o2"
+set: knowledge-check
+type: single-choice
+stem: "Which set names the four critical Lean-Agile shifts introduced in the course?"
+options:
+  - key: "a"
+    text: "Portfolio alignment, quarterly budgeting, centralized governance, and model standardization"
+    correct: false
+    feedback: "Incorrect. Please review the four Lean-Agile shifts in Lesson 1."
+  - key: "b"
+    text: "Outcome-driven flow, AI-augmented teams, iterative learning and rapid experimentation, and development and innovation at scale"
+    correct: true
+    feedback: "Correct. These are the four shifts that frame the course’s 12 critical success factors."
+  - key: "c"
+    text: "Product vision, PI planning, data stewardship, and launch readiness assessment"
+    correct: false
+    feedback: "Incorrect. Please review outcome-driven flow, AI-augmented teams, experimentation, and innovation at scale in Lesson 1."
+  - key: "d"
+    text: "Customer research, feature delivery, annual planning, and technical modernization"
+    correct: false
+    feedback: "Incorrect. Please review the four Lean-Agile shifts in Lesson 1."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0003"

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/043"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/06-creating-an-ai-native-art-launch-plan"
+objective: "obj:art-leader-trainer-enablement/l6-o2"
+set: knowledge-check
+type: single-choice
+stem: "The group has agreed on a launch-plan sequence but has not set dates for its first two ART events. What should it do next?"
+options:
+  - key: "a"
+    text: "Set real dates for both events so the plan has deadlines"
+    correct: true
+    feedback: "Correct. The group agrees on dates for the first PI Outcome Planning and first Sense and Respond, giving the plan real deadlines."
+  - key: "b"
+    text: "Wait until every action has an owner before choosing either date"
+    correct: false
+    feedback: "Incorrect. Please review dates for PI Outcome Planning and Sense and Respond in Lesson 6."
+  - key: "c"
+    text: "Use the same date for both events to simplify the plan"
+    correct: false
+    feedback: "Incorrect. Please review assigning separate real dates to the first ART events in Lesson 6."
+  - key: "d"
+    text: "Replace the sequence with a list of actions without deadlines"
+    correct: false
+    feedback: "Incorrect. Please review event dates, action sequencing, and launch-plan deadlines in Lesson 6."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0043"

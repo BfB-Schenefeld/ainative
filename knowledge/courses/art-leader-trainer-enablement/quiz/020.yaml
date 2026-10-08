@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/020"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/03-cross-functional-ai-augmented-teams"
+objective: "obj:art-leader-trainer-enablement/l3-o2"
+set: knowledge-check
+type: single-choice
+stem: "A team reviews customer feedback, then changes its approach based on what it learned. Which sequence best describes these activities?"
+options:
+  - key: "a"
+    text: "Respond and Align"
+    correct: false
+    feedback: "Incorrect. Please review Sense activities and the Sense and Respond sequence in Lesson 3."
+  - key: "b"
+    text: "Align and Regroup"
+    correct: false
+    feedback: "Incorrect. Please review how teams sense feedback and respond by adapting in Lesson 3."
+  - key: "c"
+    text: "Sense and Align"
+    correct: false
+    feedback: "Incorrect. Please review the distinction between Sense and Respond activities in Lesson 3."
+  - key: "d"
+    text: "Sense and Respond"
+    correct: true
+    feedback: "Correct. Sense activities analyze customer feedback, and Respond activities adjust the team's approach."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0020"

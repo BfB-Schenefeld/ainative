@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/044"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/06-creating-an-ai-native-art-launch-plan"
+objective: "obj:art-leader-trainer-enablement/l6-o3"
+set: knowledge-check
+type: single-choice
+stem: "How does the group use a fist-of-five check before the launch plan is final?"
+options:
+  - key: "a"
+    text: "Each person signals confidence, and anyone at three or below explains why"
+    correct: true
+    feedback: "Correct. Everyone signals confidence; a rating of three or fewer prompts that person to explain before the plan moves forward."
+  - key: "b"
+    text: "Only the facilitator votes, and the group accepts the result"
+    correct: false
+    feedback: "Incorrect. Please review whole-group confidence signaling with fist-of-five in Lesson 6."
+  - key: "c"
+    text: "Everyone votes on the plan's cost, then the owner decides"
+    correct: false
+    feedback: "Incorrect. Please review fist-of-five confidence checks in Lesson 6."
+  - key: "d"
+    text: "Anyone below five is asked to revise their rating without discussion"
+    correct: false
+    feedback: "Incorrect. Please review the three-or-below discussion threshold in the fist-of-five check in Lesson 6."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0044"

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/004"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/01-introducing-ai-native-safe"
+objective: "obj:art-leader-trainer-enablement/l1-o2"
+set: knowledge-check
+type: single-choice
+stem: "How are the 12 critical success factors organized in relation to the four Lean-Agile shifts?"
+options:
+  - key: "a"
+    text: "Each success factor is an alternative to adopting one of the shifts"
+    correct: false
+    feedback: "Incorrect. Please review how the 12 success factors relate to the four shifts in Lesson 1."
+  - key: "b"
+    text: "The factors are grouped with the shifts they help an organization navigate"
+    correct: true
+    feedback: "Correct. The course groups the critical success factors under the four shifts."
+  - key: "c"
+    text: "Each shift is assessed using exactly one success factor"
+    correct: false
+    feedback: "Incorrect. Please review the 12 success factors grouped across four shifts in Lesson 1."
+  - key: "d"
+    text: "The factors apply only after an AI-Native ART has launched"
+    correct: false
+    feedback: "Incorrect. Please review using success factors to identify gaps and shape the launch plan in Lesson 1."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0004"

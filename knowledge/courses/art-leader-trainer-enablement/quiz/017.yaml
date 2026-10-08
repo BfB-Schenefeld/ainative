@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/017"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/03-cross-functional-ai-augmented-teams"
+objective: "obj:art-leader-trainer-enablement/l3-o1"
+set: knowledge-check
+type: single-choice
+stem: "Which ART structure best reflects the characteristic of organizing around products?"
+options:
+  - key: "a"
+    text: "Teams support one product or related products with clear customers and measurable outcomes"
+    correct: true
+    feedback: "Correct. Product organization creates focus around defined customers, a value proposition, and measurable outcomes."
+  - key: "b"
+    text: "Teams take infrastructure requests from other ARTs without defining a customer"
+    correct: false
+    feedback: "Incorrect. Please review product focus, defined customers, and value propositions in Lesson 3."
+  - key: "c"
+    text: "Teams are grouped by specialist function and receive work from a central queue"
+    correct: false
+    feedback: "Incorrect. Please review product-aligned ARTs and cross-functional organization in Lesson 3."
+  - key: "d"
+    text: "Teams focus on short-term features without a shared product value proposition"
+    correct: false
+    feedback: "Incorrect. Please review product value propositions and measurable outcomes in Lesson 3."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0017"

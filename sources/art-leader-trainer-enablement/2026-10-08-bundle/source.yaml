@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=../../../schemas/source.schema.json
+source_id: "src:2026-10-08/art-leader-trainer-enablement"
+provider: "provider:scaledagile"
+
+capture:
+  url: "https://art-leader-trainer-enablement.scaledagile.com/assets/index-D1iRUco4.js"
+  captured_at: "2026-10-08T10:27:34Z"
+  method: singlefile-html
+  tool_version: "extract_assets_from_har.py 0.1.0 (body taken from HAR, not re-downloaded)"
+  sha256: "f347ea6896284f0403f5ecd3cce529c7d5be46891410324756e9072607e14f01"
+  bytes: 1211928
+  captured_by: "Jörg Christoffers"
+
+coverage:
+  status: complete
+  contains:
+    - "47 knowledge-check items across 6 lessons, 4 options each"
+    - "Correct answer and per-option feedback for every option, right and wrong"
+    - "Each item linked to the lesson AND the specific learning objective it assesses"
+    - "Full curriculum: 6 lessons, the four shifts plus a workshop, 25 objectives"
+    - "26 sections and 58 facilitator activities with slide references and timings"
+  missing:
+    - "Slide content and activity prose — the bundle carries structure, not teaching copy"
+    - "Learner-entered responses (the app stores those in localStorage, not the bundle)"
+    - "The linked AI-Native ART Launch Readiness Assessment (separate app)"
+  notes: >-
+    Third bundle shape. Not code-split: one index-*.js of 1.2 MB holds the whole
+    course, and it is served from scaledagile.com itself rather than a replit host.
+    Quiz items key on `stem` instead of `question` and carry `lesson`, `lessonLabel`
+    and `objectiveId`, which is the first time questions link to objectives directly.
+
+    The six per-lesson banks are comma-chained const declarations with minified names
+    that change on every build, so extract_companion_app.py finds them by shape
+    rather than by name.
+
+    Body was lifted out of the HAR, so the sha256 is of the actually served bytes
+    and is verifiable.
+
+rights:
+  holder: "Scaled Agile, Inc."
+  basis: "Personal learner access to licensed training content"
+  redistribution: none
+
+derives:
+  - "course:scaledagile/art-leader-trainer-enablement"

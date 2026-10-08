@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/037"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/05-development-and-innovation-at-scale"
+objective: "obj:art-leader-trainer-enablement/l5-o3"
+set: knowledge-check
+type: single-choice
+stem: "An ART's usage-based AI costs are rising quickly. Which guardrails directly support controlling spend?"
+options:
+  - key: "a"
+    text: "Set one fixed budget and stop tracking usage"
+    correct: false
+    feedback: "Incorrect. Please review AI usage tracking and spend limits in Lesson 5."
+  - key: "b"
+    text: "Track consumption growth, set caps and alerts, and attribute costs"
+    correct: true
+    feedback: "Correct. These practices make cumulative AI spend visible and help keep it financially sustainable."
+  - key: "c"
+    text: "Allow each team to choose whether to report its costs"
+    correct: false
+    feedback: "Incorrect. Please review cost attribution and consistent AI spend reporting in Lesson 5."
+  - key: "d"
+    text: "Review costs only after the annual budget is exhausted"
+    correct: false
+    feedback: "Incorrect. Please review consumption growth, caps, and alerts in Lesson 5."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0037"

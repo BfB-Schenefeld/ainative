@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/021"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/03-cross-functional-ai-augmented-teams"
+objective: "obj:art-leader-trainer-enablement/l3-o3"
+set: knowledge-check
+type: single-choice
+stem: "An ART wants to adapt available AI tools to its workflows and keep teams current as models change. Which AI Value Architect responsibility fits best?"
+options:
+  - key: "a"
+    text: "Facilitating AI solution development"
+    correct: false
+    feedback: "Incorrect. Please review AI solution development and early constraint identification in Lesson 3."
+  - key: "b"
+    text: "Optimizing outcomes"
+    correct: false
+    feedback: "Incorrect. Please review measuring AI impact and improving customer outcomes in Lesson 3."
+  - key: "c"
+    text: "Unlocking value from AI workflows and tools"
+    correct: true
+    feedback: "Correct. This responsibility identifies value in available tools, keeps teams current, and tailors tools to workflows."
+  - key: "d"
+    text: "Coaching AI adoption"
+    correct: false
+    feedback: "Incorrect. Please review AI fluency and responsible use versus workflow tool adaptation in Lesson 3."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0021"

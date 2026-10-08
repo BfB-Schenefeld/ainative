@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/006"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/01-introducing-ai-native-safe"
+objective: "obj:art-leader-trainer-enablement/l1-o3"
+set: knowledge-check
+type: single-choice
+stem: "After discussing for time, if a room cannot find consensus on an assessment statement, what should the facilitator do?"
+options:
+  - key: "a"
+    text: "Mark the assessment statement as “partially in place” and make note of the disagreement"
+    correct: true
+    feedback: "Correct. If the room cannot reach consensus within the time available, record “partially in place” and note the disagreement."
+  - key: "b"
+    text: "Mark the assessment statement as “not in place” and identify a gap for addressing later"
+    correct: false
+    feedback: "Incorrect. Please review handling assessment disagreement and recording a partial rating in Lesson 1."
+  - key: "c"
+    text: "Insist that the room cannot move on until agreement has been reached"
+    correct: false
+    feedback: "Incorrect. Please review the timeboxed consensus process and recording disagreement in Lesson 1."
+  - key: "d"
+    text: "Decide that it will take too long to address the disagreement and move on for the timebox's sake"
+    correct: false
+    feedback: "Incorrect. Please review documenting disagreement and using the partially in place rating in Lesson 1."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0006"

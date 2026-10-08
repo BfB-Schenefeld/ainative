@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/016"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/02-optimized-for-outcome-driven-flow"
+objective: "obj:art-leader-trainer-enablement/l2-o5"
+set: knowledge-check
+type: single-choice
+stem: "After individually scoring assessment statements, what should the room check for as a whole group?"
+options:
+  - key: "a"
+    text: "Did we correctly answer the assessment question? Which ones did we get wrong?"
+    correct: false
+    feedback: "Incorrect. Please review comparing assessment interpretations and discussing rating differences in Lesson 2."
+  - key: "b"
+    text: "Did we understand the statements in the same way? Where did we have differences and why?"
+    correct: true
+    feedback: "Correct. After scoring individually, the room compares interpretations and discusses why ratings differ."
+  - key: "c"
+    text: "What actions can we take to immediately address any “partially in place” or “not in place” statements? When can we take these actions?"
+    correct: false
+    feedback: "Incorrect. Please review first comparing interpretations and discussing rating differences in Lesson 2."
+  - key: "d"
+    text: "Nothing; the group should wait to align on their answers until the end of class."
+    correct: false
+    feedback: "Incorrect. Please review discussing differences after individual assessment scoring in Lesson 2."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0016"

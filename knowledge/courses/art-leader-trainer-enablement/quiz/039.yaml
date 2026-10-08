@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/039"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/05-development-and-innovation-at-scale"
+objective: "obj:art-leader-trainer-enablement/l5-o4"
+set: knowledge-check
+type: single-choice
+stem: "When an ART evaluates a critical success factor statement, which rating scale should each participant use?"
+options:
+  - key: "a"
+    text: "High priority, medium priority, or low priority"
+    correct: false
+    feedback: "Incorrect. Please review the critical success factor rating scale in Lesson 5."
+  - key: "b"
+    text: "Fully in place, partially in place, or not in place"
+    correct: true
+    feedback: "Correct. Participants assess each statement for their ART using these three levels."
+  - key: "c"
+    text: "Approved, rejected, or deferred"
+    correct: false
+    feedback: "Incorrect. Please review ART assessment ratings versus decision states in Lesson 5."
+  - key: "d"
+    text: "Low risk, moderate risk, or high risk"
+    correct: false
+    feedback: "Incorrect. Please review the success-factor assessment scale in Lesson 5."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0039"

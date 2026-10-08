@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/032"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/04-iterative-learning-and-rapid-experimentation-cycles"
+objective: "obj:art-leader-trainer-enablement/l4-o4"
+set: knowledge-check
+type: single-choice
+stem: "When completing the success-factor assessment, what should an individual evaluate?"
+options:
+  - key: "a"
+    text: "Each statement as it applies to their ART"
+    correct: true
+    feedback: "Correct. Participants individually evaluate each statement for their ART using the three in-place ratings."
+  - key: "b"
+    text: "Whether the course described each statement clearly"
+    correct: false
+    feedback: "Incorrect. Please review evaluating each success-factor statement against the ART's current state in Lesson 4."
+  - key: "c"
+    text: "How other ARTs perform against the same statements"
+    correct: false
+    feedback: "Incorrect. Please review rating your own ART in Lesson 4."
+  - key: "d"
+    text: "Whether each statement should be removed from the assessment"
+    correct: false
+    feedback: "Incorrect. Please review scoring the ART against critical success factors in Lesson 4."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0032"

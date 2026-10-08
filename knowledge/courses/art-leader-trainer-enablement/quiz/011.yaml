@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/011"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/02-optimized-for-outcome-driven-flow"
+objective: "obj:art-leader-trainer-enablement/l2-o2"
+set: knowledge-check
+type: single-choice
+stem: "Which proposal best meets the course’s criteria for a well-formed OKR?"
+options:
+  - key: "a"
+    text: "A clear, memorable objective with measurable, value-based key results"
+    correct: true
+    feedback: "Correct. Objectives are inspirational, clear, and memorable, while Key Results are value-based, measurable, and gradable."
+  - key: "b"
+    text: "A detailed task list with key results measured by projected vs. actual completion dates"
+    correct: false
+    feedback: "Incorrect. Please review value-based, measurable Key Results rather than task dates in Lesson 2."
+  - key: "c"
+    text: "A broad objective with key results that are difficult to verify"
+    correct: false
+    feedback: "Incorrect. Please review clear objectives and gradable Key Results in Lesson 2."
+  - key: "d"
+    text: "A fixed delivery commitment with key results based only on output volume"
+    correct: false
+    feedback: "Incorrect. Please review value-based OKRs rather than output counts in Lesson 2."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0011"

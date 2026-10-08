@@ -121,11 +121,12 @@ def main() -> int:
     lessons = [n for n in nodes.values() if n["type"] == "lesson"]
     concepts = [n for n in nodes.values() if n["type"] == "concept"]
     cap = sum(1 for l in lessons if l.get("capture_status") == "captured")
+    part = sum(1 for l in lessons if l.get("capture_status") == "partial")
     defined = sum(1 for c in concepts if c.get("status") == "defined")
     lines = [
         "# Coverage (generated — do not edit)",
         "",
-        f"- Lessons: **{cap} captured** / {len(lessons)} known",
+        f"- Lessons: **{cap} captured**, {part} partial / {len(lessons)} known",
         f"- Concepts: **{defined} defined** / {len(concepts)} minted",
         f"- Quiz items: **{sum(1 for n in nodes.values() if n['type'] == 'quiz_item')}**",
         "",

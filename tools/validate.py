@@ -147,6 +147,8 @@ def main() -> int:
         refs.append(("course", doc["course"], qfile))
         if doc.get("lesson"):
             refs.append(("lesson", doc["lesson"], qfile))
+        if doc.get("objective"):
+            refs.append(("objective", doc["objective"], qfile))
         opts = doc.get("options") or []
         correct = [o for o in opts if o.get("correct")]
         if doc.get("answer_status") == "confirmed" and not correct:

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/047"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/06-creating-an-ai-native-art-launch-plan"
+objective: "obj:art-leader-trainer-enablement/l6-o4"
+set: knowledge-check
+type: single-choice
+stem: "What should the ART expect after the launch plan is committed and the class ends?"
+options:
+  - key: "a"
+    text: "The plan is complete and no longer changes"
+    correct: false
+    feedback: "Incorrect. Please review iteration and learning in the living launch plan in Lesson 6."
+  - key: "b"
+    text: "The facilitator carries out all actions on behalf of the owners"
+    correct: false
+    feedback: "Incorrect. Please review named-owner accountability for implementing success factors in Lesson 6."
+  - key: "c"
+    text: "Owners implement the success factors in sequence, and learning can feed back into the living plan"
+    correct: true
+    feedback: "Correct. The plan starts the next roadmap phase, owners act on it in the agreed sequence, and lessons from events feed back into it."
+  - key: "d"
+    text: "The ART waits for a new assessment before doing any planned work"
+    correct: false
+    feedback: "Incorrect. Please review post-class implementation and action sequencing in Lesson 6."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0047"

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/028"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/04-iterative-learning-and-rapid-experimentation-cycles"
+objective: "obj:art-leader-trainer-enablement/l4-o2"
+set: knowledge-check
+type: single-choice
+stem: "Which item is most appropriate as an outcome on a PI Outcome Planning Board rather than as an implementation detail?"
+options:
+  - key: "a"
+    text: "Build a recommendation widget on the product page"
+    correct: false
+    feedback: "Incorrect. Please review measurable PI outcomes versus feature solutions in Lesson 4."
+  - key: "b"
+    text: "Redesign the checkout button color for the diet-swap flow"
+    correct: false
+    feedback: "Incorrect. Please review outcome statements versus prescribed design changes in Lesson 4."
+  - key: "c"
+    text: "Increase diabetic and heart-health diet-swap completion to 60%"
+    correct: true
+    feedback: "Correct. This states a measurable customer outcome without fixing the feature solution."
+  - key: "d"
+    text: "Change the page layout to place the diet-swap link higher"
+    correct: false
+    feedback: "Incorrect. Please review customer outcomes versus implementation details in Lesson 4."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0028"

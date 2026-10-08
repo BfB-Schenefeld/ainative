@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/029"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/04-iterative-learning-and-rapid-experimentation-cycles"
+objective: "obj:art-leader-trainer-enablement/l4-o3"
+set: knowledge-check
+type: single-choice
+stem: "How often does a Sense and Respond event normally occur?"
+options:
+  - key: "a"
+    text: "At least once per iteration, with immediate events for significant signals"
+    correct: true
+    feedback: "Correct. Sense and Respond occurs at least once per iteration, with immediate events for significant signals."
+  - key: "b"
+    text: "Once at the beginning of each PI only"
+    correct: false
+    feedback: "Incorrect. Please review the Sense and Respond cadence of at least once per iteration in Lesson 4."
+  - key: "c"
+    text: "Every week on a fixed day for every ART"
+    correct: false
+    feedback: "Incorrect. Please review Sense and Respond cadence versus ART Sync cadence in Lesson 4."
+  - key: "d"
+    text: "There is no recommendation for how often an ART senses and responds; it is up to ART leadership to decide"
+    correct: false
+    feedback: "Incorrect. Please review the recommended iteration cadence and immediate response to significant signals in Lesson 4."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0029"

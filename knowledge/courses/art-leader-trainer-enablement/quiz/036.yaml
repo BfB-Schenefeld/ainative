@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/036"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/05-development-and-innovation-at-scale"
+objective: "obj:art-leader-trainer-enablement/l5-o2"
+set: knowledge-check
+type: single-choice
+stem: "A solution has passed validation and is now in real use. Which pipeline stage examines what happened and what should change next?"
+options:
+  - key: "a"
+    text: "Release"
+    correct: true
+    feedback: "Correct. Release considers what happened in real use and what changes next, connecting delivered work to customer and business value."
+  - key: "b"
+    text: "Specify"
+    correct: false
+    feedback: "Incorrect. Please review the Release stage and learning from real use in Lesson 5."
+  - key: "c"
+    text: "Discover"
+    correct: false
+    feedback: "Incorrect. Please review the Discover stage and problem selection in Lesson 5."
+  - key: "d"
+    text: "Build"
+    correct: false
+    feedback: "Incorrect. Please review the Build stage and solution development in Lesson 5."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0036"

@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../../../schemas/quiz-item.schema.json
+id: "quiz:scaledagile/art-leader-trainer-enablement/lesson/009"
+course: "course:scaledagile/art-leader-trainer-enablement"
+lesson: "lesson:scaledagile/art-leader-trainer-enablement/02-optimized-for-outcome-driven-flow"
+objective: "obj:art-leader-trainer-enablement/l2-o1"
+set: knowledge-check
+type: single-choice
+stem: "An ART is deciding whether to prioritize a requested enhancement. What should guide that decision in outcome-driven product development?"
+options:
+  - key: "a"
+    text: "How directly the work advances desired outcomes and customer or business value"
+    correct: true
+    feedback: "Correct. Outcome-driven flow prioritizes outputs based on the outcomes they advance and connects those outcomes to value."
+  - key: "b"
+    text: "Whether the work can be completed before the next planning event"
+    correct: false
+    feedback: "Incorrect. Please review prioritizing work by desired outcomes and value in Lesson 2."
+  - key: "c"
+    text: "What regulatory or environmental factors might impact the value of the work"
+    correct: false
+    feedback: "Incorrect. Please review outcome-driven prioritization and customer or business value in Lesson 2."
+  - key: "d"
+    text: "Whether the feature uses the newest available AI model"
+    correct: false
+    feedback: "Incorrect. Please review how outcomes and customer or business value guide priorities in Lesson 2."
+answer_status: confirmed
+sources:
+  - "src:2026-10-08/art-leader-trainer-enablement#b0009"

@@ -1,0 +1,1743 @@
+{
+ "lessons": [
+  {
+   "id": 1,
+   "title": "Introducing AI-Native SAFe",
+   "objectives": [
+    "Explain why organizations need a proven framework to succeed with AI",
+    "Describe the four Lean-Agile shifts and the 12 critical success factors of AI-Native SAFe",
+    "Familiarize yourself with the AI-Native ART Launch Readiness Assessment rating scale",
+    "Understand how assessment gaps translate into a sequenced launch plan"
+   ],
+   "sections": [
+    {
+     "id": "1.1",
+     "title": "Getting started",
+     "activities": [
+      {
+       "id": "1.1.a",
+       "badge": "Activity",
+       "title": "Welcome to the Launching AI Native ARTs companion app",
+       "slideRef": "",
+       "kind": "banner"
+      },
+      {
+       "id": "1.1.b",
+       "badge": "Discussion",
+       "title": "Icebreaker",
+       "slideRef": "Slide 1-8",
+       "timing": "Prepare: 10 min",
+       "format": "Groups",
+       "kind": "fields",
+       "intro": "In your groups, introduce yourself, including your name and role on your ART. Then discuss:",
+       "prompts": [
+        "What is one thing you're proud of about how your ART works today?",
+        "What need(s) for change do you see, especially driven by AI?"
+       ],
+       "fields": [
+        {
+         "id": "name",
+         "label": "Your name and role on your ART",
+         "kind": "text"
+        },
+        {
+         "id": "proud",
+         "label": "One thing you're proud of about how your ART works today",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "change",
+         "label": "Need(s) for change you see, especially driven by AI",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "heard",
+         "label": "Something you heard from your group worth remembering",
+         "kind": "textarea",
+         "rows": 2,
+         "helper": "Optional"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "1.2",
+     "title": "Why AI-Native SAFe",
+     "activities": [
+      {
+       "id": "1.2.a",
+       "badge": "Reflect",
+       "title": "Why a framework, and why now?",
+       "slideRef": "Slides 1-9–1-16",
+       "kind": "textarea",
+       "intro": "A 2026 global study from the RoAI Institute of more than 1,000 C-suite executives found that the absence of a standard framework was a primary contributor to the inability to derive value from AI.",
+       "prompts": [
+        "Where does your organization sit against that finding today?"
+       ],
+       "fields": [
+        {
+         "id": "answer",
+         "label": "",
+         "kind": "textarea"
+        }
+       ],
+       "referenceImage": {
+        "__ref__": "c0"
+       }
+      }
+     ]
+    },
+    {
+     "id": "1.3",
+     "title": "Activity: Try the assessment scale",
+     "activities": [
+      {
+       "id": "1.3.a",
+       "badge": "Activity",
+       "title": "Try the assessment scale",
+       "slideRef": "Slide 1-18",
+       "timing": "Prepare: 1 min · Share: 3 min",
+       "format": "Individual → Class",
+       "kind": "steps",
+       "intro": "Before we assess anything real, let's practice with something everyone has an opinion on.",
+       "steps": [
+        {
+         "id": "s1",
+         "badge": "Activity",
+         "title": "Individually, score this statement: \"We settled working agreements for this class.\"",
+         "slideRef": "",
+         "timing": "Individual · 1 min",
+         "kind": "radioWithText",
+         "options": [
+          "Fully in place",
+          "Partially in place",
+          "Not in place"
+         ],
+         "fields": [
+          {
+           "id": "reason",
+           "label": "Why did you score it that way?",
+           "kind": "text"
+          }
+         ]
+        },
+        {
+         "id": "s2",
+         "badge": "Activity",
+         "title": "Review your answers as a class",
+         "slideRef": "",
+         "timing": "Class · 3 min",
+         "kind": "fields",
+         "fields": [
+          {
+           "id": "agree",
+           "label": "Where did the room agree and disagree?",
+           "kind": "textarea",
+           "rows": 2
+          },
+          {
+           "id": "consensus",
+           "label": "Did you reach consensus? How?",
+           "kind": "textarea",
+           "rows": 2
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "1.3.b",
+       "badge": "Reference",
+       "title": "Access the assessment",
+       "slideRef": "Slide 1-19",
+       "kind": "linkOut",
+       "intro": "Check you can locate the full version of the assessment we are going to use. For the rest of this course, whenever we score something together, we follow the same pattern: everyone answers alone first, then we look at the full spread before anyone talks.",
+       "url": "https://laina-assessment.replit.app/",
+       "assessmentTab": "Overview"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "title": "Optimized for outcome-driven flow",
+   "shift": "Shift #1",
+   "objectives": [
+    "Explain the outcome-driven product development cycle adopted by AI-Native ARTs",
+    "Evaluate if an OKR is well-formed, and recognize how OKRs align your organization at every level",
+    "Recognize why AI compute costs need ongoing management instead of fixed budgeting",
+    "Explore the concept of curated data and judge whether a data source meets the four qualities of curated data",
+    "Score your organization against the critical success factors"
+   ],
+   "sections": [
+    {
+     "id": "2.0",
+     "title": "Opening discussion",
+     "activities": [
+      {
+       "id": "2.0.a",
+       "badge": "Discussion",
+       "title": "Why \"outcome-driven\" flow?",
+       "slideRef": "Slide 2-3",
+       "timing": "Share: 5 min",
+       "format": "Class",
+       "kind": "fields",
+       "shiftGraphicHighlight": 1,
+       "fields": [
+        {
+         "id": "significance",
+         "label": "What is the significance of the term \"outcome-driven\" in this shift?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "change",
+         "label": "How would shifting to optimizing for outcome-driven flow change the ways of working on your ART?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "2.1",
+     "title": "SF1 · Outcome-driven product development",
+     "activities": [
+      {
+       "id": "2.1.a",
+       "badge": "Activity",
+       "title": "Compare workflows",
+       "slideRef": "Slide 2-6",
+       "timing": "Sketch: 4 min · Compare: 6 min · Share: 3 min",
+       "kind": "steps",
+       "steps": [
+        {
+         "id": "s1",
+         "badge": "Activity",
+         "title": "Individually, roughly describe your ART's current product development process",
+         "slideRef": "",
+         "timing": "Individual · 4 min",
+         "kind": "textarea",
+         "fields": [
+          {
+           "id": "ans",
+           "label": "",
+           "kind": "textarea",
+           "rows": 6
+          }
+         ]
+        },
+        {
+         "id": "s2",
+         "badge": "Activity",
+         "title": "In groups, compare your description to outcome-driven product development",
+         "slideRef": "",
+         "timing": "Groups · 6 min",
+         "kind": "textarea",
+         "fields": [
+          {
+           "id": "ans",
+           "label": "",
+           "kind": "textarea",
+           "rows": 4
+          }
+         ],
+         "afterInputImage": {
+          "__ref__": "g0"
+         }
+        },
+        {
+         "id": "s3",
+         "badge": "Activity",
+         "title": "What will you share with the class?",
+         "slideRef": "",
+         "timing": "Share · 3 min",
+         "kind": "textarea",
+         "fields": [
+          {
+           "id": "ans",
+           "label": "",
+           "kind": "textarea",
+           "rows": 3
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2.1.b",
+       "badge": "Activity",
+       "title": "Evaluate an OKR",
+       "slideRef": "Slide 2-10",
+       "timing": "Discuss: 5 min",
+       "format": "Class",
+       "kind": "matrix",
+       "reference": [
+        "Objectives are inspirational, clear, and memorable, and classified as a roofshot or a moonshot.",
+        "Key Results are value-based, measurable, and gradable."
+       ],
+       "referenceDefinitions": {
+        "roofshot": "A Roofshot is a conservative pursuit: lower-risk, with highly likely and tangible results. Optimization work fits naturally here.",
+        "moonshot": "A Moonshot is a very ambitious pursuit that aims for an innovative step change. The risk is expected to be high, but the goal is not impossible. The point of a moonshot is to push past small, safe optimizations and revisit how the problem is solved today, in the hope of a breakthrough."
+       },
+       "scenarioImage": {
+        "__ref__": "u0"
+       },
+       "hideMatrixNotePlaceholders": true,
+       "rows": [
+        "Objective: \"Modernize our platform.\"",
+        "KR1: Migrate 80% of services to the new architecture.",
+        "KR2: Reduce deployment time by 30%.",
+        "KR3: Complete the migration ahead of the Q3 roadmap deadline."
+       ],
+       "scale": [
+        "Meets criteria",
+        "Partially meets",
+        "Does not meet"
+       ],
+       "fields": [
+        {
+         "id": "noteLabel",
+         "label": "What's wrong, or what's missing?",
+         "kind": "text"
+        },
+        {
+         "id": "prioritize",
+         "label": "Would this OKR make it obvious what to prioritize?",
+         "kind": "textarea",
+         "rows": 2
+        },
+        {
+         "id": "dashboard",
+         "label": "Which Key Result could a dashboard show you automatically?",
+         "kind": "textarea",
+         "rows": 2
+        }
+       ]
+      },
+      {
+       "id": "2.1.c",
+       "badge": "Assess",
+       "title": "SF1: Outcome-driven product development",
+       "slideRef": "Slides 2-11–2-13",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF1: Outcome-Driven Product Development",
+       "assessmentTab": "L2: Outcome-Driven Flow",
+       "statements": [
+        "We use well-formed OKRs to capture and communicate outcomes.",
+        "We prioritize our work based on our OKRs.",
+        "We have automated reports for tracking Key Results.",
+        "We regularly act on the feedback generated from measuring progress against outcomes."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "2.2",
+     "title": "SF2 · Portfolio outcomes and investment strategy",
+     "activities": [
+      {
+       "id": "2.2.a",
+       "badge": "Discussion",
+       "title": "Why the portfolio matters to the ART",
+       "slideRef": "Slide 2-16",
+       "timing": "Discuss: 6 min",
+       "format": "Class",
+       "kind": "textarea",
+       "intro": "The portfolio that governs products, solutions, and investments can feel far away from an ART. But decisions made by the portfolio impact daily work. As a class, discuss:",
+       "prompts": [
+        "How do portfolio outcomes and investment strategy impact your ART?"
+       ],
+       "fields": [
+        {
+         "id": "ans",
+         "label": "",
+         "kind": "textarea"
+        }
+       ]
+      },
+      {
+       "id": "2.2.b",
+       "badge": "Activity",
+       "title": "Does strategy reach your ART?",
+       "slideRef": "Slide 2-20",
+       "timing": "Prepare: 5 min · Share: 4 min",
+       "format": "Individual → Pairs",
+       "kind": "steps",
+       "steps": [
+        {
+         "id": "s1",
+         "badge": "Activity",
+         "title": "Individually, write down what product(s) your ART is responsible for.",
+         "slideRef": "",
+         "timing": "Individual · 5 min",
+         "kind": "textarea",
+         "fields": [
+          {
+           "id": "ans",
+           "label": "",
+           "kind": "textarea",
+           "rows": 3,
+           "placeholder": "Name it plainly. If this is hard to answer, that itself is a finding."
+          }
+         ]
+        },
+        {
+         "id": "s2",
+         "badge": "Activity",
+         "title": "Individually answer, how do portfolio OKRs inform your ART's product development cycle?",
+         "slideRef": "",
+         "timing": "Individual",
+         "kind": "textarea",
+         "fields": [
+          {
+           "id": "ans",
+           "label": "",
+           "kind": "textarea",
+           "rows": 3
+          }
+         ]
+        },
+        {
+         "id": "s3",
+         "badge": "Activity",
+         "title": "Compare notes with a partner — where do you differ?",
+         "slideRef": "",
+         "timing": "Pairs · 4 min",
+         "kind": "textarea",
+         "fields": [
+          {
+           "id": "ans",
+           "label": "",
+           "kind": "textarea",
+           "rows": 3
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "id": "2.2.c",
+       "badge": "Assess",
+       "title": "SF2: Portfolio and investment strategy",
+       "slideRef": "Slides 2-23–2-25",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF2: Portfolio and Investment Strategy",
+       "assessmentTab": "L2: Outcome-Driven Flow",
+       "statements": [
+        "We have clarity on the product(s) this ART is responsible for.",
+        "A set of portfolio outcomes provides the longer-term product strategy for this ART.",
+        "A set of transformation outcomes helps us balance our capacity between product development and changing the ways of working.",
+        "The portfolio has set clear guardrails for tracking and managing variable AI costs."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "2.3",
+     "title": "SF3 · Curated data",
+     "activities": [
+      {
+       "id": "2.3.a",
+       "badge": "Discussion",
+       "title": "What makes data important?",
+       "slideRef": "Slide 2-27",
+       "timing": "Discuss: 5 min",
+       "format": "Class",
+       "kind": "fields",
+       "intro": "Consider past experiences with AI tools, such as LLMs or built-in assistants. As a class, choose one of these prompts and discuss:",
+       "fields": [
+        {
+         "id": "impressed",
+         "label": "What stories do you have where an AI tool impressed you with its output? Why?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "disappointed",
+         "label": "What stories do you have where an AI tool disappointed you with its output? Why?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      },
+      {
+       "id": "2.3.b",
+       "badge": "Activity",
+       "title": "Who is responsible for great data?",
+       "slideRef": "Slide 2-32",
+       "timing": "Prepare: 8 min · Share: 5 min",
+       "format": "Groups",
+       "kind": "fields",
+       "intro": "As a group, pick a different data type — intent, context, specification, performance, or customer feedback — that your ART relies on. Then name a specific data source for your type (something that already exists, not a general category).",
+       "referenceImage": {
+        "__ref__": "f0"
+       },
+       "referenceImageAlt": "The four qualities of curated data",
+       "referenceImageBare": true,
+       "fields": [
+        {
+         "id": "type",
+         "label": "Data type you chose",
+         "kind": "text"
+        },
+        {
+         "id": "source",
+         "label": "A specific, named data source",
+         "kind": "text"
+        },
+        {
+         "id": "meets",
+         "label": "Which of the four qualities does it meet?",
+         "kind": "textarea",
+         "rows": 2
+        },
+        {
+         "id": "fails",
+         "label": "Which qualities does it NOT meet?",
+         "kind": "textarea",
+         "rows": 2
+        },
+        {
+         "id": "action",
+         "label": "One concrete action that would fix the biggest gap",
+         "kind": "textarea",
+         "rows": 2
+        }
+       ]
+      },
+      {
+       "id": "2.3.c",
+       "badge": "Assess",
+       "title": "SF3: Curated data",
+       "slideRef": "Slides 2-35–2-37",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF3: Curated Data",
+       "assessmentTab": "L2: Outcome-Driven Flow",
+       "statements": [
+        "Curated data powers every step of our product development process.",
+        "Our Teams identify data requirements before beginning development work.",
+        "We verify that datasets meet all four core curation standards: complete, accurate, maintained, and securely accessed.",
+        "Data stewards continuously monitor and maintain data standards."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "2.4",
+     "title": "Gap analysis review",
+     "activities": [
+      {
+       "id": "2.4.a",
+       "badge": "Workshop",
+       "title": "Align on \"Outcome-driven flow\" gaps",
+       "slideRef": "Slides 2-38–2-40",
+       "timing": "Prepare: 20 min",
+       "format": "Class consensus",
+       "kind": "consensusBlock",
+       "shift": "Optimized for Outcome-Driven Flow",
+       "assessmentTab": "L2: Outcome-Driven Flow",
+       "statements": [
+        "We use well-formed OKRs to capture and communicate outcomes.",
+        "We prioritize our work based on our OKRs.",
+        "We have automated reports for tracking Key Results.",
+        "We regularly act on the feedback generated from measuring progress against outcomes.",
+        "We have clarity on the product(s) this ART is responsible for.",
+        "A set of portfolio outcomes provides the longer-term product strategy for this ART.",
+        "A set of transformation outcomes helps us balance our capacity between product development and changing the ways of working.",
+        "The portfolio has set clear guardrails for tracking and managing variable AI costs.",
+        "Curated data powers every step of our product development process.",
+        "Our Teams identify data requirements before beginning development work.",
+        "We verify that datasets meet all four core curation standards: complete, accurate, maintained, and securely accessed.",
+        "Data stewards continuously monitor and maintain data standards."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "title": "Cross-functional, AI-augmented teams",
+   "shift": "Shift #2",
+   "objectives": [
+    "Recognize the six characteristics of an AI-Native ART, and how they shape your launch plan",
+    "Describe how AI-Native Teams combine capabilities and align, sense, and respond activities to drive learning",
+    "Describe the AI Value Architect's five areas of responsibility, and identify who might step into the role",
+    "Score your organization against the critical success factors"
+   ],
+   "sections": [
+    {
+     "id": "3.0",
+     "title": "Opening discussion",
+     "activities": [
+      {
+       "id": "3.0.a",
+       "badge": "Discussion",
+       "title": "Why cross-functional, AI-augmented teams?",
+       "slideRef": "Slide 3-3",
+       "timing": "Discuss: 5 min",
+       "format": "Class",
+       "kind": "fields",
+       "shiftGraphicHighlight": 2,
+       "fields": [
+        {
+         "id": "meaning",
+         "label": "What does it mean to be AI-augmented?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "how",
+         "label": "How will teams become AI-augmented on your ART?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "3.1",
+     "title": "SF4 · AI-Native ARTs",
+     "activities": [
+      {
+       "id": "3.1.a",
+       "badge": "Discussion",
+       "title": "Did you truly organize around value?",
+       "slideRef": "Slide 3-8",
+       "timing": "Prepare: 6 min · Share: 4 min",
+       "format": "Groups → Class",
+       "kind": "fields",
+       "referenceImage": {
+        "__ref__": "h0"
+       },
+       "referenceImageAlt": "Comparison of Loan Originations, Member Engagement, and Platform Services ARTs",
+       "referenceImageBare": true,
+       "fields": [
+        {
+         "id": "organized",
+         "label": "Which ART is organized around a product?",
+         "kind": "textarea",
+         "rows": 2
+        },
+        {
+         "id": "problems",
+         "label": "What problems could the other two experience a year from now?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      },
+      {
+       "id": "3.1.organized",
+       "badge": "Discussion",
+       "title": "How are we organized?",
+       "slideRef": "Slide 3-9",
+       "format": "Class",
+       "kind": "fields",
+       "fields": [
+        {
+         "id": "products",
+         "label": "What product, or products, is your ART responsible for?",
+         "kind": "textarea",
+         "rows": 2
+        },
+        {
+         "id": "customer",
+         "label": "Who is your customer?",
+         "kind": "textarea",
+         "rows": 2
+        }
+       ]
+      },
+      {
+       "id": "3.1.b",
+       "badge": "Activity",
+       "title": "Governance in practice",
+       "slideRef": "Slide 3-17",
+       "timing": "Prepare: 7 min · Share: 5 min",
+       "format": "Groups → Class",
+       "kind": "fields",
+       "intro": "In your groups, choose one practice to focus on. Make sure each practice has been chosen by a group. Then read the scenario and discuss.",
+       "scenarioImages": [
+        {
+         "src": {
+          "__ref__": "m0"
+         },
+         "alt": "Scenario: A new AI agent capability has shipped, but safety-at-scale data is incomplete"
+        },
+        {
+         "src": {
+          "__ref__": "v0"
+         },
+         "alt": "Practices: Policy on risk, governance in platforms, standards for consistency, and human accountability"
+        }
+       ],
+       "fields": [
+        {
+         "id": "practice",
+         "label": "Practice your group chose",
+         "kind": "radio"
+        },
+        {
+         "id": "question",
+         "label": "In your actual role, what would this practice ask of you in this scenario?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "who",
+         "label": "Who else on your leadership team would you need to pull in?",
+         "kind": "textarea",
+         "rows": 2
+        }
+       ],
+       "options": [
+        "Policy on risk",
+        "Governance in platforms",
+        "Standards for consistency",
+        "Human accountability"
+       ]
+      },
+      {
+       "id": "3.1.c",
+       "badge": "Assess",
+       "title": "SF4: AI-Native ART",
+       "slideRef": "Slides 3-18–3-20",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF4: AI-Native ART",
+       "assessmentTab": "L3: AI-Augmented Teams",
+       "statements": [
+        "Our AI-Native ART is staffed appropriately to develop its products.",
+        "Business Owners, Product Management, the RTE, and System Architect are fully aligned on the vision and prepared to lead an AI-Native ART.",
+        "The ART has established clear AI safety and governance guardrails that teams must follow when building products.",
+        "Everyone on the ART has the AI fluency needed to build and collaborate with AI agents responsibly."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "3.2",
+     "title": "SF5 · AI-Native Teams",
+     "activities": [
+      {
+       "id": "3.2.a",
+       "badge": "Discussion",
+       "title": "One day, four hats",
+       "slideRef": "Slide 3-24",
+       "timing": "Share: 7 min",
+       "format": "Individual → Groups → Class",
+       "kind": "fields",
+       "fields": [
+        {
+         "id": "fulfilled",
+         "label": "The capabilities that you fulfilled, and when you fulfilled them",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "switched",
+         "label": "Did anyone switch capabilities or fulfill multiple capabilities at one time?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      },
+      {
+       "id": "3.2.b",
+       "badge": "Activity",
+       "title": "Accelerate or stop?",
+       "slideRef": "Slide 3-28",
+       "timing": "Prepare: 7 min · Share: 5 min",
+       "format": "Groups → Class",
+       "kind": "decisionList",
+       "intro": "In your groups, read the four scenarios. Decide to accelerate or stop each work item.",
+       "options": [
+        "Accelerate",
+        "Stop"
+       ],
+       "rows": [
+        "A validated prototype needs two people, pulled from the enabler speeding up everyone else",
+        "An experiment is trending negative, but it's 90% done",
+        "A feature is on track and wanted, but a faster experiment just found a better version",
+        "An enabler has no clear ROI after three months, and questions are starting"
+       ],
+       "fields": [
+        {
+         "id": "rationaleLabel",
+         "label": "Why? What are you giving up?",
+         "kind": "text"
+        },
+        {
+         "id": "hard",
+         "label": "What makes this decision hard in real life, even when the call seems clear?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      },
+      {
+       "id": "3.2.c",
+       "badge": "Assess",
+       "title": "SF5: AI-Native Teams",
+       "slideRef": "Slides 3-29–3-31",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF5: AI-Native Teams",
+       "assessmentTab": "L3: AI-Augmented Teams",
+       "statements": [
+        "Each AI-Native team has a clear mission and the Product, Builder, and Domain Expert capabilities to fulfill it.",
+        "Teams effectively incorporate AI into their daily workflows.",
+        "Teams operate on an Align, Sense, and Respond cadence.",
+        "Teams quickly test low-cost prototypes and kill experiments that fail to deliver value."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "3.3",
+     "title": "SF6 · AI Value Architect",
+     "activities": [
+      {
+       "id": "3.3.a",
+       "badge": "Activity",
+       "title": "Describe responsibilities at every scale",
+       "slideRef": "Slide 3-41",
+       "timing": "Prepare: 8 min · Share: 5 min",
+       "format": "Groups → Class",
+       "kind": "fields",
+       "intro": "In groups, choose one responsibility from the AI Value Architect wheel. Make sure each responsibility has one group discussing it.",
+       "referenceImage": {
+        "__ref__": "x0"
+       },
+       "referenceImageAlt": "AI Value Architects responsibilities wheel",
+       "referenceImageBare": true,
+       "fields": [
+        {
+         "id": "responsibility",
+         "label": "Responsibility your group chose",
+         "kind": "radio"
+        },
+        {
+         "id": "team",
+         "label": "…for a single team?",
+         "kind": "textarea",
+         "rows": 2,
+         "promptBefore": "How will this responsibility be fulfilled, and who will do so..."
+        },
+        {
+         "id": "solution",
+         "label": "…for a shared product or solution spanning several teams?",
+         "kind": "textarea",
+         "rows": 2
+        },
+        {
+         "id": "art",
+         "label": "…for the ART as a whole?",
+         "kind": "textarea",
+         "rows": 2
+        }
+       ],
+       "options": [
+        "Coaching AI Adoption",
+        "Unlocking Value from AI Workflows and Tools",
+        "Bridging Business and Technology",
+        "Facilitating AI Solution Development",
+        "Optimizing Outcomes"
+       ]
+      },
+      {
+       "id": "3.3.b",
+       "badge": "Discussion",
+       "title": "Who can take on this role?",
+       "slideRef": "Slide 3-42",
+       "timing": "Discuss: 5 min",
+       "format": "Class",
+       "kind": "fields",
+       "intro": "The AI Value Architect is not a new hire. Most people will be more successful in this role if they are already leading change. As a class, discuss who in your organization, or on your ART, would be a great candidate.",
+       "reference": [
+        "Common starting points: Scrum Masters / Team Coaches · SPCs · RTEs · System Architects · Product Management"
+       ],
+       "referencePlain": true,
+       "fields": [
+        {
+         "id": "candidate",
+         "label": "Who would be a strong candidate, and why?",
+         "kind": "text"
+        }
+       ]
+      },
+      {
+       "id": "3.3.c",
+       "badge": "Assess",
+       "title": "SF6: AI Value Architect",
+       "slideRef": "Slides 3-43–3-45",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF6: AI Value Architect",
+       "assessmentTab": "L3: AI-Augmented Teams",
+       "statements": [
+        "AI Value Architects bridge business goals and technical execution.",
+        "AI Value Architects help teams unlock value from AI workflows and tools.",
+        "AI Value Architects provide coaching to support individuals in integrating AI into their roles responsibly.",
+        "AI Value Architects ensure AI usage is focused on optimizing outcomes."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "3.4",
+     "title": "Gap analysis review",
+     "activities": [
+      {
+       "id": "3.4.a",
+       "badge": "Workshop",
+       "title": "Align on \"Cross-functional, AI-augmented teams\" gaps",
+       "slideRef": "Slides 3-46–3-48",
+       "timing": "Prepare: 20 min",
+       "format": "Class consensus",
+       "kind": "consensusBlock",
+       "shift": "Cross-Functional, AI-Augmented Teams",
+       "assessmentTab": "L3: AI-Augmented Teams",
+       "statements": [
+        "Our AI-Native ART is staffed appropriately to develop its products.",
+        "Business Owners, Product Management, the RTE, and System Architect are fully aligned on the vision and prepared to lead an AI-Native ART.",
+        "The ART has established clear AI safety and governance guardrails that teams must follow when building products.",
+        "Everyone on the ART has the AI fluency needed to build and collaborate with AI agents responsibly.",
+        "Each AI-Native team has a clear mission and the Product, Builder, and Domain Expert capabilities to fulfill it.",
+        "Teams effectively incorporate AI into their daily workflows.",
+        "Teams operate on an Align, Sense, and Respond cadence.",
+        "Teams quickly test low-cost prototypes and kill experiments that fail to deliver value.",
+        "AI Value Architects bridge business goals and technical execution.",
+        "AI Value Architects help teams unlock value from AI workflows and tools.",
+        "AI Value Architects provide coaching to support individuals in integrating AI into their roles responsibly.",
+        "AI Value Architects ensure AI usage is focused on optimizing outcomes."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "title": "Iterative learning and rapid experimentation cycles",
+   "shift": "Shift #3",
+   "objectives": [
+    "Explain how product vision and outcome-driven roadmaps set direction without fixing output",
+    "Describe the PI Outcome Planning event and how the ART commits to outcomes",
+    "Describe how Sense and Respond events turn evidence into action",
+    "Score your organization against the critical success factors"
+   ],
+   "sections": [
+    {
+     "id": "4.0",
+     "title": "Opening discussion",
+     "activities": [
+      {
+       "id": "4.0.a",
+       "badge": "Discussion",
+       "title": "Why do we need experimentation more than ever?",
+       "slideRef": "Slide 4-3",
+       "timing": "Discuss: 5 min",
+       "format": "Class",
+       "kind": "fields",
+       "shiftGraphicHighlight": 3,
+       "fields": [
+        {
+         "id": "why",
+         "label": "Why does iterative learning and experimentation matter more now than ever?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "dangers",
+         "label": "What are the dangers of not having this approach in place?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "4.1",
+     "title": "SF7 · Product vision and roadmap",
+     "activities": [
+      {
+       "id": "4.1.a",
+       "badge": "Discussion",
+       "title": "Your product vision",
+       "slideRef": "Slide 4-7",
+       "timing": "Discuss: 8 min",
+       "format": "Class",
+       "kind": "fields",
+       "fields": [
+        {
+         "id": "audiences",
+         "label": "How does your product vision reach different audiences?",
+         "kind": "textarea",
+         "rows": 2
+        },
+        {
+         "id": "inTools",
+         "label": "Is your product vision built into the AI tools and workflows your teams and agents use?",
+         "kind": "textarea",
+         "rows": 2
+        },
+        {
+         "id": "feedback",
+         "label": "Does customer feedback and product insight flow back into the product vision?",
+         "kind": "textarea",
+         "rows": 2
+        }
+       ]
+      },
+      {
+       "id": "4.1.b",
+       "badge": "Discussion",
+       "title": "Spot the learning milestone",
+       "slideRef": "Slide 4-12",
+       "timing": "Discuss: 8 min",
+       "format": "Class",
+       "kind": "fields",
+       "referenceImage": {
+        "__ref__": "y0"
+       },
+       "referenceImageAlt": "Three roadmap items for AI-assisted code review",
+       "referenceImageBare": true,
+       "referenceImageCompact": true,
+       "fields": [
+        {
+         "id": "milestone",
+         "label": "Which one is a genuine learning milestone?",
+         "kind": "textarea",
+         "rows": 2
+        },
+        {
+         "id": "giveaway",
+         "label": "One looks like a learning milestone but isn't. What gives it away?",
+         "kind": "textarea",
+         "rows": 2
+        },
+        {
+         "id": "stopResult",
+         "label": "For the genuine one: what result could stop the rollout?",
+         "kind": "textarea",
+         "rows": 2
+        }
+       ]
+      },
+      {
+       "id": "4.1.c",
+       "badge": "Assess",
+       "title": "SF7: Product vision and roadmap",
+       "slideRef": "Slides 4-14–4-16",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF7: Product Vision and Roadmap",
+       "assessmentTab": "L4: Rapid Experimentation",
+       "statements": [
+        "We communicate a product vision that is desirable to customers, viable for the business and technically feasible.",
+        "We maintain a set of ART outcomes that describes its longer-term strategy.",
+        "We utilize outcome-driven roadmaps that express future work as intended business and customer outcomes rather than fixed feature deliverables.",
+        "We identify learning milestones to validate technical and business opportunities and hypotheses."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "4.2",
+     "title": "SF8 · PI outcome planning",
+     "activities": [
+      {
+       "id": "4.2.a",
+       "badge": "Discussion",
+       "title": "A first look at outcome breakouts",
+       "slideRef": "Slide 4-27",
+       "timing": "Discuss: 6 min",
+       "format": "Class",
+       "kind": "decisionList",
+       "intro": "An Outcome Breakout brings together representatives from every team contributing to one PI outcome, so they can shape a shared plan together. For the \"Scale Specialized Diets\" PI outcome, the Retail Pharmacy Cart Team drafted these items ahead of the event. Which belong on the PI Outcome Planning Board at this stage?",
+       "referenceImage": {
+        "__ref__": "w0"
+       },
+       "referenceImageAlt": "Four proposed items for the Scale Specialized Diets PI outcome",
+       "referenceImageBare": true,
+       "options": [
+        "Belongs on the board",
+        "Too detailed for now"
+       ],
+       "rows": [
+        "Increase diabetic/heart-health diet-swap completion to 60%",
+        "Build a diet-swap recommendation widget on the product page",
+        "A specialized diet pilot with 500 households",
+        "Redesign the checkout button color for the diet-swap flow"
+       ],
+       "fields": [
+        {
+         "id": "rationaleLabel",
+         "label": "Why?",
+         "kind": "text"
+        }
+       ]
+      },
+      {
+       "id": "4.2.b",
+       "badge": "Discussion",
+       "title": "Timely and informed decisions, not just fast",
+       "slideRef": "Slide 4-33",
+       "timing": "Discuss: 7 min",
+       "format": "Class",
+       "kind": "decisionList",
+       "intro": "Teams are at lunch. Imagine you are the ART Leadership in the Management Review and Problem-Solving. Three decisions are on the management review board. For each item, should you decide now, or flag for more investigation?",
+       "referenceImage": {
+        "__ref__": "b0"
+       },
+       "referenceImageAlt": "Management review items with data and competing pressures",
+       "referenceImageBare": true,
+       "options": [
+        "Decide now",
+        "Investigate"
+       ],
+       "rows": [
+        "Security audit vs. family cart release",
+        "Specialized diet pilot",
+        "AI operating cost"
+       ],
+       "fields": [
+        {
+         "id": "rationaleLabel",
+         "label": "Why?",
+         "kind": "text"
+        }
+       ]
+      },
+      {
+       "id": "4.2.c",
+       "badge": "Discussion",
+       "title": "The ART commits with the confidence vote",
+       "slideRef": "Slide 4-37",
+       "timing": "Discuss: 6 min",
+       "format": "Class",
+       "kind": "fields",
+       "intro": "Every PI Outcome Planning event ends with a fist-of-five confidence vote by everyone involved in planning. However, the plan now consists of outcomes, milestones, and some critical outputs, rather than a work breakdown. As a class, discuss:",
+       "fields": [
+        {
+         "id": "coach",
+         "label": "How would you coach individuals familiar with PI Planning on this change ahead of taking a confidence vote?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "commit",
+         "label": "If the ART expects to learn and adjust throughout the PI anyway, what does \"commit\" actually mean here?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      },
+      {
+       "id": "4.2.d",
+       "badge": "Assess",
+       "title": "SF8: PI outcome planning",
+       "slideRef": "Slides 4-38–4-40",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF8: PI Outcome Planning",
+       "assessmentTab": "L4: Rapid Experimentation",
+       "statements": [
+        "The ART plans on a cadence around a set of desired outcomes rather than a set of features.",
+        "Each PI the ART commits to a set of OKRs that will progress the ART's long-term strategy.",
+        "Teams define and commit to OKRs that express their planned contributions through the PI.",
+        "The ART is effective in managing risks and making timely decisions throughout the PI."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "4.3",
+     "title": "SF9 · Sense and Respond events",
+     "activities": [
+      {
+       "id": "4.3.a",
+       "badge": "Activity",
+       "title": "What's worth bringing to Sense and Respond?",
+       "slideRef": "Slide 4-45",
+       "timing": "Prepare: 6 min · Share: 5 min",
+       "format": "Groups → Class",
+       "kind": "decisionList",
+       "intro": "Five items are competing for a limited slot in today's event. In your groups: which earn a spot in a time-boxed event? Which can wait, or don't need the room's attention at all? Be prepared to share.",
+       "referenceImage": {
+        "__ref__": "k0"
+       },
+       "referenceImageAlt": "Five items competing for a slot in a Sense and Respond event",
+       "referenceImageBare": true,
+       "options": [
+        "Earns a spot",
+        "Can wait",
+        "Doesn't need attention"
+       ],
+       "rows": [
+        "A team's experiment showed no measurable lift, but it revealed a flawed assumption other teams are also building on",
+        "Model drift flagged on a low-traffic internal tool, technically within tolerance, but trending the wrong way",
+        "A completed feature shipped exactly on plan, no surprises, nothing new to report",
+        "Skipping a workflow step cut one team's review time in half, but it was a step from the security checklist",
+        "Customer complaints ticked up slightly, but the sample size is small"
+       ],
+       "fields": [
+        {
+         "id": "rationaleLabel",
+         "label": "Why?",
+         "kind": "text"
+        }
+       ]
+      },
+      {
+       "id": "4.3.b",
+       "badge": "Discussion",
+       "title": "Explore options",
+       "slideRef": "Slide 4-46",
+       "timing": "Prepare: 6 min · Share: 5 min",
+       "format": "Groups → Class",
+       "kind": "fields",
+       "intro": "Sensing surfaced this: A team's AI-driven recommendation engine is technically working, but weekly active use is declining, and no one knows why yet.",
+       "fields": [
+        {
+         "id": "options",
+         "label": "Define some options that might be available in this scenario",
+         "kind": "textarea",
+         "rows": 4
+        }
+       ]
+      },
+      {
+       "id": "4.3.c",
+       "badge": "Assess",
+       "title": "SF9: Sense and Respond event",
+       "slideRef": "Slides 4-49–4-51",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF9: Sense and Respond Event",
+       "assessmentTab": "L4: Rapid Experimentation",
+       "statements": [
+        "Teams routinely run customer demos to get real-world feedback.",
+        "We actively measure customer usage, performance metrics, and operational signals instead of relying on assumptions.",
+        "The ART regularly adapts its plans based on progress against outcomes and new insights.",
+        "ART leaders and teams are empowered to make fast \"pivot, persevere, or stop\" decisions based on objective evidence."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "4.4",
+     "title": "Gap analysis review",
+     "activities": [
+      {
+       "id": "4.4.a",
+       "badge": "Workshop",
+       "title": "Align on \"Iterative learning and rapid experimentation cycles\" gaps",
+       "slideRef": "Slides 4-52–4-54",
+       "timing": "Prepare: 20 min",
+       "kind": "consensusBlock",
+       "shift": "Iterative Learning and Rapid Experimentation Cycles",
+       "assessmentTab": "L4: Rapid Experimentation",
+       "statements": [
+        "We communicate a product vision that is desirable to customers, viable for the business and technically feasible.",
+        "We maintain a set of ART outcomes that describes its longer-term strategy.",
+        "We utilize outcome-driven roadmaps that express future work as intended business and customer outcomes rather than fixed feature deliverables.",
+        "We identify learning milestones to validate technical and business opportunities and hypotheses.",
+        "The ART plans on a cadence around a set of desired outcomes rather than a set of features.",
+        "Each PI the ART commits to a set of OKRs that will progress the ART's long-term strategy.",
+        "Teams define and commit to OKRs that express their planned contributions through the PI.",
+        "The ART is effective in managing risks and making timely decisions throughout the PI.",
+        "Teams routinely run customer demos to get real-world feedback.",
+        "We actively measure customer usage, performance metrics, and operational signals instead of relying on assumptions.",
+        "The ART regularly adapts its plans based on progress against outcomes and new insights.",
+        "ART leaders and teams are empowered to make fast \"pivot, persevere, or stop\" decisions based on objective evidence."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "title": "Development and innovation at scale",
+   "shift": "Shift #4",
+   "objectives": [
+    "Explain how intent, specifications, and context give teams and AI agents a shared foundation",
+    "Describe how the AI Innovation Pipeline turns outcomes into real value",
+    "Recognize what responsible AI requires of an ART's governance and ethics",
+    "Score your organization against the critical success factors"
+   ],
+   "sections": [
+    {
+     "id": "5.0",
+     "title": "Opening discussion",
+     "activities": [
+      {
+       "id": "5.0.a",
+       "badge": "Discussion",
+       "title": "Why scale development and innovation?",
+       "slideRef": "Slide 5-3",
+       "timing": "Discuss: 6 min",
+       "format": "Class",
+       "kind": "fields",
+       "shiftGraphicHighlight": 4,
+       "fields": [
+        {
+         "id": "messy",
+         "label": "Think of a time work moved fast but got messy — unclear ownership, unclear decisions, cost creeping up. What caused it?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "withAI",
+         "label": "Now add AI, moving even faster, doing some of the work itself. What gets harder?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "5.1",
+     "title": "SF10 · Intent, specifications, and context",
+     "activities": [
+      {
+       "id": "5.1.a",
+       "badge": "Discussion",
+       "title": "The benefits of intent, specifications, and context",
+       "slideRef": "Slide 5-9",
+       "timing": "Discuss: 6 min",
+       "format": "Class",
+       "kind": "fields",
+       "intro": "Think of a time where a team member (human or machine) completed work in a way that technically matched the feature description, but wasn’t at all what you were envisioning.",
+       "fields": [
+        {
+         "id": "saved",
+         "label": "What part of the \"why,\" \"what,\" \"how,\" or \"where\" was missing from the description of the feature?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "improve",
+         "label": "How could your ART improve intent, specifications, or context?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      },
+      {
+       "id": "5.1.b",
+       "badge": "Assess",
+       "title": "SF10: Intent, specifications and context",
+       "slideRef": "Slides 5-10–5-12",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF10: Intent, Specifications and Context",
+       "assessmentTab": "L5: Innovation at Scale",
+       "statements": [
+        "We define and regularly update our product's intent, so teams and AI agents know which problems to solve and why.",
+        "We set clear product specifications to give teams and AI agents exact guardrails and solution details before building.",
+        "We have established a product context, so teams and AI agents understand the customer, market, and operational landscape they operate in.",
+        "All teams and AI agents build from shared intent, specifications, and context data to ensure consistency and traceability."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "5.2",
+     "title": "SF11 · AI innovation pipeline",
+     "activities": [
+      {
+       "id": "5.2.a",
+       "badge": "Activity",
+       "title": "Identifying trustworthy workflows",
+       "slideRef": "Slide 5-17",
+       "timing": "Prepare: 6 min · Share: 5 min",
+       "format": "Groups → Class",
+       "kind": "checkboxWithText",
+       "scenario": "A workflow that has been running well for months begins producing subtly bad results for two weeks before anyone notices. Something changed — a data source or a model update — and nobody is certain which.",
+       "prompts": [
+        "Which of these qualities failed here? More than one might apply."
+       ],
+       "options": [
+        "Grounded",
+        "Connected",
+        "Controlled",
+        "Auditable",
+        "Owned"
+       ],
+       "fields": [
+        {
+         "id": "sooner",
+         "label": "What could the ART have done to catch this sooner?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      },
+      {
+       "id": "5.2.b",
+       "badge": "Assess",
+       "title": "SF11: AI innovation pipeline",
+       "slideRef": "Slides 5-21–5-23",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF11: AI Innovation Pipeline",
+       "assessmentTab": "L5: Innovation at Scale",
+       "statements": [
+        "We continually invest in and optimize the tools, technologies, and architecture that enable flow.",
+        "We have embedded policies in the tools we use to ensure guardrails and human checks are in place.",
+        "We have configured systems to capture insights and evidence for auditing decisions and tracking early learning.",
+        "The AI-Native Teams on the ART have access to a shared platform that connects and composes their workflows, policies, and data into unified capabilities."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "5.3",
+     "title": "SF12 · AI governance and ethics",
+     "activities": [
+      {
+       "id": "5.3.a",
+       "badge": "Activity",
+       "title": "Guardrails for AI spend",
+       "slideRef": "Slide 5-29",
+       "timing": "Prepare: 6 min · Share: 5 min",
+       "format": "Groups → Class",
+       "kind": "fields",
+       "fields": [
+        {
+         "id": "guardrails",
+         "label": "What guardrails would be sensible for the ART to put in place to help control AI spend?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "policies",
+         "label": "How would these guardrails manifest as built-in policies?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      },
+      {
+       "id": "5.3.b",
+       "badge": "Discussion",
+       "title": "Recognizing responsible AI",
+       "slideRef": "Slide 5-31",
+       "timing": "Discuss: 5 min",
+       "format": "Class",
+       "kind": "fields",
+       "scenarioImage": {
+        "__ref__": "A0"
+       },
+       "scenarioImageAlt": "Scenario about an AI agent auto-approving vendor invoices without human review or an explanation record",
+       "reference": [
+        "Responsible AI is trustworthy, explainable, and human-centric."
+       ],
+       "referencePlain": true,
+       "fields": [
+        {
+         "id": "failures",
+         "label": "What is not reflective of responsible AI in this scenario?",
+         "labelHtml": "What is <em>not</em> reflective of responsible AI in this scenario?",
+         "kind": "textarea",
+         "rows": 4
+        }
+       ]
+      },
+      {
+       "id": "5.3.c",
+       "badge": "Assess",
+       "title": "SF12: AI governance and ethics",
+       "slideRef": "Slides 5-35–5-37",
+       "kind": "assessmentBlock",
+       "factorLabel": "SF12: AI Governance and Ethics",
+       "assessmentTab": "L5: Innovation at Scale",
+       "statements": [
+        "We have effective mechanisms in place for controlling and monitoring token spend.",
+        "Everyone on the ART is trained in and practices Responsible AI.",
+        "AI agentic behaviors are monitored at every step in every workflow.",
+        "We have defined and communicated a set of AI Ethics that everyone adheres to."
+       ]
+      }
+     ]
+    },
+    {
+     "id": "5.4",
+     "title": "Gap analysis review",
+     "activities": [
+      {
+       "id": "5.4.a",
+       "badge": "Workshop",
+       "title": "Align on \"Development and innovation at scale\" gaps",
+       "slideRef": "Slides 5-38–5-40",
+       "timing": "Prepare: 20 min",
+       "kind": "consensusBlock",
+       "shift": "Development and Innovation at Scale",
+       "assessmentTab": "L5: Innovation at Scale",
+       "statements": [
+        "We define and regularly update our product's intent, so teams and AI agents know which problems to solve and why.",
+        "We set clear product specifications to give teams and AI agents exact guardrails and solution details before building.",
+        "We have established a product context, so teams and AI agents understand the customer, market, and operational landscape they operate in.",
+        "All teams and AI agents build from shared intent, specifications, and context data to ensure consistency and traceability.",
+        "We continually invest in and optimize the tools, technologies, and architecture that enable flow.",
+        "We have embedded policies in the tools we use to ensure guardrails and human checks are in place.",
+        "We have configured systems to capture insights and evidence for auditing decisions and tracking early learning.",
+        "The AI-Native Teams on the ART have access to a shared platform that connects and composes their workflows, policies, and data into unified capabilities.",
+        "We have effective mechanisms in place for controlling and monitoring token spend.",
+        "Everyone on the ART is trained in and practices Responsible AI.",
+        "AI agentic behaviors are monitored at every step in every workflow.",
+        "We have defined and communicated a set of AI Ethics that everyone adheres to."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "title": "Creating an AI-Native ART launch plan",
+   "shift": "Workshop",
+   "objectives": [
+    "Resolve gaps from your assessment into specific, owned actions",
+    "Build a launch plan that sequences these actions before PI Outcome Planning, before Sense and Respond, or after both",
+    "Commit to the plan as a group",
+    "Discuss how you will share your plan and prepare for what happens after this class"
+   ],
+   "sections": [
+    {
+     "id": "6.1",
+     "title": "Build the plan",
+     "activities": [
+      {
+       "id": "6.1.a",
+       "badge": "Reference",
+       "title": "The AI-Native implementation launch plan",
+       "slideRef": "Slides 6-4–6-5",
+       "kind": "linkOut",
+       "intro": "Access the Assessment Tool to build, commit, and enact your plan to launch your AI-Native ART.",
+       "url": "https://laina-assessment.replit.app/",
+       "assessmentTab": "Plan",
+       "fields": [
+        {
+         "id": "final-reflections-and-notes",
+         "label": "Final reflections and notes",
+         "kind": "textarea",
+         "rows": 18
+        }
+       ]
+      },
+      {
+       "id": "6.1.b",
+       "badge": "Workshop",
+       "title": "Resolve each identified gap",
+       "slideRef": "Slide 6-6",
+       "timing": "Prepare: 60 min",
+       "format": "Class or groups",
+       "kind": "tableInput",
+       "intro": "For each gap, there are three options: <strong>Accept</strong> it for now and take no further action. <strong>Place</strong> the gap onto the launch plan at the point when you plan to address it. Or <strong>create a specific action</strong> for addressing it — multiple gaps can be added to a single action. For each Gap and Action, add an Owner.",
+       "columns": [
+        "Gap (statement / success factor)",
+        "Decision (Accept / Place on plan / Create action)",
+        "Action — specific and concrete",
+        "Owner",
+        "When (Before PI Outcome Planning / Before Sense and Respond / After both)"
+       ],
+       "url": "https://laina-assessment.replit.app/",
+       "assessmentTab": "Plan"
+      },
+      {
+       "id": "6.1.c",
+       "badge": "Workshop",
+       "title": "Review the AI-Native ART launch plan",
+       "slideRef": "Slide 6-7",
+       "timing": "Prepare: 60 min",
+       "format": "Individual → Groups → Class",
+       "kind": "fields",
+       "intro": "As each gap was resolved, a draft AI-Native Launch Plan was created. Review the plan individually looking for missing items, risks, or opportunities. Discuss these in your group. Share as a class.",
+       "fields": [
+        {
+         "id": "missing",
+         "label": "What is missing?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "risk",
+         "label": "What risk is not accounted for?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "opportunity",
+         "label": "What opportunity has the plan not taken?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "balance",
+         "label": "Is the load balanced across the three groups, or is almost everything sitting before the first event?",
+         "kind": "textarea",
+         "rows": 2
+        }
+       ]
+      },
+      {
+       "id": "6.1.d",
+       "badge": "Workshop",
+       "title": "Determine the dates for the AI-Native ART events",
+       "slideRef": "Slide 6-8",
+       "timing": "Prepare: 10 min",
+       "format": "Class",
+       "kind": "fields",
+       "intro": "As a class, agree on two real dates. Add both to your launch plan. Everything in your plan now has a real deadline to build toward.",
+       "fields": [
+        {
+         "id": "piDate",
+         "label": "Your first PI Outcome Planning event",
+         "kind": "date"
+        },
+        {
+         "id": "srDate",
+         "label": "Your first Sense and Respond event",
+         "kind": "date"
+        },
+        {
+         "id": "blocked",
+         "label": "If you can't set a date today, who decides it and by when?",
+         "kind": "textarea",
+         "rows": 2,
+         "helper": "That's an action too."
+        }
+       ]
+      },
+      {
+       "id": "6.1.e",
+       "badge": "Workshop",
+       "title": "Adjust the AI-Native ART launch plan",
+       "slideRef": "Slide 6-9",
+       "timing": "Prepare: 60 min",
+       "format": "Class or groups",
+       "kind": "tableInput",
+       "intro": "Based on the previous review, agree on the necessary adjustments to resolve any outstanding items, and update the plan to reflect them.",
+       "columns": [
+        "Finding from the review",
+        "What changes in the plan",
+        "Moved to which group?",
+        "Owner"
+       ],
+       "url": "https://laina-assessment.replit.app/",
+       "assessmentTab": "Plan"
+      }
+     ]
+    },
+    {
+     "id": "6.2",
+     "title": "Commit",
+     "activities": [
+      {
+       "id": "6.2.a",
+       "badge": "Reflect",
+       "title": "Commit to the AI-Native ART launch plan",
+       "slideRef": "Slide 6-10",
+       "timing": "Reflect: 2 min · Discuss: 10 min",
+       "format": "Individual → Class",
+       "kind": "fistOfFive",
+       "intro": "Before this plan is final, determine if the group actually agrees with it. Take a minute on your own and look back at the plan. On the count of three, everyone holds up a fist of five — a closed fist means no confidence, five fingers means full confidence.",
+       "fields": [
+        {
+         "id": "reason",
+         "label": "If you're at three or below, what would have to change?",
+         "kind": "textarea",
+         "rows": 3,
+         "helper": "Anyone showing three or below explains why before the plan moves forward."
+        },
+        {
+         "id": "resolved",
+         "label": "What concerns were raised, and how were they addressed?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "6.3",
+     "title": "What's next",
+     "activities": [
+      {
+       "id": "6.3.a",
+       "badge": "Discussion",
+       "title": "Share your plan",
+       "slideRef": "Slide 6-13",
+       "timing": "Discuss: 8 min",
+       "format": "Class",
+       "kind": "tableInput",
+       "intro": "As a class, consider who needs to see this plan and how you will share it with them. Name the people, the format, and what you need from them when they see it.",
+       "reference": [
+        "Prompts to cover: Communicating · Team Training and launching the teams · AI training · Iterating the plan as you learn more · Owners reporting back · Measuring progress"
+       ],
+       "columns": [
+        "Who needs to see it (a real name)",
+        "Format (deck / walkthrough / written summary)",
+        "What you need from them (approval / feedback / awareness)"
+       ],
+       "fields": [
+        {
+         "id": "rhythm",
+         "label": "What is your ongoing plan for communication?",
+         "kind": "textarea",
+         "rows": 3,
+         "helper": "The AI-Native Launch Plan is a living document."
+        }
+       ]
+      },
+      {
+       "id": "6.3.b",
+       "badge": "Reflect",
+       "title": "Reflect on what you've learned",
+       "slideRef": "Slide 6-16",
+       "timing": "Discuss: 8 min",
+       "format": "Class",
+       "kind": "fields",
+       "intro": "Think back across the whole two days. As a class, discuss:",
+       "fields": [
+        {
+         "id": "different",
+         "label": "What's one thing you'll do differently when you're back at work because of this course?",
+         "kind": "textarea",
+         "rows": 3
+        },
+        {
+         "id": "surprised",
+         "label": "What surprised you — about your ART, or about AI-Native SAFe itself?",
+         "kind": "textarea",
+         "rows": 3
+        }
+       ]
+      },
+      {
+       "id": "6.3.c",
+       "badge": "Reference",
+       "title": "What's next",
+       "slideRef": "Slide 6-12",
+       "kind": "instruction",
+       "intro": "Your launch plan is not the end. It's the starting point for the next phase of the roadmap: implement the critical success factors, in the order you just built.",
+       "reference": [
+        "1. Before PI Outcome Planning",
+        "2. Before Sense and Respond",
+        "3. After both",
+        "The plan moves only if the named owners act. Nobody else is going to pick this up after the class ends."
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
