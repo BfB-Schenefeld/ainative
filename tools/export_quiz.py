@@ -3,8 +3,11 @@
 export_quiz.py -- export quiz records to a human-readable workbook and CSV.
 
 Reads knowledge/courses/<slug>/quiz/*.yaml and writes:
-  <out>.xlsx   two sheets: one row per question (wide), one row per option (long)
-  <out>.csv    semicolon-delimited, UTF-8 BOM, for German Excel
+  <out>.xlsx   three sheets: Questions (wide), Answer options (long), Info
+  <out>.csv    semicolon-delimited, UTF-8 BOM, so German Excel opens it directly
+
+Labels are English. The semicolon delimiter is a regional Excel convention, not a
+language choice, so it stays.
 
 Usage:
     python3 tools/export_quiz.py --course ai-native-safe-overview --out exports/final-quiz
@@ -34,6 +37,11 @@ THIN = Side(style="thin", color="BFBFBF")
 BOX = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 TOPWRAP = Alignment(wrap_text=True, vertical="top")
 
+TYPE_LABEL = {"single-choice": "Single choice", "multiple-choice": "Multiple choice",
+              "true-false": "True / false", "matching": "Matching", "open": "Open"}
+SET_LABEL = {"final": "Final quiz", "knowledge-check": "Knowledge check",
+             "practice": "Practice", "unknown": "Unknown"}
+
 
 def load(course: str):
     qdir = ROOT / "knowledge" / "courses" / course / "quiz"
@@ -43,14 +51,17 @@ def load(course: str):
     return items
 
 
-def load_lesson_titles(course: str) -> dict:
-    """Real lesson titles from course.yaml, so the export shows names not slugs."""
+def load_course(course: str) -> dict:
     cfile = ROOT / "knowledge" / "courses" / course / "course.yaml"
     try:
-        doc = yaml.safe_load(cfile.read_text(encoding="utf-8"))
-        return {les["id"]: les["title"] for les in doc.get("lessons", []) or []}
+        return yaml.safe_load(cfile.read_text(encoding="utf-8")) or {}
     except Exception:
         return {}
+
+
+def load_lesson_titles(doc: dict) -> dict:
+    """Real lesson titles from course.yaml, so the export shows names not slugs."""
+    return {les["id"]: les["title"] for les in doc.get("lessons", []) or []}
 
 
 LESSON_TITLES: dict = {}
@@ -61,17 +72,17 @@ def lesson_label(item) -> str:
     if ref in LESSON_TITLES:
         return LESSON_TITLES[ref]
     tail = ref.rsplit("/", 1)[-1] if ref else ""
-    return tail.replace("-", " ").strip() if tail else "unbekannt"
+    return tail.replace("-", " ").strip() if tail else "unknown"
 
 
-def wide_rows(items, maxopt):
+def wide_rows(items, maxopt, has_diff, has_rat):
     """One row per question: every option, its verdict, and its explanation."""
-    header = ["Nr", "ID", "Typ", "Schwierigkeit", "Lektion", "Frage"]
+    header = ["No", "ID", "Type"] + (["Difficulty"] if has_diff else []) + ["Lesson", "Question"]
     for i in range(maxopt):
         L = chr(65 + i)
-        header += [f"Option {L}", f"{L} richtig?", f"Begründung {L}"]
-    header += ["Richtige Antwort", "Begründung (richtig)", "Erläuterung zur Frage",
-               "Antwortstatus", "Quelle"]
+        header += [f"Option {L}", f"{L} correct?", f"Feedback {L}"]
+    header += ["Correct answer", "Feedback (correct)"]
+    header += (["Question rationale"] if has_rat else []) + ["Answer status", "Source"]
 
     rows = []
     for n, it in enumerate(items, 1):
@@ -80,49 +91,45 @@ def wide_rows(items, maxopt):
         row = [
             n,
             it.get("id", ""),
-            "Einfachauswahl" if it.get("type") == "single-choice" else it.get("type", ""),
-            {"easy": "leicht", "medium": "mittel", "harder": "schwer"}.get(
-                it.get("difficulty", ""), it.get("difficulty", "")),
-            lesson_label(it),
-            it.get("stem", ""),
+            TYPE_LABEL.get(it.get("type", ""), it.get("type", "")),
         ]
+        if has_diff:
+            row.append(it.get("difficulty", ""))
+        row += [lesson_label(it), it.get("stem", "")]
         for i in range(maxopt):
             if i < len(opts):
                 o = opts[i]
-                row += [o.get("text", ""), "RICHTIG" if o.get("correct") else "falsch", o.get("feedback", "")]
+                row += [o.get("text", ""),
+                        "CORRECT" if o.get("correct") else "wrong",
+                        o.get("feedback", "")]
             else:
                 row += ["", "", ""]
-        row += [
-            correct.get("text", "") if correct else "",
-            correct.get("feedback", "") if correct else "",
-            it.get("rationale", ""),
-            it.get("answer_status", ""),
-            (it.get("sources") or [""])[0],
-        ]
+        row += [correct.get("text", "") if correct else "",
+                correct.get("feedback", "") if correct else ""]
+        if has_rat:
+            row.append(it.get("rationale", ""))
+        row += [it.get("answer_status", ""), (it.get("sources") or [""])[0]]
         rows.append(row)
     return header, rows
 
 
-def long_rows(items):
+def long_rows(items, has_diff, has_rat):
     """One row per option: easier to filter, sort and pivot."""
-    header = ["Nr", "Frage-ID", "Schwierigkeit", "Lektion", "Frage", "Option",
-              "Antworttext", "Richtig?", "Begründung", "Erläuterung zur Frage"]
+    header = ["No", "Question ID"] + (["Difficulty"] if has_diff else [])
+    header += ["Lesson", "Question", "Option", "Answer text", "Correct?", "Feedback"]
+    header += ["Question rationale"] if has_rat else []
     rows = []
     for n, it in enumerate(items, 1):
         for o in it.get("options", []) or []:
-            rows.append([
-                n,
-                it.get("id", ""),
-                {"easy": "leicht", "medium": "mittel", "harder": "schwer"}.get(
-                    it.get("difficulty", ""), it.get("difficulty", "")),
-                lesson_label(it),
-                it.get("stem", ""),
-                (o.get("key") or "").upper(),
-                o.get("text", ""),
-                "RICHTIG" if o.get("correct") else "falsch",
-                o.get("feedback", ""),
-                it.get("rationale", "") if o.get("correct") else "",
-            ])
+            row = [n, it.get("id", "")]
+            if has_diff:
+                row.append(it.get("difficulty", ""))
+            row += [lesson_label(it), it.get("stem", ""), (o.get("key") or "").upper(),
+                    o.get("text", ""),
+                    "CORRECT" if o.get("correct") else "wrong", o.get("feedback", "")]
+            if has_rat:
+                row.append(it.get("rationale", "") if o.get("correct") else "")
+            rows.append(row)
     return header, rows
 
 
@@ -149,10 +156,10 @@ def style_sheet(ws, header, rows, widths, wrap_cols, verdict_cols, row_height=No
                 cell.alignment = Alignment(vertical="top")
             if cell.column in verdict_cols:
                 cell.alignment = Alignment(vertical="top", horizontal="center")
-                if cell.value == "RICHTIG":
+                if cell.value == "CORRECT":
                     cell.fill = OK_FILL
                     cell.font = BOLD
-                elif cell.value == "falsch":
+                elif cell.value == "wrong":
                     cell.fill = NO_FILL
             elif ri % 2 == 0 and cell.column not in verdict_cols:
                 cell.fill = ALT_FILL
@@ -171,74 +178,97 @@ def main() -> int:
     if not items:
         print("no quiz items found", file=sys.stderr)
         return 1
-    LESSON_TITLES = load_lesson_titles(args.course)
+    course_doc = load_course(args.course)
+    LESSON_TITLES = load_lesson_titles(course_doc)
     # only emit as many option columns as the bank actually uses
     maxopt = max((len(it.get("options") or []) for it in items), default=0)
+    # a column that is empty for every item in this bank is noise, so leave it out
+    has_diff = any(it.get("difficulty") for it in items)
+    has_rat = any(it.get("rationale") for it in items)
 
     out = pathlib.Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
 
-    wh, wr = wide_rows(items, maxopt)
-    lh, lr = long_rows(items)
+    wh, wr = wide_rows(items, maxopt, has_diff, has_rat)
+    lh, lr = long_rows(items, has_diff, has_rat)
 
     wb = Workbook()
     ws = wb.active
-    ws.title = "Fragen"
-    FIRST = 7  # first option column after Nr, ID, Typ, Schwierigkeit, Lektion, Frage
-    wide_widths = [5, 40, 15, 14, 40, 60]
+    ws.title = "Questions"
+    FIRST = 6 + (1 if has_diff else 0)  # first option column
+    wide_widths = [5, 40, 15] + ([14] if has_diff else []) + [40, 60]
     for _ in range(maxopt):
         wide_widths += [50, 12, 62]
-    wide_widths += [50, 62, 66, 14, 42]
+    wide_widths += [50, 62] + ([66] if has_rat else []) + [14, 42]
     last = FIRST + maxopt * 3
-    wide_wrap = ({5, 6} | {c for c in range(FIRST, last) if (c - FIRST) % 3 != 1}
-                 | {last, last + 1, last + 2})
+    wide_wrap = ({FIRST - 2, FIRST - 1} | {c for c in range(FIRST, last) if (c - FIRST) % 3 != 1}
+                 | set(range(last, last + 2 + (1 if has_rat else 0))))
     wide_verdict = {c for c in range(FIRST, last) if (c - FIRST) % 3 == 1}
     style_sheet(ws, wh, wr, wide_widths, wide_wrap, wide_verdict, row_height=110)
 
-    ws2 = wb.create_sheet("Antwortoptionen")
-    style_sheet(ws2, lh, lr, [5, 40, 14, 40, 60, 8, 55, 12, 70, 66],
-                {4, 5, 7, 9, 10}, {6, 8}, row_height=58)
+    ws2 = wb.create_sheet("Answer options")
+    d = 1 if has_diff else 0
+    long_widths = [5, 40] + ([14] if has_diff else []) + [40, 60, 8, 55, 12, 70]
+    long_widths += [66] if has_rat else []
+    style_sheet(ws2, lh, lr, long_widths,
+                {3 + d, 4 + d, 6 + d, 8 + d, 9 + d}, {5 + d, 7 + d}, row_height=58)
 
     info = wb.create_sheet("Info")
-    for r in [
-        ["AI-Native SAFe Overview — Final Quiz", ""],
-        ["", ""],
-        ["Fragen im Pool", len(items)],
-        ["Antwortoptionen je Frage", maxopt],
-        ["Schwierigkeitsverteilung", ""],
-        ["Fragen pro Versuch", 15],
-        ["Bestehensgrenze", "12 von 15 (80 %)"],
-        ["Modus", "Open Book, unbegrenzte Wiederholungen, ohne Zeitlimit"],
-        ["", ""],
-        ["Blatt „Fragen“", "Eine Zeile je Frage, alle Optionen nebeneinander."],
-        ["Blatt „Antwortoptionen“", "Eine Zeile je Antwortoption — zum Filtern und Sortieren."],
-        ["", ""],
-        ["Quelle", "src:2026-08-26/upgrade-path-final-quiz"],
-        ["Herkunft", "Bundle-Chunk FinalQuiz-DUvUYCnK.js der Upgrade-Path-Webanwendung"],
-        ["Vorbehalt", "Das Original-Artefakt wurde nach dem Auslesen neu deployt; "
-                      "die Transkription ist nicht byte-verifiziert. Siehe source.yaml."],
-        ["Rechte", "Scaled Agile, Inc. — keine Weitergabe (rights.redistribution: none)"],
-    ]:
-        info.append(r)
-    bands = {}
+    bands, sets, lessons_seen, sources = {}, {}, {}, []
     for it in items:
-        d = it.get("difficulty")
-        if d:
-            bands[d] = bands.get(d, 0) + 1
+        if it.get("difficulty"):
+            bands[it["difficulty"]] = bands.get(it["difficulty"], 0) + 1
+        st = it.get("set", "unknown")
+        sets[st] = sets.get(st, 0) + 1
+        lab = lesson_label(it)
+        lessons_seen[lab] = lessons_seen.get(lab, 0) + 1
+        for src in it.get("sources") or []:
+            base = src.split("#")[0]
+            if base not in sources:
+                sources.append(base)
+
+    def dist(d, order=None):
+        keys = sorted(d, key=lambda k: order.index(k) if order and k in order else 99)
+        return ", ".join(f"{k}: {d[k]}" for k in keys)
+
+    rows = [
+        [course_doc.get("title") or args.course, ""],
+        ["", ""],
+        ["Questions in pool", len(items)],
+        ["Answer options per question", maxopt],
+        ["Question sets", dist(sets, ["final", "knowledge-check", "practice", "unknown"])],
+    ]
     if bands:
-        label = {"easy": "leicht", "medium": "mittel", "harder": "schwer"}
-        info["B6"] = ", ".join(f"{label.get(k, k)}: {v}" for k, v in
-                               sorted(bands.items(), key=lambda kv: ["easy", "medium", "harder"].index(kv[0])
-                                      if kv[0] in ("easy", "medium", "harder") else 9))
-    info.column_dimensions["A"].width = 26
+        rows.append(["Difficulty split", dist(bands, ["easy", "medium", "harder"])])
+    if len(lessons_seen) > 1:
+        rows.append(["Questions per lesson",
+                     "; ".join(f"{k} ({v})" for k, v in lessons_seen.items())])
+    confirmed = sum(1 for it in items if it.get("answer_status") == "confirmed")
+    rows += [
+        ["Confirmed answer keys", f"{confirmed} of {len(items)}"],
+        ["", ""],
+        ["Sheet \u201cQuestions\u201d", "One row per question, all options side by side."],
+        ["Sheet \u201cAnswer options\u201d",
+         "One row per answer option, for filtering, sorting and pivoting."],
+        ["", ""],
+        ["Source", ", ".join(sources) or "unknown"],
+        ["Rights", "Scaled Agile, Inc. Not for redistribution "
+                   "(rights.redistribution: none in every source record)."],
+        ["Generated", "tools/export_quiz.py from the records in knowledge/courses/"
+                      f"{args.course}/quiz/. Regenerate rather than editing this file."],
+    ]
+    for r in rows:
+        info.append(r)
+    info.column_dimensions["A"].width = 28
     info.column_dimensions["B"].width = 95
     for row in info.iter_rows():
         for cell in row:
             cell.font = BASE_FONT
             cell.alignment = TOPWRAP
     info["A1"].font = Font(name="Arial", size=13, bold=True)
-    for r in (3, 4, 5, 6, 8, 9, 11, 12, 13, 14):
-        info[f"A{r}"].font = BOLD
+    for ri in range(3, len(rows) + 1):
+        if info[f"A{ri}"].value:
+            info[f"A{ri}"].font = BOLD
 
     xlsx = out.with_suffix(".xlsx")
     wb.save(xlsx)
@@ -250,7 +280,7 @@ def main() -> int:
         for r in wr:
             w.writerow([str(c).replace("\r\n", " ").replace("\n", " ") if c is not None else "" for c in r])
 
-    csv_long = out.parent / (out.name + "-optionen.csv")
+    csv_long = out.parent / (out.name + "-options.csv")
     with csv_long.with_suffix(".csv").open("w", encoding="utf-8-sig", newline="") as fh:
         w = csv.writer(fh, delimiter=";", quoting=csv.QUOTE_ALL, lineterminator="\r\n")
         w.writerow(lh)
